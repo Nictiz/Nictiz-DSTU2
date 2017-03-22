@@ -1,0 +1,57 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="965eab6e-13c7-4882-b888-af04908a7903" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2016-11-09T17:45:50.683+00:00" />
+  </meta>
+  <url value="http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson-role" />
+  <name value="nl-core-relatedperson-role" />
+  <status value="draft" />
+  <publisher value="HL7 Netherlands" />
+  <description value="Extension to support RelatedPerson.role" />
+  <copyright value="CC0" />
+  <fhirVersion value="1.0.2" />
+  <mapping>
+    <identity value="zib-contactpersoon" />
+    <uri value="https://zibs.nl/wiki/Contactpersoon(NL)" />
+    <name value="Zorginformatiebouwsteen Contactpersoon" />
+  </mapping>
+  <kind value="datatype" />
+  <constrainedType value="Extension" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="RelatedPerson" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="RelatedPersonRole" />
+    </element>
+    <element>
+      <path value="Extension.url" />
+      <representation value="xmlAttr" />
+      <type>
+        <code value="uri" />
+      </type>
+      <fixedUri value="http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson-role" />
+    </element>
+    <element>
+      <path value="Extension.valueCodeableConcept" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.2--20150401000000" />
+          <display value="RolCodelijst" />
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="zib-contactpersoon" />
+        <map value="NL-CM:3.1.2" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>
