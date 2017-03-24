@@ -37,7 +37,7 @@
     <element>
       <path value="Extension.extension" />
       <name value="BankName" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element>
