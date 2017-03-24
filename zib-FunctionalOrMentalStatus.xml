@@ -79,6 +79,7 @@
         <description value="OMAHA (2.16.840.1.113883.6.98): All values" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.1--20150401000000" />
+          <display value="StatusNaamOMAHACodelijst"/>
         </valueSetReference>
       </binding>
     </element>
@@ -91,6 +92,7 @@
         <description value="NOC (2.16.840.1.113883.6.16): All values" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.2--20150401000000" />
+          <display value="StatusNaamNOCCodelijst"/>
         </valueSetReference>
       </binding>
     </element>
@@ -103,6 +105,7 @@
         <description value="ICF (2.16.840.1.113883.6.254): All values" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.3--20150401000000" />
+          <display value="StatusNaamICFCodelijst"/>
         </valueSetReference>
       </binding>
     </element>
@@ -115,6 +118,7 @@
         <description value="SNOMED CT (2.16.840.1.113883.6.96): All values" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.4--20150401000000" />
+          <display value="StatusNaamSnomedCodelijst"/>
         </valueSetReference>
       </binding>
     </element>
@@ -160,6 +164,7 @@
         <description value="OMAHA (2.16.840.1.113883.6.98): All values" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.5--20150401000000" />
+          <display value="StatusWaardeOMAHACodelijst"/>
         </valueSetReference>
       </binding>
     </element>
@@ -172,6 +177,7 @@
         <description value="NOC (2.16.840.1.113883.6.16): All values" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.7--20150401000000" />
+          <display value="StatusWaardeNOCCodelijst"/>
         </valueSetReference>
       </binding>
     </element>
@@ -184,6 +190,7 @@
         <description value="ICF (2.16.840.1.113883.6.254): All values" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.6--20150401000000" />
+          <display value="StatusWaardeICFCodelijst"/>
         </valueSetReference>
       </binding>
     </element>
@@ -196,6 +203,7 @@
         <description value="SNOMED CT (2.16.840.1.113883.6.96): All values" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.8--20150401000000" />
+          <display value="StatusWaardeSnomedCodelijst"/>
         </valueSetReference>
       </binding>
     </element>

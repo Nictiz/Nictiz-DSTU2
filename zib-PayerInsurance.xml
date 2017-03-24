@@ -69,6 +69,7 @@
         <description value="Type of insurance policy. Codes as returned in the Check for Right to Insurance." />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.1.1.1--20150401000000" />
+          <display value="VerzekeringssoortCodelijst"/>
         </valueSetReference>
       </binding>
       <mapping>

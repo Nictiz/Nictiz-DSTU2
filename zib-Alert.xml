@@ -75,6 +75,7 @@ Warnings for non-allergic disorders can concern:
         <description value="Indicates the type of alert, meaning a rough description of the cause or origin of the warning." />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.3.1--20150401000000" />
+          <display value="AlertTypeCodelijst"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -146,6 +147,7 @@ Warnings for non-allergic disorders can concern:
         <strength value="extensible" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.3.2--20150401000000" />
+          <display value="AlertNaamCodelijst"/>
         </valueSetReference>
       </binding>
       <mapping>
