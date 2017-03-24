@@ -1,0 +1,25 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="904e9b07-af56-4483-bbd3-b24fd65649e7" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2016-10-31T17:14:48.001+00:00" />
+  </meta>
+  <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.9--20150401000000" />
+  <identifier>
+    <use value="official" />
+    <system value="http://art-decor.org/ns/oids/vs" />
+    <value value="2.16.840.1.113883.2.4.3.11.60.40.2.9.5.9" />
+  </identifier>
+  <version value="2015-04-01T00:00:00" />
+  <name value="VoorschriftProductHPKCodelijst" />
+  <status value="active" />
+  <description value="G-Standaard Handels Product Kode (HPK) (2.16.840.1.113883.2.4.4.7): Alle waarden" />
+  <expansion>
+    <identifier value="urn:uuid:366ab3a4-3164-48e5-897e-749ff71cc4f1" />
+    <timestamp value="2016-10-31T18:14:48.215+01:00" />
+    <total value="0" />
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.2.4.4.7" />
+    </contains>
+  </expansion>
+</ValueSet>

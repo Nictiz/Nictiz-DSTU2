@@ -1,0 +1,43 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="a3e12f36-d7b4-4811-93ac-2b2857aed520" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2017-01-31T15:49:31.542+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/Spirometer-Bundle" />
+  <name value="Spirometer Bundle" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <date value="2017-01-20T11:24:21.1492075+01:00" />
+  <kind value="resource" />
+  <constrainedType value="Bundle" />
+  <abstract value="false" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+  <differential>
+    <element>
+      <path value="Bundle" />
+    </element>
+    <element>
+      <path value="Bundle.type" />
+      <type>
+        <code value="code" />
+      </type>
+      <fixedCode value="document" />
+    </element>
+    <element>
+      <path value="Bundle.entry" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+      </type>
+      <type>
+        <code value="Composition" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/Spirometer-Composition" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

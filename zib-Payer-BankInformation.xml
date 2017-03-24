@@ -1,0 +1,113 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="4e7fdcca-4c2d-4aec-8f3b-94d0bd9bfab1" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2017-02-22T10:56:13.364+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/zib-Payer-BankInformation" />
+  <name value="ZIB Payer BankInformation" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <date value="2017-01-16T16:23:21.4994187+01:00" />
+  <description value="Container of the BankInformation concept. This container contains all data elements of the BankInformation concept." />
+  <copyright value="CC0" />
+  <fhirVersion value="1.0.2" />
+  <mapping>
+    <identity value="zib-betaler" />
+    <uri value="https://zibs.nl/wiki/Betaler(NL)" />
+    <name value="Zorginformatiebouwsteen Betaler" />
+  </mapping>
+  <kind value="datatype" />
+  <constrainedType value="Extension" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Patient" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <differential>
+    <element>
+      <path value="Extension" />
+    </element>
+    <element>
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Extension.extension" />
+      <name value="BankName" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element>
+      <path value="Extension.extension.url" />
+      <fixedUri value="BankName" />
+    </element>
+    <element>
+      <path value="Extension.extension.valueString" />
+      <short value="BankName" />
+      <definition value="Name of the financial organization." />
+      <alias value="BankNaam" />
+      <type>
+        <code value="string" />
+      </type>
+      <mapping>
+        <identity value="zib-betaler" />
+        <map value="NL-CM:1.1.9" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension" />
+      <name value="AccountNumber" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element>
+      <path value="Extension.extension.url" />
+      <fixedUri value="AccountNumber" />
+    </element>
+    <element>
+      <path value="Extension.extension.valueString" />
+      <short value="AccountNumber" />
+      <definition value="The payer’s bank account number at the listed organization. For European countries, this is the IBAN." />
+      <alias value="Rekeningnummer" />
+      <type>
+        <code value="string" />
+      </type>
+      <mapping>
+        <identity value="zib-betaler" />
+        <map value=" NL-CM:1.1.11" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension" />
+      <name value="Bankcode " />
+    </element>
+    <element>
+      <path value="Extension.extension.url" />
+      <fixedUri value="Bankcode " />
+    </element>
+    <element>
+      <path value="Extension.extension.valueString" />
+      <short value="BankCode" />
+      <definition value="Code indicating the bank and branch. For European countries, this is the organization’s BIC or SWIFT code." />
+      <alias value="BankCode" />
+      <type>
+        <code value="string" />
+      </type>
+      <mapping>
+        <identity value="zib-betaler" />
+        <map value=" NL-CM:1.1.10" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.url" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/zib-BetalerBankgegevens" />
+    </element>
+    <element>
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,36 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="33f1dae3-a9eb-4f16-8a87-f61577f5b517" />
+  <meta>
+    <versionId value="4" />
+    <lastUpdated value="2016-12-12T16:23:55.679+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp9-usage-description" />
+  <name value="MP9 Usage Description" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <description value="Textual description of the medication usage." />
+  <copyright value="CC0" />
+  <kind value="datatype" />
+  <constrainedType value="Extension" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Medication" />
+  <context value="MedicationOrder" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <differential>
+    <element>
+      <path value="Extension" />
+    </element>
+    <element>
+      <path value="Extension.url" />
+      <representation value="xmlAttr" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/mp9-usage-description" />
+    </element>
+    <element>
+      <path value="Extension.valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

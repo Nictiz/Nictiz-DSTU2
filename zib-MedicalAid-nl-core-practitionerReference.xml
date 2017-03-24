@@ -1,0 +1,46 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="78226a67-b28e-43fb-8c78-0758823d06a2" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2017-02-22T10:32:08.251+00:00" />
+  </meta>
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>An extenstion to provide infromation on the HealthProfessional involved in the indication for use of the medical device as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) 'MedischHulpmiddel' version 3.0..</p>
+    </div>
+  </text>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalAid-nl-core-practitionerReference" />
+  <name value="ZIB MedicalAid nl-core-practitionerReference" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <date value="2017-02-01T17:54:36.1834577+01:00" />
+  <description value="The healthprofessional involved in the indication for use of the medical device as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) 'MedischHulpmiddel' version 3.0." />
+  <requirements value="To record who is involved in the indication for use of the medical device. This extension is used because currently there is no reference to a Practitioner resource for this supporting information " />
+  <copyright value="CC0" />
+  <kind value="datatype" />
+  <constrainedType value="Extension" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="DeviceUseStatement" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <differential>
+    <element>
+      <path value="Extension" />
+    </element>
+    <element>
+      <path value="Extension.url" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalAid-nl-core-practitionerReference" />
+    </element>
+    <element>
+      <path value="Extension.valueReference" />
+      <short value="HealthProffesional" />
+      <definition value="The healthcare provider involved in the indication for use of the medical aid implant." />
+      <alias value="Zorgverlener" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,92 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="3ccd3af5-98cd-4e9d-806e-7dde33f64cbb" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2017-02-22T10:32:09.079+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/zib-PayerInsurance" />
+  <name value="ZIB PayerInsurance" />
+  <status value="draft" />
+  <publisher value="Nicitiz" />
+  <date value="2017-01-16T17:02:59.6109232+01:00" />
+  <description value="Base StructureDefinition for Coverage Resource&#xD;&#xA;" />
+  <copyright value="CC0" />
+  <fhirVersion value="1.0.2" />
+  <mapping>
+    <identity value="zib-betaler" />
+    <uri value="https://zibs.nl/wiki/Betaler(NL)" />
+    <name value="Zorginformatiebouwsteen Betaler" />
+  </mapping>
+  <kind value="resource" />
+  <constrainedType value="Coverage" />
+  <abstract value="false" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Coverage" />
+  <differential>
+    <element>
+      <path value="Coverage" />
+    </element>
+    <element>
+      <path value="Coverage.issuer" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-BetalerVerzekeraar" />
+      </type>
+    </element>
+    <element>
+      <path value="Coverage.period" />
+      <definition value="Time period during which the coverage is in force. A missing start date indicates the start date isn't known, a missing end date means the coverage is continuing to be in force. " />
+    </element>
+    <element>
+      <path value="Coverage.period.start" />
+      <short value="StartDateTime" />
+      <definition value="Date from which the insurance policy coverage applies." />
+      <alias value="BeginDatumTijd" />
+      <mapping>
+        <identity value="zib-betaler" />
+        <map value="NL-CM:1.1.13" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Coverage.period.end" />
+      <short value="EndDateTime" />
+      <definition value="Date until which the insurance policy coverage applies.&#xD;&#xA;This item maps the ‘Expiry date’ on EHIC field 9." />
+      <alias value="EindDatumTijd" />
+      <min value="1" />
+      <mapping>
+        <identity value="zib-betaler" />
+        <map value="NL-CM:1.1.14" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Coverage.type" />
+      <short value="InsuranceType" />
+      <definition value="Type of insurance policy. Codes as returned in the Check for Right to Insurance" />
+      <alias value="VerzekeringsSoort" />
+      <min value="1" />
+      <binding>
+        <strength value="extensible" />
+        <description value="Type of insurance policy. Codes as returned in the Check for Right to Insurance." />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.1.1.1--20150401000000" />
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="zib-betaler" />
+        <map value="NL-CM:1.1.15" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Coverage.identifier" />
+      <short value="InsurantNumber" />
+      <definition value="Number under which the insured person is registered at the insurance company&#xD;&#xA;This item maps the ‘Identification number of the card’ on EHIC field 8" />
+      <alias value="VerzekerdeNummer" />
+      <min value="1" />
+      <max value="1" />
+      <mapping>
+        <identity value="zib-betaler" />
+        <map value="NL-CM:1.1.6" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

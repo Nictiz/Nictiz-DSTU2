@@ -1,0 +1,92 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="8c6e8ba5-9637-477a-8bd7-340a3a99b342" />
+  <meta>
+    <versionId value="4" />
+    <lastUpdated value="2016-12-12T16:52:03.83+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp9-MedicationAdministration" />
+  <name value="MP9 Medication Administration" />
+  <status value="draft" />
+  <kind value="resource" />
+  <constrainedType value="MedicationAdministration" />
+  <abstract value="false" />
+  <base value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
+  <differential>
+    <element>
+      <path value="MedicationAdministration" />
+      <type>
+        <code value="MedicationAdministration" />
+      </type>
+    </element>
+    <element>
+      <path value="MedicationAdministration.status" />
+      <name value="MedicatieToedieningStatus" />
+      <short value="MedicatieToedieningStatus" />
+    </element>
+    <element>
+      <path value="MedicationAdministration.patient" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
+      </type>
+    </element>
+    <element>
+      <path value="MedicationAdministration.practitioner" />
+      <name value="Toediener" />
+    </element>
+    <element>
+      <path value="MedicationAdministration.reasonNotGiven" />
+      <name value="MedicatieToedieningRedenVanNietToedienen" />
+      <short value="MedicatieToedieningRedenVanNietToedienen" />
+      <binding>
+        <strength value="required" />
+        <description value="RedenMedicatieafspraak" />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.21--2016-06-17T11:20:39" />
+          <display value="RedenMedicatieafspraak" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="MedicationAdministration.effectiveTime[x]" />
+      <name value="ToedieningsDatumTijd" />
+      <short value="ToedieningsDatumTijd" />
+    </element>
+    <element>
+      <path value="MedicationAdministration.medicationReference" />
+      <name value="ToedieningsProduct" />
+      <short value="ToedieningsProduct" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-Medication" />
+      </type>
+    </element>
+    <element>
+      <path value="MedicationAdministration.note" />
+      <name value="Toelichting" />
+      <short value="Toelichting" />
+    </element>
+    <element>
+      <path value="MedicationAdministration.dosage" />
+      <name value="Dosering" />
+    </element>
+    <element>
+      <path value="MedicationAdministration.dosage.route" />
+      <name value="Toedieningsweg" />
+      <short value="Toedieningsweg" />
+      <binding>
+        <strength value="required" />
+        <description value="VoorschriftToedieningswegCodelijst" />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.4--2015-04-01T00:00:0" />
+          <display value="VoorschriftToedieningswegCodelijst" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="MedicationAdministration.dosage.quantity" />
+      <name value="ToegediendeHoeveelheid" />
+      <short value="ToegediendeHoeveelheid" />
+    </element>
+  </differential>
+</StructureDefinition>

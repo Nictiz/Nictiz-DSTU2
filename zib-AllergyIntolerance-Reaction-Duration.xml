@@ -1,0 +1,50 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="9d6eb862-8bcf-496d-8424-5f7df318d377" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2016-12-09T08:47:29.063+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance-Reaction-Duration" />
+  <name value="ZIB AllergyIntolerance Reaction Duration" />
+  <status value="draft" />
+  <description value="Represents how long an adverse reaction to an allergy or intolerance lasts/lasted." />
+  <fhirVersion value="1.0.2" />
+  <mapping>
+    <identity value="zib-allergieintolerantie" />
+    <uri value="https://zibs.nl/wiki/AllergieIntolerantie(NL)" />
+    <name value="Zorginformatiebouwsteen AllergieIntolerantie" />
+  </mapping>
+  <kind value="datatype" />
+  <constrainedType value="Extension" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="AllergyIntolerance.reaction" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <max value="1" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <representation value="xmlAttr" />
+      <short value="identifies the meaning of the extension" />
+      <type>
+        <code value="uri" />
+      </type>
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance-Reaction-Duration" />
+    </element>
+    <element id="Extension.valueQuantity">
+      <path value="Extension.valueQuantity" />
+      <short value="ReactionDuration" />
+      <definition value="Duration of the reaction." />
+      <alias value="ReactieDuur" />
+      <min value="1" />
+      <max value="1" />
+      <mapping>
+        <identity value="zib-allergieintolerantie" />
+        <map value="NL-CM-8.2.16" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

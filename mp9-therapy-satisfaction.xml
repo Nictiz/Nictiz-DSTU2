@@ -1,0 +1,36 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="15c0fb8c-60d2-40d4-943e-af5ab9809c41" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2016-12-12T16:29:09.363+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp9-therapy-satisfaction" />
+  <name value="MP9 Therapy Satisfaction" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <description value="The overall experience the patient has as a consumer of the medication." />
+  <copyright value="CC0" />
+  <kind value="datatype" />
+  <constrainedType value="Extension" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="MedicationStatement" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <differential>
+    <element>
+      <path value="Extension" />
+      <short value="medication treatment experience " />
+    </element>
+    <element>
+      <path value="Extension.url" />
+      <representation value="xmlAttr" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/mp9-therapy-satisfaction" />
+    </element>
+    <element>
+      <path value="Extension.valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

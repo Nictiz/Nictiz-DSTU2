@@ -1,0 +1,202 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="e445eae5-56dd-4b2f-85c1-39fc585f0d35" />
+  <meta>
+    <versionId value="5" />
+    <lastUpdated value="2016-12-12T16:41:08.39+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp9-MedicationAgreement" />
+  <name value="MP9 Medication Agreement" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <description value="Medication Agreement (Medicatie afspraak) as defined by the Dutch Medication v9 project." />
+  <copyright value="CC0" />
+  <fhirVersion value="1.0.2" />
+  <kind value="resource" />
+  <constrainedType value="MedicationOrder" />
+  <abstract value="false" />
+  <base value="http://hl7.org/fhir/StructureDefinition/MedicationOrder" />
+  <differential>
+    <element>
+      <path value="MedicationOrder" />
+      <type>
+        <code value="MedicationOrder" />
+      </type>
+    </element>
+    <element>
+      <path value="MedicationOrder.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="MedicationOrder.extension" />
+      <name value="usagePeriod" />
+      <short value="IngangsDatum/ UitgangsDatum" />
+      <definition value="Optional Extensions Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-usage-period" />
+      </type>
+    </element>
+    <element>
+      <path value="MedicationOrder.extension" />
+      <name value="usageDuration" />
+      <short value="Gebruikduur" />
+      <definition value="Optional Extensions Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-usage-duration" />
+      </type>
+    </element>
+    <element>
+      <path value="MedicationOrder.extension" />
+      <name value="supportingInformation" />
+      <short value="supporting information" />
+      <definition value="Optional Extensions Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-medication-supporting-information" />
+      </type>
+    </element>
+    <element>
+      <path value="MedicationOrder.identifier" />
+      <name value="Identificatie" />
+      <short value="Identificatie" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element>
+      <path value="MedicationOrder.dateWritten" />
+      <name value="Afspraakdatum" />
+      <short value="Afspraakdatum" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="MedicationOrder.dateEnded" />
+      <name value="EindDatum" />
+      <short value="EindDatum (Einddatum (en tijd))" />
+    </element>
+    <element>
+      <path value="MedicationOrder.patient" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
+      </type>
+    </element>
+    <element>
+      <path value="MedicationOrder.prescriber" />
+      <name value=" Voorschrijver" />
+      <short value=" Voorschrijver" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner" />
+      </type>
+    </element>
+    <element>
+      <path value="MedicationOrder.reasonCodeableConcept" />
+      <name value="Reden afspraak" />
+      <short value="Reden afspraak" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="RedenMedicatieafspraak" />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.21--2016-06-17T11:20:39" />
+          <display value="RedenMedicatieafspraak" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="MedicationOrder.note" />
+      <name value="Toelichting" />
+      <short value="Toelichting" />
+    </element>
+    <element>
+      <path value="MedicationOrder.medicationReference" />
+      <name value=" Afgesproken geneesmiddel" />
+      <short value=" Afgesproken geneesmiddel" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-Medication" />
+      </type>
+    </element>
+    <element>
+      <path value="MedicationOrder.dosageInstruction" />
+      <name value=" Gebruiksinstructie" />
+      <short value=" Gebruiksinstructie" />
+    </element>
+    <element>
+      <path value="MedicationOrder.dosageInstruction.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="MedicationOrder.dosageInstruction.extension" />
+      <name value="description" />
+      <short value="omschrijving" />
+      <definition value="Optional Extensions Element - found in all resources." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-usage-description" />
+      </type>
+    </element>
+    <element>
+      <path value="MedicationOrder.dosageInstruction.additionalInstructions" />
+      <name value="Aanvullende instructie" />
+      <short value="Aanvullende instructie" />
+    </element>
+    <element>
+      <path value="MedicationOrder.dosageInstruction.timing" />
+      <name value=" Toedieningsschema" />
+      <short value=" Toedieningsschema" />
+      <type>
+        <code value="Timing" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-AdministrationSchedule" />
+      </type>
+    </element>
+    <element>
+      <path value="MedicationOrder.dosageInstruction.asNeededCodeableConcept" />
+      <name value="Zo nodig" />
+      <short value="Zo nodig" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element>
+      <path value="MedicationOrder.dosageInstruction.route" />
+      <name value="Toedieningsweg" />
+      <short value="Toedieningsweg " />
+      <binding>
+        <strength value="required" />
+        <description value="VoorschriftToedieningswegCodelijst" />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.6--2015-04-01T00:00:00" />
+          <display value="VoorschriftToedieningswegCodelijst" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="MedicationOrder.dosageInstruction.dose[x]" />
+      <name value=" Keerdosis" />
+      <short value=" Keerdosis" />
+    </element>
+    <element>
+      <path value="MedicationOrder.dosageInstruction.rate[x]" />
+      <name value="Toedieningssnelheid (Inloopsnelheid)" />
+      <short value="Toedieningssnelheid (Inloopsnelheid)" />
+    </element>
+  </differential>
+</StructureDefinition>

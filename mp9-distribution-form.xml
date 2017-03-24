@@ -1,0 +1,35 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ece50de1-7e99-454f-b1e7-c3889dd28633" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2016-12-12T16:25:17.365+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp9-distribution-form" />
+  <name value="MP9 Distribution Form" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <description value="The distribution form of the medication (e.g. via Baxter, separate package)" />
+  <copyright value="CC0" />
+  <kind value="datatype" />
+  <constrainedType value="Extension" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="MedicationDispense" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <differential>
+    <element>
+      <path value="Extension" />
+    </element>
+    <element>
+      <path value="Extension.url" />
+      <representation value="xmlAttr" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/mp9-distribution-form" />
+    </element>
+    <element>
+      <path value="Extension.valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

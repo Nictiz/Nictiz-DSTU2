@@ -1,0 +1,35 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="3859bf6b-6445-480c-b41b-4a47c93e345c" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2016-12-12T16:25:37.517+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp9-dosage-sequence-number" />
+  <name value="MP9 Dosage Sequence Number" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <description value="The order of the dosage instructions" />
+  <copyright value="CC0" />
+  <kind value="datatype" />
+  <constrainedType value="Extension" />
+  <abstract value="false" />
+  <contextType value="datatype" />
+  <context value="Timing" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <differential>
+    <element>
+      <path value="Extension" />
+    </element>
+    <element>
+      <path value="Extension.url" />
+      <representation value="xmlAttr" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/mp9-dosage-sequence-number" />
+    </element>
+    <element>
+      <path value="Extension.valueInteger" />
+      <type>
+        <code value="integer" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

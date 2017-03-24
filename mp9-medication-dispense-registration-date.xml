@@ -1,0 +1,35 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="32ef301d-d4ee-4b6b-b976-fab63e40d78b" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2016-12-12T16:24:56.205+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp9-medication-dispense-registration-date" />
+  <name value="MP9 Dispense Registration Date" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <description value="The date/time the dispenser registers the actual dispense of the medication" />
+  <copyright value="CC0" />
+  <kind value="datatype" />
+  <constrainedType value="Extension" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="MedicationDispense" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <differential>
+    <element>
+      <path value="Extension" />
+    </element>
+    <element>
+      <path value="Extension.url" />
+      <representation value="xmlAttr" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/mp9-medication-dispense-registration-date" />
+    </element>
+    <element>
+      <path value="Extension.valueDateTime" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

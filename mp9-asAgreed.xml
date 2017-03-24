@@ -1,0 +1,35 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="8a22f2dc-6957-490b-8d6c-44ee06eb0ccc" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2016-12-12T16:22:27.396+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp9-as-agreed" />
+  <name value="MP9 As Agreed" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <description value="Is the drug being taken as agreed in the medication agreement?" />
+  <copyright value="CC0" />
+  <kind value="datatype" />
+  <constrainedType value="Extension" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="MedicationStatement" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <differential>
+    <element>
+      <path value="Extension" />
+    </element>
+    <element>
+      <path value="Extension.url" />
+      <representation value="xmlAttr" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/mp9-as-agreed" />
+    </element>
+    <element>
+      <path value="Extension.valueBoolean" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

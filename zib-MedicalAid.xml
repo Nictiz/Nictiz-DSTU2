@@ -1,0 +1,171 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="be34878f-b8b0-42fe-8606-7d791ddceabf" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2017-02-22T10:32:08.314+00:00" />
+  </meta>
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>MedischHulpmiddel as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.
+
+Medical aids are any internally implanted and external devices and/or aids used by the patient (in the past) to reduce the effects of functional limitations in organ systems or to facilitate the treatment of a disease.</p>
+    </div>
+  </text>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalAid" />
+  <name value="ZIB MedicalAid" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <date value="2017-01-16T14:46:58.7900353+01:00" />
+  <description value="MedischHulpmiddel as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.&#xD;&#xA;&#xD;&#xA;Medical aids are any internally implanted and external devices and/or aids used by the patient (in the past) to reduce the effects of functional limitations in organ systems or to facilitate the treatment of a disease." />
+  <copyright value="CC0" />
+  <mapping>
+    <identity value="zib-medischhulpmiddel" />
+    <uri value="https://zibs.nl/wiki/MedischHulpmiddel(NL)" />
+    <name value="Zorginformatiebouwsteen MedischHulpmiddel" />
+  </mapping>
+  <kind value="resource" />
+  <constrainedType value="DeviceUseStatement" />
+  <abstract value="false" />
+  <base value="http://hl7.org/fhir/StructureDefinition/DeviceUseStatement" />
+  <differential>
+    <element>
+      <path value="DeviceUseStatement" />
+      <short value="MedicalAid" />
+      <alias value="MedischHulpmiddel" />
+      <mapping>
+        <identity value="zib-medischhulpmiddel" />
+        <map value="NL-CM:10.1.1" />
+      </mapping>
+    </element>
+    <element>
+      <path value="DeviceUseStatement.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element>
+      <path value="DeviceUseStatement.extension" />
+      <name value="HealthcareProvider" />
+      <short value="HealthcareProvider" />
+      <definition value="The healthcare provider at which use of the medical aid was initiated or where the aid was implanted." />
+      <alias value="Zorgaanbieder" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalAid-nl-core-organizationReference" />
+      </type>
+      <mapping>
+        <identity value="zib-medischhulpmiddel" />
+        <map value="NL-CM:10.1.8" />
+      </mapping>
+    </element>
+    <element>
+      <path value="DeviceUseStatement.extension" />
+      <name value="HealthProfessional" />
+      <short value="HealthProfessional" />
+      <definition value="The healthcare provider involved in the indication for use of the medical aid implant." />
+      <alias value="Zorgverlener" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalAid-nl-core-practitionerReference" />
+      </type>
+      <mapping>
+        <identity value="zib-medischhulpmiddel" />
+        <map value="NL-CM:10.1.9" />
+      </mapping>
+    </element>
+    <element>
+      <path value="DeviceUseStatement.bodySiteCodeableConcept" />
+      <short value="AidAnatomicalLocation" />
+      <definition value="Patient’s anatomical location of the medical aid used." />
+      <alias value="HulpmiddelAnatomischeLocatie" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <description value="Patient’s anatomical location of the medical aid used." />
+        <valueSetUri value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.1.2--20150401000000" />
+      </binding>
+      <mapping>
+        <identity value="zib-medischhulpmiddel" />
+        <map value="NL-CM:10.1.6" />
+      </mapping>
+    </element>
+    <element>
+      <path value="DeviceUseStatement.bodySiteCodeableConcept.coding" />
+      <definition value="A reference to a code defined by a terminology system. " />
+    </element>
+    <element>
+      <path value="DeviceUseStatement.bodySiteCodeableConcept.coding.system" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="DeviceUseStatement.bodySiteCodeableConcept.coding.code" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="DeviceUseStatement.whenUsed" />
+      <short value="Time range defined by start and end date/time " />
+    </element>
+    <element>
+      <path value="DeviceUseStatement.whenUsed.start" />
+      <short value="StartDate" />
+      <definition value="The start date of the first use or implant of the medical aid. A ‘vague’ date, such as only the year, is permitted." />
+      <alias value="BeginDatum" />
+    </element>
+    <element>
+      <path value="DeviceUseStatement.device" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalAidProduct" />
+      </type>
+    </element>
+    <element>
+      <path value="DeviceUseStatement.indication" />
+      <short value="Concept - reference to a terminology or just text" />
+    </element>
+    <element>
+      <path value="DeviceUseStatement.indication.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element>
+      <path value="DeviceUseStatement.indication.extension" />
+      <name value="Indication-Problem" />
+      <short value="Indication-Probleem" />
+      <definition value="The medical reason for use of the medical aid." />
+      <alias value="Indicatie-Probleem" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalAid-ConcernReference" />
+      </type>
+      <mapping>
+        <identity value="zib-medischhulpmiddel" />
+        <map value="NL-CM:10.1.7" />
+      </mapping>
+    </element>
+    <element>
+      <path value="DeviceUseStatement.notes" />
+      <short value="Explanation" />
+      <definition value="Comment about use or information on the medical aid used." />
+      <alias value="Toelichting" />
+      <mapping>
+        <identity value="zib-medischhulpmiddel" />
+        <map value="NL-CM:10.1.10" />
+      </mapping>
+    </element>
+    <element>
+      <path value="DeviceUseStatement.subject" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

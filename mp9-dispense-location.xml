@@ -1,0 +1,35 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="68af2fd0-11d2-4a29-a64f-7a9894419ef1" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2016-12-12T16:24:17.512+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp9-dispense-location" />
+  <name value="MP9 Dispense Location" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <description value="Location where the medication is (to be) dispensed" />
+  <copyright value="CC0" />
+  <kind value="datatype" />
+  <constrainedType value="Extension" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="MedicationOrder.dispenseRequest" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <differential>
+    <element>
+      <path value="Extension" />
+    </element>
+    <element>
+      <path value="Extension.url" />
+      <representation value="xmlAttr" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/mp9-dispense-location" />
+    </element>
+    <element>
+      <path value="Extension.valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

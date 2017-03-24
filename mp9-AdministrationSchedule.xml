@@ -1,0 +1,137 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="77dc0559-023b-4c4d-92e1-781f16acd33e" />
+  <meta>
+    <versionId value="4" />
+    <lastUpdated value="2016-12-12T16:58:13.365+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp9-AdministrationSchedule" />
+  <name value="MP9 Administration Schedule" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <description value="A Timing datatype as defined by the Dutch Medication v9 project." />
+  <copyright value="CC0" />
+  <fhirVersion value="1.0.2" />
+  <kind value="datatype" />
+  <constrainedType value="Timing" />
+  <abstract value="false" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Timing" />
+  <differential>
+    <element>
+      <path value="Timing" />
+      <type>
+        <code value="Timing" />
+      </type>
+    </element>
+    <element>
+      <path value="Timing.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Timing.extension" />
+      <name value="sequenceNumber" />
+      <short value="dosage sequence number" />
+      <definition value="Optional Extensions Element - found in all resources." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-dosage-sequence-number" />
+      </type>
+    </element>
+    <element>
+      <path value="Timing.event" />
+      <name value="Toedientijd" />
+    </element>
+    <element>
+      <path value="Timing.repeat" />
+      <name value="Herhaling" />
+    </element>
+    <element>
+      <path value="Timing.repeat.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Timing.repeat.extension" />
+      <name value="daysOfWeek" />
+      <definition value="Optional Extensions Element - found in all resources." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-day-of-week" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="WeekdagenCodelijst" />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.4--2015-04-01T00:00:00" />
+          <display value="WeekdagenCodelijst" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="Timing.repeat.boundsQuantity" />
+      <name value="Doseerduur" />
+      <short value="Doseerduur" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Duration" />
+      </type>
+    </element>
+    <element>
+      <path value="Timing.repeat.frequency" />
+      <name value="Frequency - min / vaste waarde" />
+      <short value="min / vaste waarde" />
+      <defaultValueInteger value="1" />
+    </element>
+    <element>
+      <path value="Timing.repeat.frequencyMax" />
+      <name value="Frequency - max" />
+    </element>
+    <element>
+      <path value="Timing.repeat.period" />
+      <name value="Interval" />
+    </element>
+    <element>
+      <path value="Timing.repeat.periodUnits" />
+      <name value="Frequency Tijdeenheid" />
+    </element>
+    <element>
+      <path value="Timing.repeat.when" />
+      <name value="Wanneer" />
+    </element>
+    <element>
+      <path value="Timing.repeat.when.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Timing.repeat.when.extension" />
+      <name value="when-specification" />
+      <short value="Defines a more specific value to a code. Especially use ful for FHIR's required ValueSets." />
+      <definition value="Defines a more specific value to a code. Especially useful for FHIR's required ValueSets. These extensions are primarily used on codes bound to a required value set, where you would like to use a more specific code than the codes in the bounded value set." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/code-specification" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="DagdeelCodelijst" />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.5--2015-04-01T00:00:00" />
+          <display value="DagdeelCodelijst" />
+        </valueSetReference>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

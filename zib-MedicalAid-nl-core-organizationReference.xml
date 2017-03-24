@@ -1,0 +1,46 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="e7abf192-457d-4410-9533-38caf709cbf6" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2017-02-22T10:32:08.189+00:00" />
+  </meta>
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>An extension to provide information on the healthcare provider at which use of the medical aid was initiated or where the aid was implanted as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) 'MedischHulpmiddel' version 3.0.</p>
+    </div>
+  </text>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalAid-nl-core-organizationReference" />
+  <name value="ZIB MedicalAid nl-core-organizationReference" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <date value="2017-02-01T17:54:32.4726597+01:00" />
+  <description value="The healthcare provider at which use of the medical aid was initiated or where the aid was implanted as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) 'MedischHulpmiddel' version 3.0." />
+  <requirements value="To provide additional information on the Healthcare provider where the medical device was initiated or the aid was implanted. This extension is used because currently there is no reference to an Organization resource for this supporting information." />
+  <copyright value="CC0" />
+  <kind value="datatype" />
+  <constrainedType value="Extension" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="DeviceUseStatement" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <differential>
+    <element>
+      <path value="Extension" />
+    </element>
+    <element>
+      <path value="Extension.url" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalAid-nl-core-organizationReference" />
+    </element>
+    <element>
+      <path value="Extension.valueReference" />
+      <short value="HealthcareProvider" />
+      <definition value="The healthcare provider at which use of the medical aid was initiated or where the aid was implanted." />
+      <alias value="Zorgaanbieder" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,150 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2017-02-22T10:32:09.204+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/zib-PayerPerson" />
+  <name value="ZIB PayerPerson" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <date value="2017-01-16T15:52:25.068429+01:00" />
+  <mapping>
+    <identity value="zib-betaler" />
+    <uri value="https://zibs.nl/wiki/Betaler(NL)" />
+    <name value="Zorginformatiebouwsteen Betaler" />
+  </mapping>
+  <kind value="resource" />
+  <constrainedType value="Patient" />
+  <abstract value="false" />
+  <base value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
+  <differential>
+    <element>
+      <path value="Patient" />
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="BankInformation" />
+      <short value="BankInformation" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Payer-BankInformation" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Patient.extension.extension" />
+      <name value="BankName" />
+      <short value="BankName" />
+      <definition value="Name of the financial organization." />
+      <alias value="BankNaam" />
+      <min value="1" />
+      <max value="1" />
+      <mapping>
+        <identity value="zib-betaler" />
+        <map value="NL-CM:1.1.9" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.extension.extension.url" />
+      <fixedUri value="BankName" />
+    </element>
+    <element>
+      <path value="Patient.extension.extension.valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension.extension" />
+      <name value="AccountNumber" />
+      <short value="AccountNumber" />
+      <definition value="The payer’s bank account number at the listed organization. For European countries, this is the IBAN." />
+      <alias value="Rekeningnummer" />
+      <min value="1" />
+      <max value="1" />
+      <mapping>
+        <identity value="zib-betaler" />
+        <map value="NL-CM:1.1.11" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.extension.extension.url" />
+      <fixedUri value="AccountNumber" />
+    </element>
+    <element>
+      <path value="Patient.extension.extension.valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension.extension" />
+      <name value="Bankcode " />
+      <short value="Bankcode " />
+      <definition value="Code indicating the bank and branch. For European countries, this is the organization’s BIC or SWIFT code." />
+      <alias value="BankCode" />
+      <mapping>
+        <identity value="zib-betaler" />
+        <map value="NL-CM:1.1.10" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.extension.extension.url" />
+      <fixedUri value="Bankcode " />
+    </element>
+    <element>
+      <path value="Patient.extension.extension.valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension.url" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="uri" />
+      </type>
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/zib-BetalerBankgegevens" />
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.extension.value[x]" />
+      <max value="0" />
+      <type>
+        <code value="boolean" />
+      </type>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.name" />
+      <short value="PayerName" />
+      <definition value="Full name of the paying person or organization (legal entity)." />
+      <alias value="BetalerNaam" />
+      <max value="1" />
+      <mapping>
+        <identity value="zib-betaler" />
+        <map value="NL-CM:1.1.5" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,143 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="6d6e8bbf-1a85-4067-b048-01800c591f9d" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2016-09-30T11:19:08.191+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp9-ingredient" />
+  <name value="MP9 Ingredient" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <description value="An igredient as defined by the Dutch Medication v9 project." />
+  <copyright value="CC0" />
+  <fhirVersion value="1.0.2" />
+  <kind value="resource" />
+  <constrainedType value="Substance" />
+  <abstract value="false" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Substance" />
+  <differential>
+    <element>
+      <path value="Substance" />
+      <type>
+        <code value="Substance" />
+      </type>
+    </element>
+    <element>
+      <path value="Substance.code" />
+      <short value="What substance this is " />
+    </element>
+    <element>
+      <path value="Substance.code.coding" />
+      <slicing>
+        <discriminator value="system" />
+        <rules value="openAtEnd" />
+      </slicing>
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element>
+      <path value="Substance.code.coding" />
+      <name value="GTIN" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="IngredientCodeGTINCodeLijst" />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.21--2015-04-01T00:00:00" />
+          <display value="IngredientCodeGTINCodeLijst" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="Substance.code.coding" />
+      <name value="SSK" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="IngredientCodeSSKLijst" />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.19--2015-04-01T00:00:00" />
+          <display value="IngredientCodeSSKLijst" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="Substance.code.coding" />
+      <name value="PRK" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="IngredientCodePRKLijst" />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.18--2015-04-01T00:00:00" />
+          <display value="IngredientCodePRKLijst" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="Substance.code.coding" />
+      <name value="HPK" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="IngredientCodeHPKLijst" />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.17--2015-04-01T00:00:00" />
+          <display value="IngredientCodeHPKLijst" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="Substance.code.coding" />
+      <name value="GPK" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="IngredientCodeGPKLijst" />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.16--2015-04-01T00:00:00" />
+          <display value="IngredientCodeGPKLijst" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="Substance.code.coding" />
+      <name value="SNK" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="IngredientCodeSNKLijst" />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.15--2015-04-01T00:00:00" />
+          <display value="IngredientCodeSNKLijst" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="Substance.code.coding" />
+      <name value="ATC" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="IngredientCodeATCCodelijst" />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.14--2015-04-01T00:00:00" />
+          <display value="IngredientCodeATCCodelijst" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="Substance.code.coding" />
+      <name value="ZI" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="IngredientCodeZICodelijst" />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.12--2015-04-01T00:00:0" />
+          <display value="IngredientCodeZICodelijst" />
+        </valueSetReference>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

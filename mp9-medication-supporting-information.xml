@@ -1,0 +1,37 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="9777c47d-dd64-4b95-a2f2-19da99f71eac" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2016-12-12T16:28:30.848+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp9-medication-supporting-information" />
+  <name value="MP9 Supporting Information" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <description value="Information that is relevant to the medication agreement, e.g. height or weight of the patient," />
+  <copyright value="CC0" />
+  <kind value="datatype" />
+  <constrainedType value="Extension" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="MedicationOrder" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <differential>
+    <element>
+      <path value="Extension" />
+      <short value="supporting information" />
+    </element>
+    <element>
+      <path value="Extension.url" />
+      <representation value="xmlAttr" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/mp9-medication-supporting-information" />
+    </element>
+    <element>
+      <path value="Extension.valueReference" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

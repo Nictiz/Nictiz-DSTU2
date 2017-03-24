@@ -1,0 +1,44 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Nictiz-code-specification" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2016-11-11T12:25:34.473+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/code-specification" />
+  <name value="Coded more specific value" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <description value="Provides the specific CBB code for a FHIR element that has a required binding to a FHIR ValueSet." />
+  <copyright value="CC0" />
+  <fhirVersion value="1.0.2" />
+  <kind value="datatype" />
+  <constrainedType value="Extension" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="CodeableConcept" />
+  <context value="code" />
+  <context value="Coding" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Provides the specific CBB code for a FHIR element that has a required binding to a FHIR ValueSet" />
+      <definition value="Defines a more specific value to a code. Especially useful for FHIR's required ValueSets. These extensions are primarily used on codes bound to a required value set, where you would like to use a more specific code than the codes in the bounded value set." />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <representation value="xmlAttr" />
+      <type>
+        <code value="uri" />
+      </type>
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/code-specification" />
+    </element>
+    <element id="Extension.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,35 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="3a197fc3-408c-4377-b991-3bf7bd836874" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2016-12-12T16:26:52.019+00:00" />
+  </meta>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp9-reason-for-dispense" />
+  <name value="MP9 Reason For Dispense" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <description value="The reason a medication is (to be) dispended." />
+  <copyright value="CC0" />
+  <kind value="datatype" />
+  <constrainedType value="Extension" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="MedicationDispense" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <differential>
+    <element>
+      <path value="Extension" />
+    </element>
+    <element>
+      <path value="Extension.url" />
+      <representation value="xmlAttr" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/mp9-reason-for-dispense" />
+    </element>
+    <element>
+      <path value="Extension.valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
