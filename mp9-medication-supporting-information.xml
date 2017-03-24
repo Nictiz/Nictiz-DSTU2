@@ -22,6 +22,11 @@
       <short value="supporting information" />
     </element>
     <element>
+      <path value="Extension.extension" />
+      <min value="0" />
+      <max value="0" />
+    </element>
+    <element>
       <path value="Extension.url" />
       <representation value="xmlAttr" />
       <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/mp9-medication-supporting-information" />
