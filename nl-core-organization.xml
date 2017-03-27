@@ -25,7 +25,7 @@
   <abstract value="false" />
   <base value="http://hl7.org/fhir/StructureDefinition/Organization" />
   <differential>
-    <element>
+    <element id="Organization">
       <path value="Organization" />
       <name value="HealthcareProvider" />
       <short value="HealthcareProvider" />
@@ -38,14 +38,14 @@
         <map value="NL-CM:17.2.1" />
       </mapping>
     </element>
-    <element>
+    <element id="Organization.extension">
       <path value="Organization.extension" />
       <slicing>
         <discriminator value="url" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="Organization.extension.OrganizationAlias">
       <path value="Organization.extension" />
       <name value="organization-alias" />
       <short value="Other names that this Organization is known as." />
@@ -56,14 +56,14 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/organization-alias" />
       </type>
     </element>
-    <element>
+    <element id="Organization.identifier">
       <path value="Organization.identifier" />
       <slicing>
         <discriminator value="system" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="Organization.identifier.URA">
       <path value="Organization.identifier" />
       <name value="URA" />
       <mapping>
@@ -71,18 +71,18 @@
         <map value="NL-CM:17.2.2" />
       </mapping>
     </element>
-    <element>
+    <element id="Organization.identifier.system">
       <path value="Organization.identifier.system" />
       <min value="1" />
       <fixedUri value="http://fhir.nl/fhir/NamingSystem/ura" />
     </element>
-    <element>
+    <element id="Organization.identifier.value">
       <path value="Organization.identifier.value" />
       <short value="URA (UZI-register abonneenummer)" />
       <min value="1" />
       <exampleString value="12345678" />
     </element>
-    <element>
+    <element id="Organization.identifier.AGB">
       <path value="Organization.identifier" />
       <name value="AGB" />
       <mapping>
@@ -90,24 +90,24 @@
         <map value="NL-CM:17.2.2" />
       </mapping>
     </element>
-    <element>
+    <element id="Organization.identifier.system">
       <path value="Organization.identifier.system" />
       <min value="1" />
       <fixedUri value="http://fhir.nl/fhir/NamingSystem/agb-z" />
     </element>
-    <element>
+    <element id="Organization.identifier.value">
       <path value="Organization.identifier.value" />
       <short value="AGB-Z (Vektis AGB-Z zorgverlenertabel)" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Organization.type">
       <path value="Organization.type" />
       <slicing>
         <discriminator value="coding.system" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="Organization.type.Type">
       <path value="Organization.type" />
       <name value="OrganizationType" />
       <short value="OrganizationType" />
@@ -124,7 +124,7 @@
         <map value="NL-CM:17.2.4" />
       </mapping>
     </element>
-    <element>
+    <element id="Organization.type.DepartmentSpecialism">
       <path value="Organization.type" />
       <name value="DepartmentSpecialty" />
       <short value="DepartmentSpecialty" />
@@ -141,11 +141,11 @@
         <map value="NL-CM:17.2.7" />
       </mapping>
     </element>
-    <element>
+    <element id="Organization.name">
       <path value="Organization.name" />
       <short value="OrganizationName or DepartmentName" />
     </element>
-    <element>
+    <element id="Organization.telecom">
       <path value="Organization.telecom" />
       <slicing>
         <discriminator value="system" />
@@ -153,7 +153,7 @@
       </slicing>
       <short value="A contact detail for the organization" />
     </element>
-    <element>
+    <element id="Organization.telecom.Phone">
       <path value="Organization.telecom" />
       <name value="TelephoneNumbers" />
       <short value="TelephoneNumbers" />
@@ -168,11 +168,11 @@
         <map value="NL-CM:0.1.21" />
       </mapping>
     </element>
-    <element>
+    <element id="Organization.telecom.Phone.system">
       <path value="Organization.telecom.system" />
       <fixedCode value="phone" />
     </element>
-    <element>
+    <element id="Organization.telecom.Phone.value">
       <path value="Organization.telecom.value" />
       <name value="TelephoneNumber" />
       <short value="TelephoneNumber" />
@@ -182,7 +182,7 @@
         <map value="NL-CM:0.1.23" />
       </mapping>
     </element>
-    <element>
+    <element id="Organization.telecom.Phone.use">
       <path value="Organization.telecom.use" />
       <name value="NumberType" />
       <short value="NumberType" />
@@ -192,7 +192,7 @@
         <map value="NL-CM:0.1.22" />
       </mapping>
     </element>
-    <element>
+    <element id="Organization.telecom.Email">
       <path value="Organization.telecom" />
       <name value="EmailAddresses" />
       <short value="EmailAddresses" />
@@ -207,12 +207,12 @@
         <map value="NL-CM:0.1.18" />
       </mapping>
     </element>
-    <element>
+    <element id="Organization.telecom.Email.system">
       <path value="Organization.telecom.system" />
       <fixedCode value="email" />
     </element>
-    <element>
-      <path value="Organization.telecom.value" />
+    <element id="Organization.telecom.Email.use">
+      <path value="Organization.telecom.use"/>
       <name value="EmailAddress" />
       <short value="EmailAddress" />
       <alias value="E-mailadres" />
@@ -221,7 +221,7 @@
         <map value="NL-CM:0.1.20" />
       </mapping>
     </element>
-    <element>
+    <element id="Organization.telecom.Email.use">
       <path value="Organization.telecom.use" />
       <name value="EmailType" />
       <short value="EmailType" />
@@ -231,7 +231,7 @@
         <map value="NL-CM:0.1.19" />
       </mapping>
     </element>
-    <element>
+    <element id="Organization.address">
       <path value="Organization.address" />
       <short value="AddressInformation" />
       <alias value="Adresgegevens" />

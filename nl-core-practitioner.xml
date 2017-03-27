@@ -58,7 +58,7 @@
       <definition value="Unieke Zorgverlener Identificatie (Dutch physician identification number)" />
       <max value="1" />
     </element>
-    <element id="Practitioner.identifier.system.1">
+    <element id="Practitioner.identifier.UZI.system">
       <path value="Practitioner.identifier.system" />
       <min value="1" />
       <type>
@@ -66,7 +66,7 @@
       </type>
       <fixedUri value="http://fhir.nl/fhir/NamingSystem/uzi-nr-pers" />
     </element>
-    <element id="Practitioner.identifier.value.1">
+    <element id="Practitioner.identifier.UZI.value">
       <path value="Practitioner.identifier.value" />
       <min value="1" />
       <exampleString value="01011234" />
@@ -77,7 +77,7 @@
       <short value="AGB" />
       <max value="1" />
     </element>
-    <element id="Practitioner.identifier.system.2">
+    <element id="Practitioner.identifier.AGB.system">
       <path value="Practitioner.identifier.system" />
       <min value="1" />
       <type>
@@ -85,7 +85,7 @@
       </type>
       <fixedUri value="http://fhir.nl/fhir/NamingSystem/agb-z" />
     </element>
-    <element id="Practitioner.identifier.value.2">
+    <element id="Practitioner.identifier.AGB.value">
       <path value="Practitioner.identifier.value" />
       <min value="1" />
       <exampleString value="123456" />
@@ -96,7 +96,7 @@
       <short value="BIG" />
       <max value="1" />
     </element>
-    <element id="Practitioner.identifier.system.3">
+    <element id="Practitioner.identifier.BIG.system">
       <path value="Practitioner.identifier.system" />
       <min value="1" />
       <type>
@@ -104,7 +104,7 @@
       </type>
       <fixedUri value="http://fhir.nl/fhir/NamingSystem/big" />
     </element>
-    <element id="Practitioner.identifier.value.3">
+    <element id="Practitioner.identifier.BIG.value">
       <path value="Practitioner.identifier.value" />
       <min value="1" />
       <exampleString value="12345678" />
@@ -134,7 +134,7 @@
         <map value="NL-CM:17.1.8" />
       </mapping>
     </element>
-    <element id="Practitioner.telecom.TelephoneNumbers">
+    <element id="Practitioner.telecom.Phone">
       <path value="Practitioner.telecom" />
       <name value="TelephoneNumbers" />
       <short value="TelephoneNumbers" />
@@ -144,14 +144,14 @@
         <map value="NL-CM:0.1.21" />
       </mapping>
     </element>
-    <element id="Practitioner.telecom.system.1">
+    <element id="Practitioner.telecom.Phone.system">
       <path value="Practitioner.telecom.system" />
       <type>
         <code value="code" />
       </type>
       <fixedCode value="phone" />
     </element>
-    <element id="Practitioner.telecom.value.TelephoneNumber">
+    <element id="Practitioner.telecom.Phone.value">
       <path value="Practitioner.telecom.value" />
       <name value="TelephoneNumber" />
       <short value="TelephoneNumber" />
@@ -161,7 +161,7 @@
         <map value="NL-CM:0.1.23" />
       </mapping>
     </element>
-    <element id="Practitioner.telecom.use.NumberType.1">
+    <element id="Practitioner.telecom.Phone.use">
       <path value="Practitioner.telecom.use" />
       <name value="NumberType" />
       <short value="NumberType" />
@@ -171,7 +171,7 @@
         <map value="NL-CM:0.1.22" />
       </mapping>
     </element>
-    <element id="Practitioner.telecom.EmailAddresses">
+    <element id="Practitioner.telecom.Email">
       <path value="Practitioner.telecom" />
       <name value="EmailAddresses" />
       <short value="EmailAddresses" />
@@ -181,14 +181,14 @@
         <map value="NL-CM:0.1.18" />
       </mapping>
     </element>
-    <element id="Practitioner.telecom.system.2">
+    <element id="Practitioner.telecom.Email.system">
       <path value="Practitioner.telecom.system" />
       <type>
         <code value="code" />
       </type>
       <fixedCode value="email" />
     </element>
-    <element id="Practitioner.telecom.value.EmailAddress">
+    <element id="Practitioner.telecom.Email.value">
       <path value="Practitioner.telecom.value" />
       <name value="EmailAddress" />
       <short value="EmailAddress" />
@@ -199,7 +199,7 @@
         <map value="NL-CM:0.1.20" />
       </mapping>
     </element>
-    <element id="Practitioner.telecom.use.NumberType.2">
+    <element id="Practitioner.telecom.Email.use">
       <path value="Practitioner.telecom.use" />
       <name value="EmailType" />
       <short value="EmailType" />

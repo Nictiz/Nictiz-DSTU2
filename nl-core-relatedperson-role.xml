@@ -27,7 +27,7 @@
       <path value="Extension" />
       <short value="RelatedPersonRole" />
     </element>
-    <element>
+    <element id="Extension.url">
       <path value="Extension.url" />
       <representation value="xmlAttr" />
       <type>
@@ -35,7 +35,7 @@
       </type>
       <fixedUri value="http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson-role" />
     </element>
-    <element>
+    <element id="Extension.RoleCode">
       <path value="Extension.valueCodeableConcept" />
       <min value="1" />
       <type>

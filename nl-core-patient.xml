@@ -109,7 +109,7 @@
         <map value="NL-CM:0.1.5" />
       </mapping>
     </element>
-    <element id="Patient.telecom.TelephoneNumbers">
+    <element id="Patient.telecom.Phone">
       <path value="Patient.telecom" />
       <name value="TelephoneNumbers" />
       <short value="TelephoneNumbers" />
@@ -119,14 +119,14 @@
         <map value="NL-CM:0.1.21" />
       </mapping>
     </element>
-    <element id="Patient.telecom.system.1">
+    <element id="Patient.telecom.Phone.system">
       <path value="Patient.telecom.system" />
       <type>
         <code value="code" />
       </type>
       <fixedCode value="phone" />
     </element>
-    <element id="Patient.telecom.value.TelephoneNumber">
+    <element id="Patient.telecom.Phone.value">
       <path value="Patient.telecom.value" />
       <name value="TelephoneNumber" />
       <short value="TelephoneNumber" />
@@ -136,7 +136,7 @@
         <map value="NL-CM:0.1.23" />
       </mapping>
     </element>
-    <element id="Patient.telecom.use.NumberType.1">
+    <element id="Patient.telecom.Phone.use">
       <path value="Patient.telecom.use" />
       <name value="NumberType" />
       <short value="NumberType" />
@@ -146,7 +146,7 @@
         <map value="NL-CM:0.1.22" />
       </mapping>
     </element>
-    <element id="Patient.telecom.EmailAddresses">
+    <element id="Patient.telecom.Email">
       <path value="Patient.telecom" />
       <name value="EmailAddresses" />
       <short value="EmailAddresses" />
@@ -156,14 +156,14 @@
         <map value="NL-CM:0.1.18" />
       </mapping>
     </element>
-    <element id="Patient.telecom.system.2">
+    <element id="Patient.telecom.Email.system">
       <path value="Patient.telecom.system" />
       <type>
         <code value="code" />
       </type>
       <fixedCode value="email" />
     </element>
-    <element id="Patient.telecom.value.EmailAddress">
+    <element id="Patient.telecom.Email.value">
       <path value="Patient.telecom.value" />
       <name value="EmailAddress" />
       <short value="EmailAddress" />
@@ -174,7 +174,7 @@
         <map value="NL-CM:0.1.20" />
       </mapping>
     </element>
-    <element id="Patient.telecom.use.NumberType.2">
+    <element id="Patient.telecom.Email.use">
       <path value="Patient.telecom.use" />
       <name value="EmailType" />
       <short value="EmailType" />
@@ -336,7 +336,7 @@
         <map value="NL-CM:3.1.6" />
       </mapping>
     </element>
-    <element id="Patient.contact.telecom.TelephoneNumbers">
+    <element id="Patient.contact.telecom.Phone">
       <path value="Patient.contact.telecom" />
       <name value="TelephoneNumbers" />
       <short value="TelephoneNumbers" />
@@ -346,14 +346,14 @@
         <map value="NL-CM:0.1.21" />
       </mapping>
     </element>
-    <element id="Patient.contact.telecom.system.1">
+    <element id="Patient.contact.telecom.Phone.system">
       <path value="Patient.contact.telecom.system" />
       <type>
         <code value="code" />
       </type>
       <fixedCode value="phone" />
     </element>
-    <element id="Patient.contact.telecom.value.TelephoneNumber">
+    <element id="Patient.contact.telecom.Phone.value">
       <path value="Patient.contact.telecom.value" />
       <name value="TelephoneNumber" />
       <short value="TelephoneNumber" />
@@ -363,7 +363,7 @@
         <map value="NL-CM:0.1.23" />
       </mapping>
     </element>
-    <element id="Patient.contact.telecom.use.NumberType.1">
+    <element id="Patient.contact.telecom.Phone.use">
       <path value="Patient.contact.telecom.use" />
       <name value="NumberType" />
       <short value="NumberType" />
@@ -373,7 +373,7 @@
         <map value="NL-CM:0.1.22" />
       </mapping>
     </element>
-    <element id="Patient.contact.telecom.EmailAddresses">
+    <element id="Patient.contact.telecom.Email">
       <path value="Patient.contact.telecom" />
       <name value="EmailAddresses" />
       <short value="EmailAddresses" />
@@ -383,14 +383,14 @@
         <map value="NL-CM:0.1.18" />
       </mapping>
     </element>
-    <element id="Patient.contact.telecom.system.2">
+    <element id="Patient.contact.telecom.Email.system">
       <path value="Patient.contact.telecom.system" />
       <type>
         <code value="code" />
       </type>
       <fixedCode value="email" />
     </element>
-    <element id="Patient.contact.telecom.value.EmailAddress">
+    <element id="Patient.contact.telecom.Email.value">
       <path value="Patient.contact.telecom.value" />
       <name value="EmailAddress" />
       <short value="EmailAddress" />
@@ -400,7 +400,7 @@
         <map value="NL-CM:0.1.20" />
       </mapping>
     </element>
-    <element id="Patient.contact.telecom.use.NumberType.2">
+    <element id="Patient.contact.telecom.Email.use">
       <path value="Patient.contact.telecom.use" />
       <name value="EmailType" />
       <short value="EmailType" />
