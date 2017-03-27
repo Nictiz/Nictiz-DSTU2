@@ -79,7 +79,7 @@
       <path value="Address.extension" />
       <slicing>
         <discriminator value="url" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element id="Address.extension.official">
@@ -105,7 +105,7 @@
       <path value="Address.line.extension" />
       <slicing>
         <discriminator value="url" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element id="Address.line.extension.streetName">

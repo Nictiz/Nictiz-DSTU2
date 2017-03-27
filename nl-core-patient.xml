@@ -54,7 +54,7 @@
       <path value="Patient.identifier" />
       <slicing>
         <discriminator value="system" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
       <short value="PatientIdentificationNumber" />
       <definition value="The Burgerservicenummer, as one of the possible patient identification numbers, should at least be sent unless there is a reason not to. Reasons for not sending include but are not limited to, research and apps without a contract for data processing (Dutch: bewerkingsovereenkomst)." />
@@ -100,7 +100,7 @@
       <path value="Patient.telecom" />
       <slicing>
         <discriminator value="system" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
       <short value="ContactDetails" />
       <alias value="Contactgegevens" />
@@ -271,7 +271,7 @@
       <path value="Patient.contact.relationship" />
       <slicing>
         <discriminator value="coding.system" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
       <short value="Role or Relationship" />
       <alias value="Rol of relatie" />
@@ -327,7 +327,7 @@
       <path value="Patient.contact.telecom" />
       <slicing>
         <discriminator value="system" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
       <short value="ContactDetails" />
       <alias value="Contactgegevens" />

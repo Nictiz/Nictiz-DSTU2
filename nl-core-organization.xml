@@ -60,7 +60,7 @@
       <path value="Organization.identifier" />
       <slicing>
         <discriminator value="system" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element>
@@ -104,7 +104,7 @@
       <path value="Organization.type" />
       <slicing>
         <discriminator value="coding.system" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element>
@@ -149,7 +149,7 @@
       <path value="Organization.telecom" />
       <slicing>
         <discriminator value="system" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
       <short value="A contact detail for the organization" />
     </element>
