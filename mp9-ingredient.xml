@@ -30,7 +30,7 @@
       <path value="Substance.code.coding" />
       <slicing>
         <discriminator value="system" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
       <min value="1" />
       <max value="1" />

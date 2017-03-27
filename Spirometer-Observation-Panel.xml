@@ -85,7 +85,7 @@
       <path value="Observation.related" />
       <slicing>
         <discriminator value="@profile" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element>

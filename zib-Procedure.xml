@@ -150,7 +150,7 @@
       <path value="Procedure.performer" />
       <slicing>
         <discriminator value="@profile" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
       <min value="2" />
     </element>

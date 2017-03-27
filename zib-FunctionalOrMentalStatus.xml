@@ -67,7 +67,7 @@
       <path value="Observation.code.coding" />
       <slicing>
         <discriminator value="system" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element>
@@ -152,7 +152,7 @@
       <path value="Observation.valueCodeableConcept.coding" />
       <slicing>
         <discriminator value="system" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element>

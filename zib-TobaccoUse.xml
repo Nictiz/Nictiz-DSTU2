@@ -124,7 +124,7 @@ Tobacco is a product that comes from the leaves of the tobacco plant, which is s
       <path value="Observation.component" />
       <slicing>
         <discriminator value="code.coding.code" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element>

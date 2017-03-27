@@ -25,7 +25,7 @@
       <path value="MedicationDispense.extension" />
       <slicing>
         <discriminator value="url" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element>

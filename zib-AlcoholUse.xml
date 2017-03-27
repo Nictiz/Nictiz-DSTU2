@@ -119,7 +119,7 @@ In the context of this information model, alcohol is the collective term for alc
       <path value="Observation.component" />
       <slicing>
         <discriminator value="code.coding.code" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element>

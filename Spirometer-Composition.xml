@@ -112,7 +112,7 @@
       <name value="section" />
       <slicing>
         <discriminator value="@profile" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element>

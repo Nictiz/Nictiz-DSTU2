@@ -108,7 +108,7 @@
       <path value="AllergyIntolerance.status.extension" />
       <slicing>
         <discriminator value="url" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element id="AllergyIntolerance.status.extension.AllergyStatus">
@@ -143,7 +143,7 @@
       <path value="AllergyIntolerance.criticality.extension" />
       <slicing>
         <discriminator value="url" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element id="AllergyIntolerance.criticality.extension.CriticalExtent">
@@ -178,7 +178,7 @@
       <path value="AllergyIntolerance.category.extension" />
       <slicing>
         <discriminator value="url" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element id="AllergyIntolerance.category.extension.AllergyCategory">
@@ -260,7 +260,7 @@
       <path value="AllergyIntolerance.reaction.extension" />
       <slicing>
         <discriminator value="url" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element id="AllergyIntolerance.reaction.extension.ReactionDuration">
@@ -303,7 +303,7 @@
       <path value="AllergyIntolerance.reaction.certainty.extension" />
       <slicing>
         <discriminator value="url" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element id="AllergyIntolerance.reaction.certainty.extension.Probability">

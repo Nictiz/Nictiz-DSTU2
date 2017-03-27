@@ -114,7 +114,7 @@ This information model describes the information asked of the patient about thei
       <path value="Observation.component" />
       <slicing>
         <discriminator value="code.coding.code" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element>

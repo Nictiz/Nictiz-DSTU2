@@ -27,7 +27,7 @@
       <path value="MedicationStatement.extension" />
       <slicing>
         <discriminator value="url" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element>
@@ -135,7 +135,7 @@
       <path value="MedicationStatement.supportingInformation" />
       <slicing>
         <discriminator value="@type" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element>
@@ -174,7 +174,7 @@
       <path value="MedicationStatement.dosage.extension" />
       <slicing>
         <discriminator value="url" />
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element>
