@@ -8,7 +8,16 @@
   <name value="Spirometer Bundle" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <date value="2017-01-20T11:24:21.1492075+01:00" />
+  <copyright value="CC0" />
   <kind value="resource" />
   <constrainedType value="Bundle" />
   <abstract value="false" />

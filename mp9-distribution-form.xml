@@ -8,6 +8,14 @@
   <name value="MP9 Distribution Form" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="The distribution form of the medication (e.g. via Baxter, separate package)" />
   <copyright value="CC0" />
   <kind value="datatype" />

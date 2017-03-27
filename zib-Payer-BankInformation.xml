@@ -8,6 +8,14 @@
   <name value="ZIB Payer BankInformation" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <date value="2017-01-16T16:23:21.4994187+01:00" />
   <description value="Container of the BankInformation concept. This container contains all data elements of the BankInformation concept." />
   <copyright value="CC0" />

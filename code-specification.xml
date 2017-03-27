@@ -8,6 +8,14 @@
   <name value="Coded more specific value" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="Provides the specific CBB code for a FHIR element that has a required binding to a FHIR ValueSet." />
   <copyright value="CC0" />
   <fhirVersion value="1.0.2" />

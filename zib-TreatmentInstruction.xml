@@ -14,8 +14,17 @@
   <name value="ZIB TreatmentInstruction" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <date value="2017-02-17T13:02:14.6212861+01:00" />
-  <description value="TreatmentInstruction as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.&#xD;&#xA;A treatment instruction includes an agreed constraint in the treatment based on the oral or written living will of the patient.&#xD;&#xA;&#xD;&#xA;A good overview of treatment instructions based on the wishes of the patient or their authorized representative on (un)desired treatments is important in a patient’s care. A concise, orderly list is of particular importance in acute care situations. Due to the large variety of symptoms, the situation concerns not only a CPR setting, but also cases in which the patient’s condition rapidly worsens as a result of existing symptoms.&#xD;&#xA;A healthcare provider consulting this information can discuss these existing treatment instructions with the patient, the patient’s family or the patient’s authorized representative and possibly include the instructions in their policy." />
+  <description
+    value="TreatmentInstruction as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.&#13;&#10;A treatment instruction includes an agreed constraint in the treatment based on the oral or written living will of the patient.&#13;&#10;&#13;&#10;A good overview of treatment instructions based on the wishes of the patient or their authorized representative on (un)desired treatments is important in a patient’s care. A concise, orderly list is of particular importance in acute care situations. Due to the large variety of symptoms, the situation concerns not only a CPR setting, but also cases in which the patient’s condition rapidly worsens as a result of existing symptoms.&#13;&#10;A healthcare provider consulting this information can discuss these existing treatment instructions with the patient, the patient’s family or the patient’s authorized representative and possibly include the instructions in their policy." />
   <copyright value="CC0" />
   <fhirVersion value="1.0.2" />
   <mapping>
@@ -31,7 +40,7 @@
     <element>
       <path value="CarePlan" />
       <short value="TreatmentInstruction" />
-      <definition value="Root concept of the TreatmentInstruction information model. This concept contains all data elements of the TreatmentInstruction information model.&#xD;&#xA;" />
+      <definition value="Root concept of the TreatmentInstruction information model. This concept contains all data elements of the TreatmentInstruction information model.&#13;&#10;" />
       <comments value="A treatment instruction includes an agreed constraint in the treatment based on the oral or written living will of the patient." />
       <alias value="BehandelAanwijzing" />
       <mapping>
@@ -146,7 +155,7 @@
     <element>
       <path value="CarePlan.period.end" />
       <short value="EndDate" />
-      <definition value="Date on which the treatment instruction ends. A ‘vague’ date, such as only the year, is permitted.&#xD;&#xA;If the validity duration of the treatment instruction cannot be expressed as a date, such as “until discharge from hospital”, it can be included in the CarePlan.note element." />
+      <definition value="Date on which the treatment instruction ends. A ‘vague’ date, such as only the year, is permitted.&#13;&#10;If the validity duration of the treatment instruction cannot be expressed as a date, such as “until discharge from hospital”, it can be included in the CarePlan.note element." />
       <alias value="EindDatum" />
       <mapping>
         <identity value="zib-behandelaanwijzing" />

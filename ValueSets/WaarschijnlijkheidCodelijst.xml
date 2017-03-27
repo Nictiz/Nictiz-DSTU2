@@ -13,6 +13,16 @@
   <version value="2015-04-01T00:00:00" />
   <name value="WaarschijnlijkheidCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:d50b2fac-cf31-488a-b453-7da729c7e10d" />
     <timestamp value="2016-10-31T18:17:59.383+01:00" />

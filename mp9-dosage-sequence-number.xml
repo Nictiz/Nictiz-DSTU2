@@ -8,6 +8,14 @@
   <name value="MP9 Dosage Sequence Number" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="The order of the dosage instructions" />
   <copyright value="CC0" />
   <kind value="datatype" />

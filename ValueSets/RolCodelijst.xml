@@ -13,6 +13,16 @@
   <version value="2015-04-01T00:00:00" />
   <name value="RolCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:9b5ce743-54b9-41e2-9a09-32023cb18cd6" />
     <timestamp value="2016-10-31T14:24:49.26+01:00" />

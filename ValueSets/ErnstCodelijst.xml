@@ -13,6 +13,16 @@
   <version value="2015-04-01T00:00:00" />
   <name value="ErnstCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:d401740f-6678-44a3-a8e9-e5510f7df2f2" />
     <timestamp value="2016-10-31T19:49:15.771+01:00" />

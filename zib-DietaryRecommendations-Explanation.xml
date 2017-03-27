@@ -14,8 +14,16 @@
   <name value="ZIB DietaryRecommendations Explanation" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <date value="2017-02-13T17:00:03.7461492+01:00" />
-  <description value="An extension to provide additional explanation of the dietary recommendations as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) 'Voedingadvies' version 3.0. &#xD;&#xA;" />
+  <description value="An extension to provide additional explanation of the dietary recommendations as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) 'Voedingadvies' version 3.0. &#13;&#10;" />
   <requirements value="The NutritionOrder.oralDiet.instruction will be used to define the actual diet intruction and not the optional explanation. There is no element available to provide an additional explanatation of the dietary recommendation. Therefore this extenstion can used." />
   <copyright value="CC0" />
   <kind value="datatype" />

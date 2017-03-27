@@ -7,7 +7,17 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance-Reaction-Duration" />
   <name value="ZIB AllergyIntolerance Reaction Duration" />
   <status value="draft" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="Represents how long an adverse reaction to an allergy or intolerance lasts/lasted." />
+  <copyright value="CC0" />
   <fhirVersion value="1.0.2" />
   <mapping>
     <identity value="zib-allergieintolerantie" />

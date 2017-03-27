@@ -7,6 +7,16 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/mp9-MedicationAdministration" />
   <name value="MP9 Medication Administration" />
   <status value="draft" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <copyright value="CC0" />
   <kind value="resource" />
   <constrainedType value="MedicationAdministration" />
   <abstract value="false" />

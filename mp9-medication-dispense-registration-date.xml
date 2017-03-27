@@ -8,6 +8,14 @@
   <name value="MP9 Dispense Registration Date" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="The date/time the dispenser registers the actual dispense of the medication" />
   <copyright value="CC0" />
   <kind value="datatype" />

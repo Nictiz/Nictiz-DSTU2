@@ -8,7 +8,16 @@
   <name value="Spirometer Observation FEV1" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <date value="2017-01-20T15:54:54.5764447+01:00" />
+  <copyright value="CC0" />
   <kind value="resource" />
   <constrainedType value="Observation" />
   <abstract value="false" />

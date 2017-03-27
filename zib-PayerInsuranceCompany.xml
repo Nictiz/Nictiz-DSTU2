@@ -8,7 +8,16 @@
   <name value="ZIB PayerInsuranceCompany" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <date value="2017-01-16T16:16:34.9349699+01:00" />
+  <copyright value="CC0" />
   <mapping>
     <identity value="zib-Betaler" />
     <uri value="https://zibs.nl/wiki/Betaler(NL)" />

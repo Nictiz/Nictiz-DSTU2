@@ -7,23 +7,25 @@
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>Vaccinatie as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.
-
-Immunization can be defined as “Generating natural immunity against pathogens by means of vaccination (active immunization) or by administering immunoglobulins (passive immunization)”.
-
-Only vaccinations are included in this information model. Administering immunoglobulins is part of the medication overview. Vaccinations have lifelong relevance.
-
-Most vaccinations are carried out in the Netherlands as part of the RVP (Rijksvaccinatieprogramma, National Immunisation Program). RVP information is especially important for children. 
-
-Vaccinations are also relevant for adult patients such as transplant patients, dialysis patients and patients with a post-splenectomy status. In addition, there are specific indications for the vaccination of risk groups, such as travelers, professionals who come into contact with blood or patients with wounds, weakened immune systems or heightened risk.</p>
+      <p>Vaccinatie as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0. Immunization can be defined as “Generating natural immunity against pathogens by means of vaccination (active immunization) or by administering immunoglobulins (passive immunization)”. Only vaccinations are included in this information model. Administering immunoglobulins is part of the medication overview. Vaccinations have lifelong relevance. Most vaccinations are carried out in the Netherlands as part of the RVP (Rijksvaccinatieprogramma, National Immunisation Program).
+        RVP information is especially important for children. Vaccinations are also relevant for adult patients such as transplant patients, dialysis patients and patients with a post-splenectomy status. In addition, there are specific indications for the vaccination of risk groups, such as travelers, professionals who come into contact with blood or patients with wounds, weakened immune systems or heightened risk.</p>
     </div>
   </text>
   <url value="http://nictiz.nl/fhir/StructureDefinition/zib-Vaccination" />
   <name value="ZIB Vaccination" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <date value="2017-01-16T11:38:25.218701+01:00" />
-  <description value="Vaccinatie as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.&#xD;&#xA;&#xD;&#xA;Immunization can be defined as “Generating natural immunity against pathogens by means of vaccination (active immunization) or by administering immunoglobulins (passive immunization)”.&#xD;&#xA;&#xD;&#xA;Only vaccinations are included in this information model. Administering immunoglobulins is part of the medication overview. Vaccinations have lifelong relevance.&#xD;&#xA;&#xD;&#xA;Most vaccinations are carried out in the Netherlands as part of the RVP (Rijksvaccinatieprogramma, National Immunisation Program). RVP information is especially important for children. &#xD;&#xA;&#xD;&#xA;Vaccinations are also relevant for adult patients such as transplant patients, dialysis patients and patients with a post-splenectomy status. In addition, there are specific indications for the vaccination of risk groups, such as travelers, professionals who come into contact with blood or patients with wounds, weakened immune systems or heightened risk." />
+  <description
+    value="Vaccinatie as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.&#13;&#10;&#13;&#10;Immunization can be defined as “Generating natural immunity against pathogens by means of vaccination (active immunization) or by administering immunoglobulins (passive immunization)”.&#13;&#10;&#13;&#10;Only vaccinations are included in this information model. Administering immunoglobulins is part of the medication overview. Vaccinations have lifelong relevance.&#13;&#10;&#13;&#10;Most vaccinations are carried out in the Netherlands as part of the RVP (Rijksvaccinatieprogramma, National Immunisation Program). RVP information is especially important for children. &#13;&#10;&#13;&#10;Vaccinations are also relevant for adult patients such as transplant patients, dialysis patients and patients with a post-splenectomy status. In addition, there are specific indications for the vaccination of risk groups, such as travelers, professionals who come into contact with blood or patients with wounds, weakened immune systems or heightened risk." />
   <copyright value="CC0" />
   <mapping>
     <identity value="zib-vaccinatie" />
@@ -82,7 +84,7 @@ Vaccinations are also relevant for adult patients such as transplant patients, d
     <element>
       <path value="Immunization.vaccineCode" />
       <short value="ProductCode" />
-      <definition value="The product code of the vaccine administered.&#xD;&#xA;There are several possible code systems for documenting the product code. If the vaccination data is registered based on an anamnesis, coding with the ATC code is preferred. In all cases it concerns those products that fall under ATC group J07 (vaccines)." />
+      <definition value="The product code of the vaccine administered.&#13;&#10;There are several possible code systems for documenting the product code. If the vaccination data is registered based on an anamnesis, coding with the ATC code is preferred. In all cases it concerns those products that fall under ATC group J07 (vaccines)." />
       <alias value="ProductCode" />
       <mapping>
         <identity value="zib-vaccinatie" />
@@ -224,7 +226,7 @@ Vaccinations are also relevant for adult patients such as transplant patients, d
     <element>
       <path value="Immunization.note" />
       <short value="Explanation" />
-      <definition value="Free text explanation.&#xD;&#xA;Examples of commonly used explanations are: - &quot;Vaccination according to the National Immunisation Program&quot;. - &quot;Not according to the National Immunisation Program&quot;, followed by further explanation. - &quot;Unknown&quot;" />
+      <definition value="Free text explanation.&#13;&#10;Examples of commonly used explanations are: - &quot;Vaccination according to the National Immunisation Program&quot;. - &quot;Not according to the National Immunisation Program&quot;, followed by further explanation. - &quot;Unknown&quot;" />
       <alias value="Toelichting" />
       <mapping>
         <identity value="zib-vaccinatie" />

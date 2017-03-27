@@ -8,6 +8,14 @@
   <name value="MP9 Medication Dispense" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value=" A MedicationDispense as defined by the Dutch Medication v9 project." />
   <copyright value=" CC0" />
   <kind value="resource" />

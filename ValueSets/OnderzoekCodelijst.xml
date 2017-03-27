@@ -13,7 +13,17 @@
   <version value="2015-04-01T00:00:00" />
   <name value="OnderzoekCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="LOINC (2.16.840.1.113883.6.1): Alle waarden" />
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:08181e33-d421-4c76-b726-1a0c288fb28a" />
     <timestamp value="2016-10-31T18:10:05.885+01:00" />

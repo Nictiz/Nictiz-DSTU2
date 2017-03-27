@@ -8,6 +8,14 @@
   <name value="ZIB AllergyIntolerance" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="An AllergyIntolerance resource as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 1.0" />
   <copyright value="CC0" />
   <fhirVersion value="1.0.2" />

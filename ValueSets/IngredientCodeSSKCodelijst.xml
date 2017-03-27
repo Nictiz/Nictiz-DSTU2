@@ -13,7 +13,17 @@
   <version value="2015-04-01T00:00:00" />
   <name value="IngredientCodeSSKCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="G-standaard Stofnaamcode i.c.m. toedieningsweg (SSK) (2.16.840.1.113883.2.4.4.1.725): Alle waarden" />
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:ed8df21c-c0c0-4305-947c-6ad1e3bd2489" />
     <timestamp value="2016-10-31T18:08:51.484+01:00" />

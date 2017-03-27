@@ -8,6 +8,14 @@
   <name value="MP9 Day Of Week" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="If one or more days of week is provided, then the dosage only has to be taken on the specified day(s)." />
   <copyright value="CC0" />
   <kind value="datatype" />

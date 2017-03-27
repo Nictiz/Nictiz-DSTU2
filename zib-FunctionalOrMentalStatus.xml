@@ -7,15 +7,23 @@
   <text>
     <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>FunctioneleOfMentaleStatus as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0. The functional or mental status provides insight into the patient’s functional and mental limitations.
-</p>
+      <p>FunctioneleOfMentaleStatus as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0. The functional or mental status provides insight into the patient’s functional and mental limitations. </p>
     </div>
   </text>
   <url value="http://nictiz.nl/fhir/StructureDefinition/zib-FunctionalOrMentalStatus" />
   <name value="ZIB FunctionalOrMentalStatus" />
   <status value="draft" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <date value="2017-02-15T13:42:55.3756005+01:00" />
-  <description value="FunctioneleOfMentaleStatus as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.&#xD;&#xA;The functional or mental status provides insight into the patient’s functional and mental limitations." />
+  <description value="FunctioneleOfMentaleStatus as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.&#13;&#10;The functional or mental status provides insight into the patient’s functional and mental limitations." />
   <copyright value="CC0" />
   <fhirVersion value="1.0.2" />
   <mapping>
@@ -56,7 +64,7 @@
     <element>
       <path value="Observation.code" />
       <short value="StatusName" />
-      <definition value="Coded description of the functional or mental status or limitation.&#xD;&#xA;&#xD;&#xA;Code systems used include:&#xD;&#xA;SNOMED CT&#xD;&#xA;ICF (International Classification of Functioning, Disability and Health)&#xD;&#xA;NOC (Nursing Outcomes Classification)&#xD;&#xA;OMAHA" />
+      <definition value="Coded description of the functional or mental status or limitation.&#13;&#10;&#13;&#10;Code systems used include:&#13;&#10;SNOMED CT&#13;&#10;ICF (International Classification of Functioning, Disability and Health)&#13;&#10;NOC (Nursing Outcomes Classification)&#13;&#10;OMAHA" />
       <alias value="StatusNaam" />
       <mapping>
         <identity value="zib-functioneleofmentalestatus" />
@@ -79,7 +87,7 @@
         <description value="OMAHA (2.16.840.1.113883.6.98): All values" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.1--20150401000000" />
-          <display value="StatusNaamOMAHACodelijst"/>
+          <display value="StatusNaamOMAHACodelijst" />
         </valueSetReference>
       </binding>
     </element>
@@ -92,7 +100,7 @@
         <description value="NOC (2.16.840.1.113883.6.16): All values" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.2--20150401000000" />
-          <display value="StatusNaamNOCCodelijst"/>
+          <display value="StatusNaamNOCCodelijst" />
         </valueSetReference>
       </binding>
     </element>
@@ -105,7 +113,7 @@
         <description value="ICF (2.16.840.1.113883.6.254): All values" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.3--20150401000000" />
-          <display value="StatusNaamICFCodelijst"/>
+          <display value="StatusNaamICFCodelijst" />
         </valueSetReference>
       </binding>
     </element>
@@ -118,7 +126,7 @@
         <description value="SNOMED CT (2.16.840.1.113883.6.96): All values" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.4--20150401000000" />
-          <display value="StatusNaamSnomedCodelijst"/>
+          <display value="StatusNaamSnomedCodelijst" />
         </valueSetReference>
       </binding>
     </element>
@@ -138,7 +146,7 @@
     <element>
       <path value="Observation.valueCodeableConcept" />
       <short value="StatusValue" />
-      <definition value="The extent to which the patient is limited by the functional or mental condition.&#xD;&#xA;If both the status name and the status value are recorded in code, then both values must come from the same code system. If the patient uses a medical aid, the evaluation of the extent of the limitation will take place without this aid." />
+      <definition value="The extent to which the patient is limited by the functional or mental condition.&#13;&#10;If both the status name and the status value are recorded in code, then both values must come from the same code system. If the patient uses a medical aid, the evaluation of the extent of the limitation will take place without this aid." />
       <alias value="StatusWaarde" />
       <type>
         <code value="CodeableConcept" />
@@ -164,7 +172,7 @@
         <description value="OMAHA (2.16.840.1.113883.6.98): All values" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.5--20150401000000" />
-          <display value="StatusWaardeOMAHACodelijst"/>
+          <display value="StatusWaardeOMAHACodelijst" />
         </valueSetReference>
       </binding>
     </element>
@@ -177,7 +185,7 @@
         <description value="NOC (2.16.840.1.113883.6.16): All values" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.7--20150401000000" />
-          <display value="StatusWaardeNOCCodelijst"/>
+          <display value="StatusWaardeNOCCodelijst" />
         </valueSetReference>
       </binding>
     </element>
@@ -190,7 +198,7 @@
         <description value="ICF (2.16.840.1.113883.6.254): All values" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.6--20150401000000" />
-          <display value="StatusWaardeICFCodelijst"/>
+          <display value="StatusWaardeICFCodelijst" />
         </valueSetReference>
       </binding>
     </element>
@@ -203,7 +211,7 @@
         <description value="SNOMED CT (2.16.840.1.113883.6.96): All values" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.8--20150401000000" />
-          <display value="StatusWaardeSnomedCodelijst"/>
+          <display value="StatusWaardeSnomedCodelijst" />
         </valueSetReference>
       </binding>
     </element>

@@ -13,6 +13,14 @@
   <name value="ZIB Procedure Requester" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <date value="2017-02-06T17:00:22.0909822+01:00" />
   <description value="The healthcare provider who requested the procedure." />
   <requirements value="The Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) Procedure version 3.0 models a direct reference to the healthcare provider who requested the procedure. The Procedure resource does not include a reference to a Practitioner resource." />

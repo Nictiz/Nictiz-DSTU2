@@ -8,6 +8,14 @@
   <name value="MP9 Authored On" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="The date/time when the Medication Dispense or Statement was authored." />
   <copyright value="CC0" />
   <kind value="datatype" />

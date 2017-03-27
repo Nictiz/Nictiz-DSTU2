@@ -7,16 +7,23 @@
   <text>
     <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>TabakGebruik as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.
-
-Tobacco is a product that comes from the leaves of the tobacco plant, which is smoked as a drug. Smokable forms of tobacco include rolling tobacco, cigarettes, cigars and pipe tobacco. This information model describes the information asked of the patient about their use of tobacco.</p>
+      <p>TabakGebruik as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0. Tobacco is a product that comes from the leaves of the tobacco plant, which is smoked as a drug. Smokable forms of tobacco include rolling tobacco, cigarettes, cigars and pipe tobacco. This information model describes the information asked of the patient about their use of tobacco.</p>
     </div>
   </text>
   <url value="http://nictiz.nl/fhir/StructureDefinition/zib-TobaccoUse" />
   <name value="ZIB TobaccoUse" />
   <status value="draft" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <date value="2017-01-06T10:06:48.2524311+01:00" />
-  <description value="TabakGebruik as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.&#xD;&#xA;&#xD;&#xA;Tobacco is a product that comes from the leaves of the tobacco plant, which is smoked as a drug. Smokable forms of tobacco include rolling tobacco, cigarettes, cigars and pipe tobacco. This information model describes the information asked of the patient about their use of tobacco." />
+  <description value="TabakGebruik as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.&#13;&#10;&#13;&#10;Tobacco is a product that comes from the leaves of the tobacco plant, which is smoked as a drug. Smokable forms of tobacco include rolling tobacco, cigarettes, cigars and pipe tobacco. This information model describes the information asked of the patient about their use of tobacco." />
   <copyright value="CC0" />
   <mapping>
     <identity value="zib-tabakgebruik" />
@@ -83,7 +90,7 @@ Tobacco is a product that comes from the leaves of the tobacco plant, which is s
     <element>
       <path value="Observation.effectivePeriod.end" />
       <short value="StopDate" />
-      <definition value="The date on which the patient quit smoking.&#xD;&#xA;If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time." />
+      <definition value="The date on which the patient quit smoking.&#13;&#10;If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time." />
       <alias value="StopDatum" />
       <exampleDateTime value="2012-02-28T00:00:00" />
       <mapping>
@@ -238,7 +245,8 @@ Tobacco is a product that comes from the leaves of the tobacco plant, which is s
     <element>
       <path value="Observation.component.valueQuantity" />
       <short value="PackYears" />
-      <definition value="The pack year is a measure for smokers’ exposure to tobacco smoke. The calculation is not included in the model. It is entered in the EPD and/or during the anamnesis and is only entered if known. This should not be calculated based on the other values in this clinical information model.&#xD;&#xA;&#xD;&#xA;The unit indicating the smoker’s total exposure to tobacco smoke. For cigarettes, this is calculated using the number of smoked packs of cigarettes per day (one pack = 20 cigarettes) times the number of years of smoking. For other forms of tobacco, this is usually converted to an equivalent cigarette consumption. Often, only the number of pack years is estimated." />
+      <definition
+        value="The pack year is a measure for smokers’ exposure to tobacco smoke. The calculation is not included in the model. It is entered in the EPD and/or during the anamnesis and is only entered if known. This should not be calculated based on the other values in this clinical information model.&#13;&#10;&#13;&#10;The unit indicating the smoker’s total exposure to tobacco smoke. For cigarettes, this is calculated using the number of smoked packs of cigarettes per day (one pack = 20 cigarettes) times the number of years of smoking. For other forms of tobacco, this is usually converted to an equivalent cigarette consumption. Often, only the number of pack years is estimated." />
       <alias value="PackYears" />
       <type>
         <code value="Quantity" />

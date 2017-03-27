@@ -8,6 +8,14 @@
   <name value="MP9 Supporting Information" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="Information that is relevant to the medication agreement, e.g. height or weight of the patient," />
   <copyright value="CC0" />
   <kind value="datatype" />

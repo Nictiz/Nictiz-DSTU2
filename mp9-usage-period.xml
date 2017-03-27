@@ -8,6 +8,14 @@
   <name value="MP9 Medication Usage Period" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="The period in which the medication is/was taken" />
   <requirements value="The ability to add extensions in a structured way is what keeps FHIR resources simple." />
   <copyright value="CC0" />

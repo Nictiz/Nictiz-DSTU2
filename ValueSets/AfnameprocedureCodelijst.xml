@@ -13,7 +13,17 @@
   <version value="2015-04-01T00:00:00" />
   <name value="AfnameprocedureCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="SNOMED CT (2.16.840.1.113883.6.96): SNOMED CT: &amp;lt;17636008 | specimen collection |" />
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:3400ce75-b34d-4327-8847-edc03b6f2e59" />
     <timestamp value="2016-11-11T13:30:01.169+01:00" />

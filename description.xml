@@ -8,6 +8,14 @@
   <name value="MP9 Usage Description" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="Textual description of the medication usage." />
   <copyright value="CC0" />
   <kind value="datatype" />

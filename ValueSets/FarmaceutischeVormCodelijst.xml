@@ -13,7 +13,17 @@
   <version value="2015-04-01T00:00:00" />
   <name value="FarmaceutischeVormCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="G-Standaard Farmaceutische vormen (2.16.840.1.113883.2.4.4.11): Alle waarden" />
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:a61dfd20-d203-41b2-985b-5dc47eaeb43b" />
     <timestamp value="2016-10-31T18:05:35.361+01:00" />

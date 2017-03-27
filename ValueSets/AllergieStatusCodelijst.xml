@@ -13,6 +13,16 @@
   <version value="2015-04-01T00:00:00" />
   <name value="AllergieStatusCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:3ce9cc3c-eee4-473a-9a7d-73bb98e82a63" />
     <timestamp value="2016-10-31T18:04:35.663+01:00" />

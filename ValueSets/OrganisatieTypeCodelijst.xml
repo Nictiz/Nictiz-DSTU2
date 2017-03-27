@@ -13,6 +13,16 @@
   <version value="2015-04-01T00:00:00" />
   <name value="OrganisatieTypeCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:229bbf08-e10f-42ec-9c03-b8986443571d" />
     <timestamp value="2017-01-26T15:28:28.881+01:00" />

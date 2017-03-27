@@ -13,6 +13,16 @@
   <version value="2015-04-01T00:00:00" />
   <name value="DagdeelCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:5301c937-cbe8-4466-8fd4-611254cc70c1" />
     <timestamp value="2017-01-24T15:34:11.569+01:00" />

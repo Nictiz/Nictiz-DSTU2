@@ -13,7 +13,17 @@
   <version value="2015-04-01T00:00:00" />
   <name value="TestmethodeCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="SNOMED CT (2.16.840.1.113883.6.96): Alle waarden" />
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:999adb3a-6a71-4c2f-b9dd-41cf3b014047" />
     <timestamp value="2016-11-11T13:31:38.619+01:00" />

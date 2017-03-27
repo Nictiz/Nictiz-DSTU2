@@ -7,17 +7,23 @@
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>The container 'Product' in MedischHulpmiddel as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.
-
-Medical aids are any internally implanted and external devices and/or aids used by the patient (in the past) to reduce the effects of functional limitations in organ systems or to facilitate the treatment of a disease.</p>
+      <p>The container 'Product' in MedischHulpmiddel as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0. Medical aids are any internally implanted and external devices and/or aids used by the patient (in the past) to reduce the effects of functional limitations in organ systems or to facilitate the treatment of a disease.</p>
     </div>
   </text>
   <url value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalAidProduct" />
   <name value="ZIB MedicalAid Product" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <date value="2017-01-13T11:58:48.3888108+01:00" />
-  <description value="This resource is part of MedischHulpmiddel as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.&#xD;&#xA;&#xD;&#xA;Medical aids are any internally implanted and external devices and/or aids used by the patient (in the past) to reduce the effects of functional limitations in organ systems or to facilitate the treatment of a disease." />
+  <description value="This resource is part of MedischHulpmiddel as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.&#13;&#10;&#13;&#10;Medical aids are any internally implanted and external devices and/or aids used by the patient (in the past) to reduce the effects of functional limitations in organ systems or to facilitate the treatment of a disease." />
   <copyright value="CC0" />
   <mapping>
     <identity value="zib-medischhulpmiddel" />
@@ -42,7 +48,8 @@ Medical aids are any internally implanted and external devices and/or aids used 
     <element>
       <path value="Device.identifier" />
       <short value="ProductID" />
-      <definition value="Unique identification of the product, such as the serial number.&#xD;&#xA;If the law requires this to be registered on the basis of a UDI (Unique Device Identifier), the unique identification must consist of a UDI-DI (Device Identifier) and a UDI-PI (Production Identifier(s)). See http://www.gs1.org/healthcare/udi for more information.&#xD;&#xA;&#xD;&#xA;The UDI-DI must be recorded in reference to GS1 GTIN (01) encryptions, with which for example a firm is linked to the product type. The UDI-PI must consist of the following: application identifier (AI); expiration date (17) and serial number (21) and/or batch or lot number (10)." />
+      <definition
+        value="Unique identification of the product, such as the serial number.&#13;&#10;If the law requires this to be registered on the basis of a UDI (Unique Device Identifier), the unique identification must consist of a UDI-DI (Device Identifier) and a UDI-PI (Production Identifier(s)). See http://www.gs1.org/healthcare/udi for more information.&#13;&#10;&#13;&#10;The UDI-DI must be recorded in reference to GS1 GTIN (01) encryptions, with which for example a firm is linked to the product type. The UDI-PI must consist of the following: application identifier (AI); expiration date (17) and serial number (21) and/or batch or lot number (10)." />
       <alias value="ProductID" />
       <mapping>
         <identity value="zib-medischhulpmiddel" />
@@ -60,7 +67,7 @@ Medical aids are any internally implanted and external devices and/or aids used 
         <description value="Global Trade Item Number (GTIN)" />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.1.3--20150401000000" />
-          <display value="ProductIDCodelijst"/>
+          <display value="ProductIDCodelijst" />
         </valueSetReference>
       </binding>
     </element>
@@ -74,7 +81,7 @@ Medical aids are any internally implanted and external devices and/or aids used 
         <description value="The code of the type of product." />
         <valueSetReference>
           <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.1.1--20150401000000" />
-          <display value="ProductTypeCodelijst"/>
+          <display value="ProductTypeCodelijst" />
         </valueSetReference>
       </binding>
       <mapping>

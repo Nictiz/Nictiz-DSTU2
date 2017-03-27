@@ -14,8 +14,16 @@
   <name value="ZIB DietaryRecommendations" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <date value="2017-02-13T15:20:12.6745603+01:00" />
-  <description value="Voedingsadvies as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.&#xD;&#xA;The ZIB Voedingsadvies references to another ZIB named VerpleegkundigeInterventie. This profile on NutritionOrder also contains concenpts of the ZIB VerpleegkundigeInterventie.  &#xD;&#xA;" />
+  <description value="Voedingsadvies as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.&#13;&#10;The ZIB Voedingsadvies references to another ZIB named VerpleegkundigeInterventie. This profile on NutritionOrder also contains concenpts of the ZIB VerpleegkundigeInterventie.  &#13;&#10;" />
   <copyright value="CC0" />
   <mapping>
     <identity value="zib-voedingsadvies" />
@@ -157,7 +165,7 @@
     <element>
       <path value="NutritionOrder.oralDiet.schedule.repeat.period" />
       <short value="Interval" />
-      <definition value="Indicates the duration of time over which repetitions are to occur; e.g. to express &quot;3 times per day&quot;, 3 would be the frequency and &quot;1 day&quot; would be the period.&#xD;&#xA;&#xD;&#xA;Interval indicates the time between planned procedures.&#xD;&#xA;When entering an interval, the focus is on the time between the consecutive procedures, such as in the treatment of a wound, for example. The exact times are of lesser importance." />
+      <definition value="Indicates the duration of time over which repetitions are to occur; e.g. to express &quot;3 times per day&quot;, 3 would be the frequency and &quot;1 day&quot; would be the period.&#13;&#10;&#13;&#10;Interval indicates the time between planned procedures.&#13;&#10;When entering an interval, the focus is on the time between the consecutive procedures, such as in the treatment of a wound, for example. The exact times are of lesser importance." />
       <alias value="Activiteit" />
       <mapping>
         <identity value="zib-verpleegkundigeinterventie" />
@@ -181,8 +189,8 @@
     <element>
       <path value="NutritionOrder.oralDiet.instruction" />
       <short value="Activity" />
-      <definition value="The description of nursing procedures carried out in the care for a patient. A nursing intervention consists of a set of patient-related nursing procedures.&#xD;&#xA;" />
-      <comments value="&#xD;&#xA;Free text dosage instructions can be used for cases where the instructions are too complex to code." />
+      <definition value="The description of nursing procedures carried out in the care for a patient. A nursing intervention consists of a set of patient-related nursing procedures.&#13;&#10;" />
+      <comments value="&#13;&#10;Free text dosage instructions can be used for cases where the instructions are too complex to code." />
       <alias value="Activiteit" />
       <mapping>
         <identity value="zib-verpleegkundigeinterventie" />

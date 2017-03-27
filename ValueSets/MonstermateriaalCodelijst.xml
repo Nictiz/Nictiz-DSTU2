@@ -13,7 +13,17 @@
   <version value="2015-04-01T00:00:00" />
   <name value="MonstermateriaalCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="SNOMED CT (2.16.840.1.113883.6.96): SNOMED CT: &amp;lt;123038009 | specimen |" />
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:e9c0395a-19af-4327-9e10-34cb0740b417" />
     <timestamp value="2016-11-11T13:29:40.978+01:00" />

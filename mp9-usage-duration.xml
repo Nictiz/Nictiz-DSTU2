@@ -8,6 +8,14 @@
   <name value="MP9 Medication Usage Duration" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="The duration of the medication usage" />
   <copyright value="CC0" />
   <kind value="datatype" />

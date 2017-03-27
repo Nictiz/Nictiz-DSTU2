@@ -8,6 +8,14 @@
   <name value="MP9 Additional Dosage Instructions" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="Additional instructions such as &quot;Swallow with plenty of water&quot; which may or may not be coded." />
   <copyright value="CC0" />
   <kind value="datatype" />

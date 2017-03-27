@@ -14,6 +14,14 @@
   <name value="ZIB Concern ProblemStatusDate" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <date value="2017-01-27T16:32:59.0479165+01:00" />
   <description value="Date from when the current value of the ProblemStatus applies: since when is the problem current, under control or non-current as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) 'OverdrachtConcern' version 3.0." />
   <requirements value="There is a need to provide a date from when the current value of ProblemStatus (ZIB) or ClinicalStatus (FHIR) applies. Currently, this date field is not provided in the Condition base Resource." />

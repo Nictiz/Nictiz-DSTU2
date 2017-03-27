@@ -13,6 +13,16 @@
   <version value="2016-06-17T11:20:39" />
   <name value="RedenMedicatieafspraak" />
   <status value="draft" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:04fc3061-181e-4a9f-85f1-392726a18673" />
     <timestamp value="2016-10-31T18:11:00.093+01:00" />

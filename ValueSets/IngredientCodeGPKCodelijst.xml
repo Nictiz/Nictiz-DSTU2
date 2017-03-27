@@ -13,7 +13,17 @@
   <version value="2015-04-01T00:00:00" />
   <name value="IngredientCodeGPKCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="G-Standaard Generieke Product Kode (GPK) (2.16.840.1.113883.2.4.4.1): Alle waarden" />
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:8faef381-3b66-4463-8119-4954024473ce" />
     <timestamp value="2016-10-31T18:06:22.9+01:00" />

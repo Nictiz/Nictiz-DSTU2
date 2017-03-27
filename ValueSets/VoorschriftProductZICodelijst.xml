@@ -13,7 +13,17 @@
   <version value="2015-04-01T00:00:00" />
   <name value="VoorschriftProductZICodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="G-Standaard Artikelen (ook KNMP-nummer, ATKODE) (2.16.840.1.113883.2.4.4.8): Alle waarden" />
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:d070ae40-1ba7-4800-a39f-620b62b8e61d" />
     <timestamp value="2016-10-31T18:15:51.908+01:00" />

@@ -13,6 +13,16 @@
   <version value="2015-04-01T00:00:00" />
   <name value="SymptoomCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:9bae63cf-d493-41e5-9464-e2bdcba8c5fd" />
     <timestamp value="2016-10-31T18:12:21.402+01:00" />

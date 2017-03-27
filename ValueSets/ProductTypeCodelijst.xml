@@ -12,7 +12,17 @@
   <version value="2015-04-01T00:00:00" />
   <name value="ProductTypeCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="UNSPSC (2.16.840.1.113883.6.302): Alle waarden" />
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:29c2d9bc-05c9-4e34-a7c9-6df8c3204164" />
     <timestamp value="2017-01-31T16:13:30.836+01:00" />

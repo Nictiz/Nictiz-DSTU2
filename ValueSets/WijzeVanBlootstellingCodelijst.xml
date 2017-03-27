@@ -13,7 +13,17 @@
   <version value="2015-04-01T00:00:00" />
   <name value="WijzeVanBlootstellingCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="SNOMED CT (2.16.840.1.113883.6.96): SNOMED CT: &amp;lt;284009009 | route of administration value|" />
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:42ab00a7-1f96-48fa-b4b4-cb1c6ad4d5f5" />
     <timestamp value="2016-11-15T13:44:22.892+01:00" />

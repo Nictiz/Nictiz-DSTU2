@@ -13,7 +13,17 @@
   <version value="2015-04-01T00:00:00" />
   <name value="IngredientCodeATCCodelijst" />
   <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="Anatomic Therapeutic Classification (ATC) (2.16.840.1.113883.6.73): Alle waarden" />
+  <copyright value="CC0" />
   <expansion>
     <identifier value="urn:uuid:b42ffc4e-0680-44e0-a989-4318aea455a0" />
     <timestamp value="2016-10-31T18:05:55.989+01:00" />

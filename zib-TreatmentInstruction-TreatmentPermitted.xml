@@ -12,9 +12,18 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentInstruction-TreatmentPermitted" />
   <name value="ZIB TreatmentInstruction TreatmentPermitted " />
   <status value="draft" />
-  <publisher value="Nictiz " />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <date value="2017-02-17T13:15:56.1486542+01:00" />
   <description value="An extension for the indication of permission for the treatment, no permission for the treatment, or permission for the treatment with constraints." />
+  <copyright value="CC0" />
   <fhirVersion value="1.0.2" />
   <kind value="datatype" />
   <constrainedType value="Extension" />

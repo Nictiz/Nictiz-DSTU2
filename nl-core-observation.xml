@@ -8,7 +8,16 @@
   <name value="nl-core-observation" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <date value="2017-01-20T15:32:11.6469951+01:00" />
+  <copyright value="CC0" />
   <fhirVersion value="1.0.2" />
   <kind value="resource" />
   <constrainedType value="Observation" />

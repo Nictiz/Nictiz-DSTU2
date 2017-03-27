@@ -14,8 +14,16 @@
   <name value="ZIB FunctionalOrMentalStatus MedicalAid" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <date value="2017-02-15T16:11:30.4915051+01:00" />
-  <description value="An extenion to provide supporting information on the Medical aid the patient has to reduce the impact of the disability or disorder. The disability or disorder is determined in 'FunctioneleOfMentaleStatus' as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0. &#xD;&#xA;&#xD;&#xA;" />
+  <description value="An extenion to provide supporting information on the Medical aid the patient has to reduce the impact of the disability or disorder. The disability or disorder is determined in 'FunctioneleOfMentaleStatus' as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0. &#13;&#10;&#13;&#10;" />
   <requirements value="Reference to the Dutch Clinical Building Block MedicalAid to provide supporting information on the Medical aid the patient uses to reduce the impact of the disability or disorder." />
   <copyright value="CC0" />
   <kind value="datatype" />

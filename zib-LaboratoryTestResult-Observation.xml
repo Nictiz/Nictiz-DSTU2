@@ -8,6 +8,14 @@
   <name value="ZIB LaboratoryTestResult Observation" />
   <status value="draft" />
   <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
   <description value="A LaboratoryTestResult as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 1.2" />
   <copyright value="CC0" />
   <fhirVersion value="1.0.2" />
@@ -29,7 +37,8 @@
     <element id="Observation">
       <path value="Observation" />
       <short value="LaboratoryTestResult" />
-      <definition value="Measurements and simple assertions made about a patient, device or other subject. These may be a simple or a complex observations. Simple Observations could consist of just a code and a value, whereas complex observations like panels and batteries could have related Observations and or components.&#xD;&#xA;The CBB LaboratoryResult also supports simple and more complex situations. For a simple result there will be a single LaboratoryTestResult.LaboratoryTest.TestName in Observation.code and no LaboratoryTestresult.Test. For a more complex situation there will be a LaboratoryTestResult.Test and any number of related LaboratoryTestResult.LaboratoryTest, e.g. parts of a panel or battery. Each related LaboratoryTest shall be conveyed in Observation.related or Observation.component. The deciding factor in choosing between related or component is: does the observation have use as independent observation (Observation.related) or is the observation only relevant in the context of its parent (Observation.component).&#xD;&#xA;Note that (textual) reports on individual (panels of) observations, like conclusions, go into a different resource DiagnosticReport. The DiagnosticReport then contains the references to the Observation resources it concerns." />
+      <definition
+        value="Measurements and simple assertions made about a patient, device or other subject. These may be a simple or a complex observations. Simple Observations could consist of just a code and a value, whereas complex observations like panels and batteries could have related Observations and or components.&#13;&#10;The CBB LaboratoryResult also supports simple and more complex situations. For a simple result there will be a single LaboratoryTestResult.LaboratoryTest.TestName in Observation.code and no LaboratoryTestresult.Test. For a more complex situation there will be a LaboratoryTestResult.Test and any number of related LaboratoryTestResult.LaboratoryTest, e.g. parts of a panel or battery. Each related LaboratoryTest shall be conveyed in Observation.related or Observation.component. The deciding factor in choosing between related or component is: does the observation have use as independent observation (Observation.related) or is the observation only relevant in the context of its parent (Observation.component).&#13;&#10;Note that (textual) reports on individual (panels of) observations, like conclusions, go into a different resource DiagnosticReport. The DiagnosticReport then contains the references to the Observation resources it concerns." />
       <alias value="LaboratoriumUitslag" />
       <mapping>
         <identity value="zib-overdrachtlaboratoriumuitslag" />
