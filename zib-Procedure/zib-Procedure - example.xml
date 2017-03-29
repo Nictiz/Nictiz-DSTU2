@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://hl7.org/fhir/encounter.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<Procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/procedure.xsd">
+<Procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://hl7.org/fhir ../../../FHIR/Schemas/procedure.xsd"
+ xmlns="http://hl7.org/fhir">
     <id value="example-overdracthverrichting"/>
     <meta>
         <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Procedure"/>
@@ -37,6 +39,11 @@
             </table>
         </div>
     </text>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-Procedure-Requester">
+        <valueReference>
+            <reference value="Practitioner/example"/>
+        </valueReference>
+    </extension>
     <subject>
             <reference value="Patient/example"/>
             <display value="Jongeneel-de Haas"/>
@@ -44,7 +51,6 @@
     <status value="completed"/>
     <code>
         <coding>
-            <!-- https://terminologie.nictiz.nl/art-decor/procedure-thesaurus-editor -->
             <system value="urn:oid:2.16.840.1.113883.2.4.3.120.5.2"/>
             <code value="338663L"/>
             <display value="KNIE - PROTHESE IMPLANTATIE GEWRICHT - LINKS"/>
@@ -66,7 +72,6 @@
             <reference value="Practitioner/example"/>
         </actor>
     </performer>
-    <!-- ZIB: Location:HealthcareProvider -->
     <performer>
         <actor>
             <reference value="Organization/example"/>
