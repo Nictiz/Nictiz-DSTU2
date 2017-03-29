@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://hl7.org/fhir/encounter.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<Encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/encounter.xsd">
+<?xml-model href="../../../FHIR/Schemas/encounter.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir">
     <id value="example-contact"/>
     <meta>
         <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Contact"/>
@@ -13,20 +13,20 @@
                 <thead>
                     <tr>
                         <th>ContactType</th>
-                        <th>Begin Datum Tijd</th>
-                        <th>ProbleemNaam</th>
-                        <th>Zorgverlener Naam</th>
-                        <th>OrganisatieType</th>
-                        <th>Organisatie Naam</th>
+                        <th>StartDateTime</th>
+                        <th>ProblemName</th>
+                        <th>HealthProfessional</th>
+                        <th>OrganizationType</th>
+                        <th>OrganizationName</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Spoed</td>
+                        <td>emergency</td>
                         <td>16-08-2012</td>
-                        <td>Gebroken been</td>
+                        <td>Broken leg</td>
                         <td>J.H.R. Peters</td>
-                        <td>Ziekenhuis</td>
+                        <td>Hospital</td>
                         <td>Universitair Medisch Centrum Groningen</td>
                     </tr>
                 </tbody>
@@ -34,11 +34,11 @@
         </div>
     </text>
     <status value="finished"/>
-    <class value="emergency"/>
-    <patient>
-        <reference value="Patient/example"/>
-        <display value="Jongeneel-de Haas"/>
-    </patient>
+    <class value="emergency "/>
+   <patient>
+       <reference value="Patient/example"/>
+       <display value="Jongeneel-de Haas"/>
+   </patient>
     <participant>
         <individual>
             <reference value="Practitioner/example"/>
