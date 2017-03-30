@@ -226,10 +226,6 @@
       <path value="Practitioner.practitionerRole" />
       <short value="HealthcareProviderRole" />
       <alias value="ZorgverlenerRol" />
-      <mapping>
-        <identity value="zib-zorgaanbieder" />
-        <map value="NL-CM:17.1.5" />
-      </mapping>
     </element>
     <element id="Practitioner.practitionerRole.managingOrganization">
       <path value="Practitioner.practitionerRole.managingOrganization" />

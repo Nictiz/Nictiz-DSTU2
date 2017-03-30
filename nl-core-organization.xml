@@ -124,6 +124,9 @@
         <map value="NL-CM:17.2.4" />
       </mapping>
     </element>
+    <!-- Deze mapping is controversieel. Als Organization een 
+         afdeling is van het een of ander dan moet je geen 
+         Organization maken maar een HealthcareService -->
     <element id="Organization.type.DepartmentSpecialism">
       <path value="Organization.type" />
       <name value="DepartmentSpecialty" />
@@ -141,9 +144,14 @@
         <map value="NL-CM:17.2.7" />
       </mapping>
     </element>
+    <!-- RadB: ZIB zegt naam 1..1 -->
     <element id="Organization.name">
       <path value="Organization.name" />
       <short value="OrganizationName or DepartmentName" />
+      <mapping>
+        <identity value="zib-zorgaanbieder" />
+        <map value="NL-CM:17.2.3" />
+      </mapping>
     </element>
     <element id="Organization.telecom">
       <path value="Organization.telecom" />
