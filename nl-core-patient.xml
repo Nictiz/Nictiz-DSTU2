@@ -1,4 +1,19 @@
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/DSTU2/structuredefinition.xsd" xmlns="http://hl7.org/fhir">
+    <!-- Alle Contactgegevens (Telefoon/email) system en value verplichten.
+        ConceptMaps inrichten voor telecom.use.
+        
+        Use is nu verplicht in de ZIB. 2017-03-30 Michael vd Z neemt dit mee terug naar RadB
+        Je kunt best weten dat iets een telefoonnummer is, zonder dat je weet welk type.
+        
+        Discussie: heeft het wel zoveel toegevoegde waarde om te slicen voor telefoonnummer
+        Besluit: We heffen de slicing voor telefoonnummer/email op. Elementen krijgen dan 
+        dubbele mappings
+        
+        multipleBirth. Discussie over boolean versus integer. Integer is base 1, dus eerste 
+        van meerling is 1. Discussie: als de ZIB alleen boolean zegt, moet dan integer eruit?
+        Besluit: nee. Als integer gevuld is, dan is boolean true. Niet nodig om systemen te 
+        beperken.
+    -->
   <id value="nl-core-patient" />
   <meta>
     <versionId value="15" />
@@ -188,6 +203,7 @@
       <path value="Patient.gender" />
       <name value="Gender" />
       <short value="Gender" />
+      <comments value="For clinical purposes, this item is likely required. It has been left optional to support use cases like research, or closely coupled contexts where all information would be either prohibited or overkill"/>
       <alias value="Geslacht" />
       <mapping>
         <identity value="zib-patient" />
@@ -267,6 +283,12 @@
         <map value="NL-CM:3.1.1" />
       </mapping>
     </element>
+    <!-- 2017-03-30 Discussie: 
+        - RelatedPerson heeft internationaal 0..1 relatietype, maar hier is dat 0..*
+            Marten S dient tracker item in voor gelijktrekken naar 0..*
+        - ZIB Contactpersoon heeft 0..* familierelaties. Kunnen niet verzinnen waarom
+            Michael vd Z neemt dit mee naar Registratie aan de Bron
+    -->
     <element id="Patient.contact.relationship.RoleOrRelationship">
       <path value="Patient.contact.relationship" />
       <slicing>
