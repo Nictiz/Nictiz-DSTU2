@@ -45,6 +45,7 @@
         <xpath value="not(exists(f:reason.text)) or not(exists(f:indication))" />
       </constraint>
     </element>
+    <!-- Had mapping problems between ambulatory vs outpatient, solved in STU3 -->
     <element>
       <path value="Encounter.class" />
       <short value="ContactType" />
@@ -55,7 +56,7 @@
         <identity value="zib-contact" />
         <map value="NL-CM:15.1.2" />
       </mapping>
-    </element>
+    </element>    
     <element>
       <path value="Encounter.patient" />
       <min value="1" />
