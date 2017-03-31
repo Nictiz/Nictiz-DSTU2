@@ -3,28 +3,39 @@
 <Observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/DSTU2/observation.xsd">
     <id value="example"/>
     <meta>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-LivingSituation"/>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-FunctionalOrMentalStatus"/>
     </meta>
     <text>
-        <status value="generated"></status>
+        <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">
             <table>
                 <caption>Patient with id example</caption>
                 <thead>
                     <tr>
-                        <th>TypeOfHome</th>
+                        <th>StatusName</th>
+                        <th>StatusValue</th>
+                        <th>StatusDate</th>
+                        <th>MedicalAid</th>
                         <th>Explanation</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Appartement of flatwoning</td>
-                        <td>The appartment is a problem because there is no elevator. Patient is looking for a new living place.</td>
+                        <td>Shaving</td>
+                        <td>Difficulty shaving</td>
+                        <td>2015-02-23</td>
+                        <td>Medical Shaving Machine</td>
+                        <td>Everyday living activities are increasingly being affected by the patient's Rheumatoid arthritis</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </text>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-FunctionalOrMentalStatus">
+        <valueReference>
+            <reference value="DeviceUseStatement/example"/>
+        </valueReference>
+    </extension>
     <status value="final"/>
     <category>
         <coding>
@@ -36,19 +47,22 @@
     <code>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="365508006"/>
-            <display value="Finding of residence and accommodation circumstances "/>
+            <code value="29923002"/>
+            <display value="Shaving (procedure)"/>
         </coding>
     </code>
     <subject>
         <reference value="Patient/example"/>
     </subject>
+    <effectivePeriod>
+        <start value="2015-02-23"/>
+    </effectivePeriod>
     <valueCodeableConcept>
         <coding>
-            <system value="2.16.840.1.113883.2.4.3.11.60.40.4.13.1"/>
-            <code value="FLATW"/>
-            <display value="Appartement of flatwoning"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="284892005"/>
+            <display value="Difficulty shaving (finding)"/>
         </coding>
     </valueCodeableConcept>
-    <comments value="The appartment is a problem because there is no elevator. Patient is looking for a new living place."/>
- </Observation>
+    <comments value="Everyday living activities are increasingly being affected by the patient's Rheumatoid arthritis"/>
+</Observation>

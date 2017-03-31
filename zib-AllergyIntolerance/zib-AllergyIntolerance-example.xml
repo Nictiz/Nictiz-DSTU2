@@ -1,4 +1,6 @@
-<AllergyIntolerance xmlns="http://hl7.org/fhir">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://hl7.org/fhir/DSTU2/AllergyIntolerance.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<AllergyIntolerance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir">
   <id value="b24e2aa6-c395-4d4e-9ad9-dee8cb91eb89" />
   <meta>
     <versionId value="4" />
