@@ -98,7 +98,7 @@
     </element>
     <element id="Procedure.code.coding">
       <path value="Procedure.code.coding" />
-      <definition value="A reference to a code defined by a terminology system. " />
+      <definition value="A reference to a code defined by a terminology system." />
     </element>
     <element id="Procedure.code.coding.system">
       <path value="Procedure.code.coding.system" />
@@ -127,7 +127,7 @@
     </element>
     <element id="Procedure.bodySite.coding">
       <path value="Procedure.bodySite.coding" />
-      <definition value="A reference to a code defined by a terminology system. " />
+      <definition value="A reference to a code defined by a terminology system." />
     </element>
     <element id="Procedure.bodySite.coding.system">
       <path value="Procedure.bodySite.coding.system" />
@@ -232,7 +232,7 @@
     </element>
     <element id="Procedure.focalDevice">
       <path value="Procedure.focalDevice" />
-      <short value="Device changed in procedure " />
+      <short value="Device changed in procedure" />
     </element>
     <element id="Procedure.focalDevice.manipulated">
       <path value="Procedure.focalDevice.manipulated" />

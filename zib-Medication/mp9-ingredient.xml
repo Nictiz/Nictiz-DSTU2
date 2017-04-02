@@ -32,7 +32,7 @@
     </element>
     <element id="Substance.code">
       <path value="Substance.code" />
-      <short value="What substance this is " />
+      <short value="What substance this is" />
     </element>
     <element id="Substance.code.coding">
       <path value="Substance.code.coding" />

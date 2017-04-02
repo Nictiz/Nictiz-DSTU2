@@ -27,7 +27,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="medication treatment experience " />
+      <short value="medication treatment experience" />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />

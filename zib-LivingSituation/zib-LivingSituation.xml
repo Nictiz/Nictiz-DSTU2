@@ -46,11 +46,11 @@
     </element>
     <element id="Observation.code">
       <path value="Observation.code" />
-      <definition value="Describes what was observed. Sometimes this is called the observation &quot;name&quot;. " />
+      <definition value="Describes what was observed. Sometimes this is called the observation &quot;name&quot;." />
     </element>
     <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
-      <definition value="A reference to a code defined by a terminology system. " />
+      <definition value="A reference to a code defined by a terminology system." />
     </element>
     <element id="Observation.code.coding.system">
       <path value="Observation.code.coding.system" />

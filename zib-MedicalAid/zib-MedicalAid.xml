@@ -103,7 +103,7 @@
     </element>
     <element id="DeviceUseStatement.bodySiteCodeableConcept.coding">
       <path value="DeviceUseStatement.bodySiteCodeableConcept.coding" />
-      <definition value="A reference to a code defined by a terminology system. " />
+      <definition value="A reference to a code defined by a terminology system." />
     </element>
     <element id="DeviceUseStatement.bodySiteCodeableConcept.coding.system">
       <path value="DeviceUseStatement.bodySiteCodeableConcept.coding.system" />
@@ -115,7 +115,7 @@
     </element>
     <element id="DeviceUseStatement.whenUsed">
       <path value="DeviceUseStatement.whenUsed" />
-      <short value="Time range defined by start and end date/time " />
+      <short value="Time range defined by start and end date/time" />
     </element>
     <element id="DeviceUseStatement.whenUsed.start">
       <path value="DeviceUseStatement.whenUsed.start" />

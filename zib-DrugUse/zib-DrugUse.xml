@@ -48,7 +48,7 @@
     </element>
     <element id="Observation.code">
       <path value="Observation.code" />
-      <definition value="Describes what was observed. Sometimes this is called the observation &quot;name&quot;.  " />
+      <definition value="Describes what was observed. Sometimes this is called the observation &quot;name&quot;." />
       <fixedCodeableConcept>
         <coding>
           <system value="http://snomed.info/sct" />
@@ -126,16 +126,16 @@
     <element id="Observation.component.TypeOfDrugOrMedication">
       <path value="Observation.component" />
       <name value="TypeOfDrugOrMedication" />
-      <definition value="Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations. " />
+      <definition value="Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations." />
       <max value="1" />
     </element>
     <element id="Observation.component.TypeOfDrugOrMedication.code">
       <path value="Observation.component.code" />
-      <definition value="Describes what was observed. Sometimes this is called the observation &quot;code&quot;. " />
+      <definition value="Describes what was observed. Sometimes this is called the observation &quot;code&quot;." />
     </element>
     <element id="Observation.component.TypeOfDrugOrMedication.code.coding">
       <path value="Observation.component.code.coding" />
-      <definition value="A reference to a code defined by a terminology system. " />
+      <definition value="A reference to a code defined by a terminology system." />
     </element>
     <element id="Observation.component.TypeOfDrugOrMedication.code.coding.system">
       <path value="Observation.component.code.coding.system" />
@@ -175,11 +175,11 @@
     </element>
     <element id="Observation.component.RouteOfAdministration.code">
       <path value="Observation.component.code" />
-      <definition value="Describes what was observed. Sometimes this is called the observation &quot;code&quot;. " />
+      <definition value="Describes what was observed. Sometimes this is called the observation &quot;code&quot;." />
     </element>
     <element id="Observation.component.RouteOfAdministration.code.coding">
       <path value="Observation.component.code.coding" />
-      <definition value="A reference to a code defined by a terminology system. " />
+      <definition value="A reference to a code defined by a terminology system." />
     </element>
     <element id="Observation.component.RouteOfAdministration.code.coding.system">
       <path value="Observation.component.code.coding.system" />
@@ -198,7 +198,7 @@
     <element id="Observation.component.RouteOfAdministration.valueCodeableConcept">
       <path value="Observation.component.valueCodeableConcept" />
       <short value="RouteOfAdministration" />
-      <definition value="The way the drugs are used. " />
+      <definition value="The way the drugs are used." />
       <alias value="Toedieningsweg" />
       <type>
         <code value="CodeableConcept" />
@@ -219,11 +219,11 @@
     </element>
     <element id="Observation.component.Amount.code">
       <path value="Observation.component.code" />
-      <definition value="Describes what was observed. Sometimes this is called the observation &quot;code&quot;. " />
+      <definition value="Describes what was observed. Sometimes this is called the observation &quot;code&quot;." />
     </element>
     <element id="Observation.component.Amount.code.coding">
       <path value="Observation.component.code.coding" />
-      <definition value="A reference to a code defined by a terminology system. " />
+      <definition value="A reference to a code defined by a terminology system." />
     </element>
     <element id="Observation.component.Amount.code.coding.system">
       <path value="Observation.component.code.coding.system" />
@@ -242,7 +242,7 @@
     <element id="Observation.component.Amount.valueRatio">
       <path value="Observation.component.valueRatio" />
       <short value="Amount" />
-      <definition value="The number of units (pills, joints, shots etc.) per day, week, month or year or the frequency of use. " />
+      <definition value="The number of units (pills, joints, shots etc.) per day, week, month or year or the frequency of use." />
       <alias value="Hoeveelheid" />
       <type>
         <code value="Ratio" />

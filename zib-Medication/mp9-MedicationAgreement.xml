@@ -186,7 +186,7 @@
     <element id="MedicationOrder.dosageInstruction.route">
       <path value="MedicationOrder.dosageInstruction.route" />
       <name value="Toedieningsweg" />
-      <short value="Toedieningsweg " />
+      <short value="Toedieningsweg" />
       <binding>
         <strength value="required" />
         <description value="VoorschriftToedieningswegCodelijst" />

@@ -40,8 +40,8 @@
     </element>
     <element id="MedicationStatement.extension.asAgreed">
       <path value="MedicationStatement.extension" />
-      <name value="asAgreed " />
-      <short value="by agreement " />
+      <name value="asAgreed" />
+      <short value="by agreement" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -65,7 +65,7 @@
       <path value="MedicationStatement.extension" />
       <name value="sideEffect" />
       <short value="bijwerking" />
-      <definition value="Optional Extensions Element " />
+      <definition value="Optional Extensions Element" />
       <min value="0" />
       <max value="1" />
       <type>

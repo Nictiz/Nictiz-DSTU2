@@ -96,15 +96,14 @@
     </element>
     <element id="NutritionOrder.oralDiet">
       <path value="NutritionOrder.oralDiet" />
-      <definition value="Diet given orally in contrast to enteral (tube) feeding. " />
+      <definition value="Diet given orally in contrast to enteral (tube) feeding." />
     </element>
     <element id="NutritionOrder.oralDiet.type">
       <path value="NutritionOrder.oralDiet.type" />
-      <definition value="The kind of diet or dietary restriction such as fiber restricted diet or diabetic diet. " />
+      <definition value="The kind of diet or dietary restriction such as fiber restricted diet or diabetic diet." />
     </element>
     <element id="NutritionOrder.oralDiet.type.coding">
       <path value="NutritionOrder.oralDiet.type.coding" />
-      <meaningWhenMissing value=" " />
     </element>
     <element id="NutritionOrder.oralDiet.type.text">
       <path value="NutritionOrder.oralDiet.type.text" />
@@ -118,16 +117,16 @@
     </element>
     <element id="NutritionOrder.oralDiet.schedule">
       <path value="NutritionOrder.oralDiet.schedule" />
-      <definition value="The time period and frequency at which the diet should be given. " />
+      <definition value="The time period and frequency at which the diet should be given." />
     </element>
     <element id="NutritionOrder.oralDiet.schedule.repeat">
       <path value="NutritionOrder.oralDiet.schedule.repeat" />
-      <definition value="A set of rules that describe when the event should occur. " />
+      <definition value="A set of rules that describe when the event should occur." />
     </element>
     <element id="NutritionOrder.oralDiet.schedule.repeat.boundsPeriod">
       <path value="NutritionOrder.oralDiet.schedule.repeat.boundsPeriod" />
       <name value="Duration" />
-      <definition value="Either a duration for the length of the timing schedule, a range of possible length, or outer bounds for start and/or end limits of the timing schedule. " />
+      <definition value="Either a duration for the length of the timing schedule, a range of possible length, or outer bounds for start and/or end limits of the timing schedule." />
       <type>
         <code value="Period" />
       </type>
@@ -174,7 +173,7 @@
     </element>
     <element id="NutritionOrder.oralDiet.fluidConsistencyType">
       <path value="NutritionOrder.oralDiet.fluidConsistencyType" />
-      <definition value="The required consistency (e.g. honey-thick, nectar-thick, thin, thickened.) of liquids or fluids served to the patient. " />
+      <definition value="The required consistency (e.g. honey-thick, nectar-thick, thin, thickened.) of liquids or fluids served to the patient." />
     </element>
     <element id="NutritionOrder.oralDiet.fluidConsistencyType.text">
       <path value="NutritionOrder.oralDiet.fluidConsistencyType.text" />

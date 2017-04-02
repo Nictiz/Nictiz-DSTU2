@@ -47,11 +47,11 @@
     </element>
     <element id="Observation.code">
       <path value="Observation.code" />
-      <definition value="Describes what was observed. Sometimes this is called the observation &quot;name&quot;. " />
+      <definition value="Describes what was observed. Sometimes this is called the observation &quot;name&quot;." />
     </element>
     <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
-      <definition value="A reference to a code defined by a terminology system. " />
+      <definition value="A reference to a code defined by a terminology system." />
     </element>
     <element id="Observation.code.coding.system">
       <path value="Observation.code.coding.system" />
@@ -137,12 +137,12 @@
     <element id="Observation.component.TypeOfTobaccoUsed">
       <path value="Observation.component" />
       <name value="TypeOfTobaccoUsed" />
-      <definition value="Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations. " />
+      <definition value="Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations." />
       <max value="1" />
     </element>
     <element id="Observation.component.TypeOfTobaccoUsed.code.coding">
       <path value="Observation.component.code.coding" />
-      <definition value="A reference to a code defined by a terminology system. " />
+      <definition value="A reference to a code defined by a terminology system." />
     </element>
     <element id="Observation.component.TypeOfTobaccoUsed.code.coding.system">
       <path value="Observation.component.code.coding.system" />
@@ -179,12 +179,12 @@
     <element id="Observation.component.Amount">
       <path value="Observation.component" />
       <name value="Amount" />
-      <definition value="Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations. " />
+      <definition value="Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations." />
       <max value="1" />
     </element>
     <element id="Observation.component.Amount.code.coding">
       <path value="Observation.component.code.coding" />
-      <definition value="A reference to a code defined by a terminology system. " />
+      <definition value="A reference to a code defined by a terminology system." />
     </element>
     <element id="Observation.component.Amount.code.coding.system">
       <path value="Observation.component.code.coding.system" />
@@ -221,12 +221,12 @@
     <element id="Observation.component.PackYears">
       <path value="Observation.component" />
       <name value="PackYears" />
-      <comments value="For a discussion on the ways Observations can assembled in groups together see [Notes below](observation.html#4.20.4). " />
+      <comments value="For a discussion on the ways Observations can assembled in groups together see [Notes below](observation.html#4.20.4)." />
       <max value="1" />
     </element>
     <element id="Observation.component.PackYears.code.coding">
       <path value="Observation.component.code.coding" />
-      <definition value="A reference to a code defined by a terminology system. " />
+      <definition value="A reference to a code defined by a terminology system." />
     </element>
     <element id="Observation.component.PackYears.code.coding.system">
       <path value="Observation.component.code.coding.system" />

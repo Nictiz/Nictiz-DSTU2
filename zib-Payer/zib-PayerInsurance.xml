@@ -43,7 +43,7 @@
     </element>
     <element id="Coverage.period">
       <path value="Coverage.period" />
-      <definition value="Time period during which the coverage is in force. A missing start date indicates the start date isn't known, a missing end date means the coverage is continuing to be in force. " />
+      <definition value="Time period during which the coverage is in force. A missing start date indicates the start date isn't known, a missing end date means the coverage is continuing to be in force." />
     </element>
     <element id="Coverage.period.start">
       <path value="Coverage.period.start" />

@@ -10,7 +10,7 @@
     </div>
   </text>
   <url value="http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentInstruction-TreatmentPermitted" />
-  <name value="ZIB TreatmentInstruction TreatmentPermitted " />
+  <name value="ZIB TreatmentInstruction TreatmentPermitted" />
   <status value="draft" />
   <publisher value="Nictiz" />
   <contact>

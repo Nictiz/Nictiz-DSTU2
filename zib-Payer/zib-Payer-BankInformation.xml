@@ -94,7 +94,7 @@
     </element>
     <element id="Extension.extension.BankCode.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="Bankcode " />
+      <fixedUri value="BankCode" />
     </element>
     <element id="Extension.extension.BankCode.valueString">
       <path value="Extension.extension.valueString" />
