@@ -25,21 +25,21 @@
   <context value="MedicationOrder" />
   <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <differential>
-    <element>
+    <element id="Extension">
       <path value="Extension" />
       <short value="supporting information" />
     </element>
-    <element>
+    <element id="Extension.extension">
       <path value="Extension.extension" />
       <min value="0" />
       <max value="0" />
     </element>
-    <element>
+    <element id="Extension.url">
       <path value="Extension.url" />
       <representation value="xmlAttr" />
       <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/mp9-medication-supporting-information" />
     </element>
-    <element>
+    <element id="Extension.valueReference">
       <path value="Extension.valueReference" />
       <type>
         <code value="Reference" />

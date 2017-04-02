@@ -24,17 +24,17 @@
   <abstract value="false" />
   <base value="http://hl7.org/fhir/StructureDefinition/Substance" />
   <differential>
-    <element>
+    <element id="Substance">
       <path value="Substance" />
       <type>
         <code value="Substance" />
       </type>
     </element>
-    <element>
+    <element id="Substance.code">
       <path value="Substance.code" />
       <short value="What substance this is " />
     </element>
-    <element>
+    <element id="Substance.code.coding">
       <path value="Substance.code.coding" />
       <slicing>
         <discriminator value="system" />
@@ -43,7 +43,7 @@
       <min value="1" />
       <max value="1" />
     </element>
-    <element>
+    <element id="Substance.code.coding.GTIN">
       <path value="Substance.code.coding" />
       <name value="GTIN" />
       <max value="1" />
@@ -51,12 +51,12 @@
         <strength value="required" />
         <description value="IngredientCodeGTINCodeLijst" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.21--2015-04-01T00:00:00" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.21--20150401000000" />
           <display value="IngredientCodeGTINCodeLijst" />
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Substance.code.coding.SSK">
       <path value="Substance.code.coding" />
       <name value="SSK" />
       <max value="1" />
@@ -64,12 +64,12 @@
         <strength value="required" />
         <description value="IngredientCodeSSKLijst" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.19--2015-04-01T00:00:00" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.19--20150401000000" />
           <display value="IngredientCodeSSKLijst" />
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Substance.code.coding.PRK">
       <path value="Substance.code.coding" />
       <name value="PRK" />
       <max value="1" />
@@ -77,12 +77,12 @@
         <strength value="required" />
         <description value="IngredientCodePRKLijst" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.18--2015-04-01T00:00:00" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.18--20150401000000" />
           <display value="IngredientCodePRKLijst" />
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Substance.code.coding.HPK">
       <path value="Substance.code.coding" />
       <name value="HPK" />
       <max value="1" />
@@ -90,12 +90,12 @@
         <strength value="required" />
         <description value="IngredientCodeHPKLijst" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.17--2015-04-01T00:00:00" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.17--20150401000000" />
           <display value="IngredientCodeHPKLijst" />
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Substance.code.coding.GPK">
       <path value="Substance.code.coding" />
       <name value="GPK" />
       <max value="1" />
@@ -103,12 +103,12 @@
         <strength value="required" />
         <description value="IngredientCodeGPKLijst" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.16--2015-04-01T00:00:00" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.16--20150401000000" />
           <display value="IngredientCodeGPKLijst" />
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Substance.code.coding.SNK">
       <path value="Substance.code.coding" />
       <name value="SNK" />
       <max value="1" />
@@ -116,12 +116,12 @@
         <strength value="required" />
         <description value="IngredientCodeSNKLijst" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.15--2015-04-01T00:00:00" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.15--20150401000000" />
           <display value="IngredientCodeSNKLijst" />
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Substance.code.coding.ATC">
       <path value="Substance.code.coding" />
       <name value="ATC" />
       <max value="1" />
@@ -129,12 +129,12 @@
         <strength value="required" />
         <description value="IngredientCodeATCCodelijst" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.14--2015-04-01T00:00:00" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.14--20150401000000" />
           <display value="IngredientCodeATCCodelijst" />
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Substance.code.coding.ZI">
       <path value="Substance.code.coding" />
       <name value="ZI" />
       <max value="1" />

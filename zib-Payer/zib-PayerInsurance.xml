@@ -30,10 +30,10 @@
   <abstract value="false" />
   <base value="http://hl7.org/fhir/StructureDefinition/Coverage" />
   <differential>
-    <element>
+    <element id="Coverage">
       <path value="Coverage" />
     </element>
-    <element>
+    <element id="Coverage.issuer">
       <path value="Coverage.issuer" />
       <min value="1" />
       <type>
@@ -41,11 +41,11 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-BetalerVerzekeraar" />
       </type>
     </element>
-    <element>
+    <element id="Coverage.period">
       <path value="Coverage.period" />
       <definition value="Time period during which the coverage is in force. A missing start date indicates the start date isn't known, a missing end date means the coverage is continuing to be in force. " />
     </element>
-    <element>
+    <element id="Coverage.period.start">
       <path value="Coverage.period.start" />
       <short value="StartDateTime" />
       <definition value="Date from which the insurance policy coverage applies." />
@@ -55,7 +55,7 @@
         <map value="NL-CM:1.1.13" />
       </mapping>
     </element>
-    <element>
+    <element id="Coverage.period.end">
       <path value="Coverage.period.end" />
       <short value="EndDateTime" />
       <definition value="Date until which the insurance policy coverage applies.&#13;&#10;This item maps the ‘Expiry date’ on EHIC field 9." />
@@ -66,7 +66,7 @@
         <map value="NL-CM:1.1.14" />
       </mapping>
     </element>
-    <element>
+    <element id="Coverage.type">
       <path value="Coverage.type" />
       <short value="InsuranceType" />
       <definition value="Type of insurance policy. Codes as returned in the Check for Right to Insurance" />
@@ -85,7 +85,7 @@
         <map value="NL-CM:1.1.15" />
       </mapping>
     </element>
-    <element>
+    <element id="Coverage.identifier">
       <path value="Coverage.identifier" />
       <short value="InsurantNumber" />
       <definition value="Number under which the insured person is registered at the insurance company&#13;&#10;This item maps the ‘Identification number of the card’ on EHIC field 8" />

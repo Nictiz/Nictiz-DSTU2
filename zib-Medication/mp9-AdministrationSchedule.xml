@@ -24,20 +24,20 @@
   <abstract value="false" />
   <base value="http://hl7.org/fhir/StructureDefinition/Timing" />
   <differential>
-    <element>
+    <element id="Timing">
       <path value="Timing" />
       <type>
         <code value="Timing" />
       </type>
     </element>
-    <element>
+    <element id="Timing.extension">
       <path value="Timing.extension" />
       <slicing>
         <discriminator value="url" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="Timing.extension.sequenceNumber">
       <path value="Timing.extension" />
       <name value="sequenceNumber" />
       <short value="dosage sequence number" />
@@ -49,22 +49,22 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-dosage-sequence-number" />
       </type>
     </element>
-    <element>
+    <element id="Timing.event">
       <path value="Timing.event" />
       <name value="Toedientijd" />
     </element>
-    <element>
+    <element id="Timing.repeat">
       <path value="Timing.repeat" />
       <name value="Herhaling" />
     </element>
-    <element>
+    <element id="Timing.repeat.extension">
       <path value="Timing.repeat.extension" />
       <slicing>
         <discriminator value="url" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="Timing.repeat.extension.daysOfWeek">
       <path value="Timing.repeat.extension" />
       <name value="daysOfWeek" />
       <definition value="Optional Extensions Element - found in all resources." />
@@ -78,12 +78,12 @@
         <strength value="required" />
         <description value="WeekdagenCodelijst" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.4--2015-04-01T00:00:00" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.4--20150401000000" />
           <display value="WeekdagenCodelijst" />
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Timing.repeat.boundsQuantity">
       <path value="Timing.repeat.boundsQuantity" />
       <name value="Doseerduur" />
       <short value="Doseerduur" />
@@ -92,36 +92,36 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/Duration" />
       </type>
     </element>
-    <element>
+    <element id="Timing.repeat.frequency">
       <path value="Timing.repeat.frequency" />
       <name value="Frequency - min / vaste waarde" />
       <short value="min / vaste waarde" />
       <defaultValueInteger value="1" />
     </element>
-    <element>
+    <element id="Timing.repeat.frequencyMax">
       <path value="Timing.repeat.frequencyMax" />
       <name value="Frequency - max" />
     </element>
-    <element>
+    <element id="Timing.repeat.period">
       <path value="Timing.repeat.period" />
       <name value="Interval" />
     </element>
-    <element>
+    <element id="Timing.repeat.periodUnits">
       <path value="Timing.repeat.periodUnits" />
       <name value="Frequency Tijdeenheid" />
     </element>
-    <element>
+    <element id="Timing.repeat.when">
       <path value="Timing.repeat.when" />
       <name value="Wanneer" />
     </element>
-    <element>
+    <element id="Timing.repeat.when.extension">
       <path value="Timing.repeat.when.extension" />
       <slicing>
         <discriminator value="url" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="Timing.repeat.when.extension.whenSpecification">
       <path value="Timing.repeat.when.extension" />
       <name value="when-specification" />
       <short value="Defines a more specific value to a code. Especially use ful for FHIR's required ValueSets." />
@@ -136,7 +136,7 @@
         <strength value="required" />
         <description value="DagdeelCodelijst" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.5--2015-04-01T00:00:00" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.5--20150401000000" />
           <display value="DagdeelCodelijst" />
         </valueSetReference>
       </binding>

@@ -33,19 +33,19 @@
   <context value="DeviceUseStatement" />
   <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <differential>
-    <element>
+    <element id="Extension">
       <path value="Extension" />
     </element>
-    <element>
+    <element id="Extension.extension">
       <path value="Extension.extension" />
       <min value="0" />
       <max value="0" />
     </element>
-    <element>
+    <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalAid-nl-core-practitionerReference" />
     </element>
-    <element>
+    <element id="Extension.valueReference">
       <path value="Extension.valueReference" />
       <short value="HealthProffesional" />
       <definition value="The healthcare provider involved in the indication for use of the medical aid implant." />

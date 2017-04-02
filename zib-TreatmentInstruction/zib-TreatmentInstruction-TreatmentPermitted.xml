@@ -32,20 +32,20 @@
   <context value="CarePlan.activity.detail.prohibited" />
   <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <differential>
-    <element>
+    <element id="Extension">
       <path value="Extension" />
       <isModifier value="true" />
     </element>
-    <element>
+    <element id="Extension.extension">
       <path value="Extension.extension" />
       <min value="0" />
       <max value="0" />
     </element>
-    <element>
+    <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentInstruction-TreatmentPermitted" />
     </element>
-    <element>
+    <element id="Extension.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept" />
       <short value="TreatmentPermitted" />
       <definition value="Indication of permission for the treatment, no permission for the treatment, or permission for the treatment with constraints." />

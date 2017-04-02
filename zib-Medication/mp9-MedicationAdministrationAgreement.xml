@@ -23,20 +23,20 @@
   <abstract value="false" />
   <base value="http://hl7.org/fhir/StructureDefinition/MedicationDispense" />
   <differential>
-    <element>
+    <element id="MedicationDispense">
       <path value="MedicationDispense" />
       <type>
         <code value="MedicationDispense" />
       </type>
     </element>
-    <element>
+    <element id="MedicationDispense.extension">
       <path value="MedicationDispense.extension" />
       <slicing>
         <discriminator value="url" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="MedicationDispense.extension.usageDuration">
       <path value="MedicationDispense.extension" />
       <name value="usageDuration" />
       <short value="Gebruiksduur" />
@@ -48,7 +48,7 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-usage-duration" />
       </type>
     </element>
-    <element>
+    <element id="MedicationDispense.extension.dispensingOrganization">
       <path value="MedicationDispense.extension" />
       <name value="dispensingOrganization" />
       <short value="Verstrekker" />
@@ -60,7 +60,7 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-dispensing-organization" />
       </type>
     </element>
-    <element>
+    <element id="MedicationDispense.extension.authoredOn">
       <path value="MedicationDispense.extension" />
       <name value="authoredOn" />
       <short value="Afspraakdatum" />
@@ -72,7 +72,7 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-authored-on" />
       </type>
     </element>
-    <element>
+    <element id="MedicationDispense.extension.reasonForDispense">
       <path value="MedicationDispense.extension" />
       <name value="reasonForDispense" />
       <short value="Reden afspraak" />
@@ -84,7 +84,7 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-reason-for-dispense" />
       </type>
     </element>
-    <element>
+    <element id="MedicationDispense.extension.usagePeriod">
       <path value="MedicationDispense.extension" />
       <name value="usagePeriod" />
       <short value="Gebruiksperiode" />
@@ -96,27 +96,27 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-usage-period" />
       </type>
     </element>
-    <element>
+    <element id="MedicationDispense.identifier">
       <path value="MedicationDispense.identifier" />
       <short value="Identificatie" />
     </element>
-    <element>
+    <element id="MedicationDispense.status">
       <path value="MedicationDispense.status" />
       <name value="StopType" />
       <short value="StopType (on-hold | stopped)" />
     </element>
-    <element>
+    <element id="MedicationDispense.patient">
       <path value="MedicationDispense.patient" />
       <type>
         <code value="Reference" />
         <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
       </type>
     </element>
-    <element>
+    <element id="MedicationDispense.dispenser">
       <path value="MedicationDispense.dispenser" />
       <name value=" Verstrekker" />
     </element>
-    <element>
+    <element id="MedicationDispense.medicationReference">
       <path value="MedicationDispense.medicationReference" />
       <name value="Product" />
       <short value="Short" />
@@ -125,46 +125,46 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-Medication" />
       </type>
     </element>
-    <element>
+    <element id="MedicationDispense.note">
       <path value="MedicationDispense.note" />
       <name value="Toelichting" />
       <short value="Toelichting" />
     </element>
-    <element>
+    <element id="MedicationDispense.dosageInstruction">
       <path value="MedicationDispense.dosageInstruction" />
       <name value="Gebruiksinstructie" />
     </element>
-    <element>
+    <element id="MedicationDispense.dosageInstruction.text">
       <path value="MedicationDispense.dosageInstruction.text" />
       <name value="Omschrijving" />
     </element>
-    <element>
+    <element id="MedicationDispense.dosageInstruction.additionalInstructions">
       <path value="MedicationDispense.dosageInstruction.additionalInstructions" />
       <name value="Aanvullende Informatie" />
       <short value="Aanvullende Informatie" />
     </element>
-    <element>
+    <element id="MedicationDispense.dosageInstruction.timing">
       <path value="MedicationDispense.dosageInstruction.timing" />
       <type>
         <code value="Timing" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-AdministrationSchedule" />
       </type>
     </element>
-    <element>
+    <element id="MedicationDispense.dosageInstruction.asNeeded">
       <path value="MedicationDispense.dosageInstruction.asNeeded[x]" />
       <name value=" Zo nodig" />
       <short value=" Zo nodig" />
     </element>
-    <element>
+    <element id="MedicationDispense.dosageInstruction.route">
       <path value="MedicationDispense.dosageInstruction.route" />
       <name value="Toedieningsweg" />
     </element>
-    <element>
+    <element id="MedicationDispense.dosageInstruction.dose">
       <path value="MedicationDispense.dosageInstruction.dose[x]" />
       <name value=" Aantal" />
       <short value=" Aantal" />
     </element>
-    <element>
+    <element id="MedicationDispense.dosageInstruction.rate">
       <path value="MedicationDispense.dosageInstruction.rate[x]" />
       <name value=" Toedieningssnelheid" />
       <short value=" Toedieningssnelheid" />

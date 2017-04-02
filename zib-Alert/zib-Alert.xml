@@ -37,7 +37,7 @@
   <abstract value="false" />
   <base value="http://hl7.org/fhir/StructureDefinition/Flag" />
   <differential>
-    <element>
+    <element id="Flag">
       <path value="Flag" />
       <short value="Alert" />
       <mapping>
@@ -45,14 +45,14 @@
         <map value="NL-CM:8.3.1" />
       </mapping>
     </element>
-    <element>
+    <element id="Flag.extension">
       <path value="Flag.extension" />
       <slicing>
         <discriminator value="url" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="Flag.extension.ConcernReference">
       <path value="Flag.extension" />
       <name value="ConcernReference" />
       <short value="Condition" />
@@ -68,7 +68,7 @@
         <map value="NL-CM:8.3.3" />
       </mapping>
     </element>
-    <element>
+    <element id="Flag.category">
       <path value="Flag.category" />
       <short value="AlertType" />
       <definition value="Indicates the type of alert, meaning a rough description of the cause or origin of the warning." />
@@ -86,11 +86,11 @@
         <map value="NL-CM:8.3.6" />
       </mapping>
     </element>
-    <element>
+    <element id="Flag.period">
       <path value="Flag.period" />
       <short value="Time period when flag is active " />
     </element>
-    <element>
+    <element id="Flag.period.start">
       <path value="Flag.period.start" />
       <short value="StartDateTime" />
       <definition value="The date and time at which the described condition was entered as a warning.&#13;&#10;This can be an exact date and time, or a rough indication of the date (such as only the year, or the month and the year)." />
@@ -100,7 +100,7 @@
         <map value="NL-CM:8.3.5" />
       </mapping>
     </element>
-    <element>
+    <element id="Flag.subject">
       <path value="Flag.subject" />
       <type>
         <code value="Reference" />
@@ -115,14 +115,14 @@
         <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization" />
       </type>
     </element>
-    <element>
+    <element id="Flag.encounter">
       <path value="Flag.encounter" />
       <type>
         <code value="Reference" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Contact" />
       </type>
     </element>
-    <element>
+    <element id="Flag.author">
       <path value="Flag.author" />
       <type>
         <code value="Reference" />
@@ -141,7 +141,7 @@
         <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization" />
       </type>
     </element>
-    <element>
+    <element id="Flag.code">
       <path value="Flag.code" />
       <short value="AlertName" />
       <definition value="A warning, other than a condition or problem. For example, a patient can be given an ‘Aggressive patient' alert.&#13;&#10;The warning can be entered in code (there are codes for frequently used alerts), but seeing the dynamic nature of the warnings cf. SARS and Ebola, these alerts will often be entered as free text." />

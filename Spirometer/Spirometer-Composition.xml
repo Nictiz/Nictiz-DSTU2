@@ -24,36 +24,36 @@
   <abstract value="false" />
   <base value="http://nictiz.nl/fhir/StructureDefinition/nl-core-composition" />
   <differential>
-    <element>
+    <element id="Composition">
       <path value="Composition" />
     </element>
-    <element>
+    <element id="Composition.type">
       <path value="Composition.type" />
       <short value="type" />
     </element>
-    <element>
+    <element id="Composition.type.coding">
       <path value="Composition.type.coding" />
       <short value="coding" />
     </element>
-    <element>
+    <element id="Composition.type.coding.system">
       <path value="Composition.type.coding.system" />
       <min value="1" />
       <fixedUri value="http://loinc.org" />
     </element>
-    <element>
+    <element id="Composition.type.coding.code">
       <path value="Composition.type.coding.code" />
       <min value="1" />
       <fixedCode value="18759-1" />
     </element>
-    <element>
+    <element id="Composition.type.coding.display">
       <path value="Composition.type.coding.display" />
       <fixedString value="Spirometry study" />
     </element>
-    <element>
+    <element id="Composition.title">
       <path value="Composition.title" />
       <fixedString value="Spirometry study" />
     </element>
-    <element>
+    <element id="Composition.subject">
       <path value="Composition.subject" />
       <type>
         <code value="Reference" />
@@ -61,7 +61,7 @@
         <aggregation value="bundled" />
       </type>
     </element>
-    <element>
+    <element id="Composition.author">
       <path value="Composition.author" />
       <type>
         <code value="Reference" />
@@ -84,11 +84,11 @@
         <aggregation value="bundled" />
       </type>
     </element>
-    <element>
+    <element id="Composition.attester">
       <path value="Composition.attester" />
       <short value="attester" />
     </element>
-    <element>
+    <element id="Composition.attester.party">
       <path value="Composition.attester.party" />
       <type>
         <code value="Reference" />
@@ -106,7 +106,7 @@
         <aggregation value="bundled" />
       </type>
     </element>
-    <element>
+    <element id="Composition.custodian">
       <path value="Composition.custodian" />
       <type>
         <code value="Reference" />
@@ -114,7 +114,7 @@
         <aggregation value="bundled" />
       </type>
     </element>
-    <element>
+    <element id="Composition.section">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Section" />
       </extension>
@@ -125,36 +125,36 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="Composition.section.SpirometerObservationPanel">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Section" />
       </extension>
       <path value="Composition.section" />
       <name value="Spirometer Observation Panel" />
     </element>
-    <element>
+    <element id="Composition.section.code">
       <path value="Composition.section.code" />
       <short value="code" />
     </element>
-    <element>
+    <element id="Composition.section.code.coding">
       <path value="Composition.section.code.coding" />
       <short value="coding" />
     </element>
-    <element>
+    <element id="Composition.section.code.coding.system">
       <path value="Composition.section.code.coding.system" />
       <min value="1" />
       <fixedUri value="http://loinc.org" />
     </element>
-    <element>
+    <element id="Composition.section.code.coding.code">
       <path value="Composition.section.code.coding.code" />
       <min value="1" />
       <fixedCode value="81459-0" />
     </element>
-    <element>
+    <element id="Composition.section.code.coding.display">
       <path value="Composition.section.code.coding.display" />
       <fixedString value="Spirometry panel" />
     </element>
-    <element>
+    <element id="Composition.section.entry">
       <path value="Composition.section.entry" />
       <min value="1" />
       <max value="1" />

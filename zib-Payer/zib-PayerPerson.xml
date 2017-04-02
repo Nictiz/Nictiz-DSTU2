@@ -27,17 +27,17 @@
   <abstract value="false" />
   <base value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
   <differential>
-    <element>
+    <element id="Patient">
       <path value="Patient" />
     </element>
-    <element>
+    <element id="Patient.extension">
       <path value="Patient.extension" />
       <slicing>
         <discriminator value="url" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="Patient.extension.BankInformation">
       <path value="Patient.extension" />
       <name value="BankInformation" />
       <short value="BankInformation" />
@@ -46,14 +46,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Payer-BankInformation" />
       </type>
     </element>
-    <element>
+    <element id="Patient.extension.extension">
       <path value="Patient.extension.extension" />
       <slicing>
         <discriminator value="url" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="Patient.extension.extension.BankName">
       <path value="Patient.extension.extension" />
       <name value="BankName" />
       <short value="BankName" />
@@ -66,17 +66,17 @@
         <map value="NL-CM:1.1.9" />
       </mapping>
     </element>
-    <element>
+    <element id="Patient.extension.extension.BankName.url">
       <path value="Patient.extension.extension.url" />
       <fixedUri value="BankName" />
     </element>
-    <element>
+    <element id="Patient.extension.extension.BankName.valueString">
       <path value="Patient.extension.extension.valueString" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element>
+    <element id="Patient.extension.extension.AccountNumber">
       <path value="Patient.extension.extension" />
       <name value="AccountNumber" />
       <short value="AccountNumber" />
@@ -89,38 +89,38 @@
         <map value="NL-CM:1.1.11" />
       </mapping>
     </element>
-    <element>
+    <element id="Patient.extension.extension.AccountNumber.url">
       <path value="Patient.extension.extension.url" />
       <fixedUri value="AccountNumber" />
     </element>
-    <element>
+    <element id="Patient.extension.extension.AccountNumber.valueString">
       <path value="Patient.extension.extension.valueString" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element>
+    <element id="Patient.extension.extension.BankCode">
       <path value="Patient.extension.extension" />
-      <name value="Bankcode " />
-      <short value="Bankcode " />
+      <name value="BankCode" />
+      <short value="BankCode" />
       <definition value="Code indicating the bank and branch. For European countries, this is the organization’s BIC or SWIFT code." />
-      <alias value="BankCode" />
+      <alias value="Bankcode" />
       <mapping>
         <identity value="zib-betaler" />
         <map value="NL-CM:1.1.10" />
       </mapping>
     </element>
-    <element>
+    <element id="Patient.extension.extension.BankCode.url">
       <path value="Patient.extension.extension.url" />
-      <fixedUri value="Bankcode " />
+      <fixedUri value="BankCode" />
     </element>
-    <element>
+    <element id="Patient.extension.extension.BankCode.valueString">
       <path value="Patient.extension.extension.valueString" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element>
+    <element id="Patient.extension.BankInformation.url">
       <path value="Patient.extension.url" />
       <min value="1" />
       <max value="1" />
@@ -133,7 +133,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element>
+    <element id="Patient.extension.value">
       <path value="Patient.extension.value[x]" />
       <max value="0" />
       <type>
@@ -144,7 +144,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element>
+    <element id="Patient.name">
       <path value="Patient.name" />
       <short value="PayerName" />
       <definition value="Full name of the paying person or organization (legal entity)." />

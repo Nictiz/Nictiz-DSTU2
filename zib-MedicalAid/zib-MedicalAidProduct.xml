@@ -35,7 +35,7 @@
   <abstract value="false" />
   <base value="http://hl7.org/fhir/StructureDefinition/Device" />
   <differential>
-    <element>
+    <element id="Device">
       <path value="Device" />
       <short value="Product" />
       <definition value="The medical aid used (internally or externally)." />
@@ -45,7 +45,7 @@
         <map value="NL-CM:10.1.2" />
       </mapping>
     </element>
-    <element>
+    <element id="Device.identifier">
       <path value="Device.identifier" />
       <short value="ProductID" />
       <definition
@@ -56,11 +56,11 @@
         <map value="NL-CM:10.1.4" />
       </mapping>
     </element>
-    <element>
+    <element id="Device.identifier.system">
       <path value="Device.identifier.system" />
       <fixedUri value="urn:oid:1.3.160" />
     </element>
-    <element>
+    <element id="Device.identifier.value">
       <path value="Device.identifier.value" />
       <binding>
         <strength value="extensible" />
@@ -71,7 +71,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Device.type">
       <path value="Device.type" />
       <short value="ProductType" />
       <definition value="The code of the type of product." />
@@ -89,15 +89,15 @@
         <map value="NL-CM:10.1.3" />
       </mapping>
     </element>
-    <element>
+    <element id="Device.type.coding.system">
       <path value="Device.type.coding.system" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Device.type.coding.code">
       <path value="Device.type.coding.code" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Device.patient">
       <path value="Device.patient" />
       <type>
         <code value="Reference" />

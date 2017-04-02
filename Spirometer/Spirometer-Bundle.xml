@@ -23,21 +23,21 @@
   <abstract value="false" />
   <base value="http://hl7.org/fhir/StructureDefinition/Bundle" />
   <differential>
-    <element>
+    <element id="Bundle">
       <path value="Bundle" />
     </element>
-    <element>
+    <element id="Bundle.type">
       <path value="Bundle.type" />
       <type>
         <code value="code" />
       </type>
       <fixedCode value="document" />
     </element>
-    <element>
+    <element id="Bundle.entry">
       <path value="Bundle.entry" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Bundle.entry.resource">
       <path value="Bundle.entry.resource" />
       <min value="1" />
       <type>

@@ -34,29 +34,29 @@
   <context value="CarePlan" />
   <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <differential>
-    <element>
+    <element id="Extension">
       <path value="Extension" />
       <short value="Verification" />
       <definition value="Container of the Verification concept. This container contains all data elements of the Verification concept." />
       <alias value="Verificatie" />
       <isModifier value="false" />
     </element>
-    <element>
+    <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
         <discriminator value="url" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="Extension.extension.Verified">
       <path value="Extension.extension" />
       <name value="Verified" />
     </element>
-    <element>
+    <element id="Extension.extension.Verified.url">
       <path value="Extension.extension.url" />
       <fixedUri value="Verified" />
     </element>
-    <element>
+    <element id="Extension.extension.Verified.valueBoolean">
       <path value="Extension.extension.valueBoolean" />
       <short value="Verified" />
       <definition value="Indication of the fact that the treatment instruction has been verified with the patient, the patient’s family and/or the patient's authorized representative." />
@@ -65,15 +65,15 @@
         <code value="boolean" />
       </type>
     </element>
-    <element>
+    <element id="Extension.extension.VerifiedWith">
       <path value="Extension.extension" />
       <name value="VerifiedWith" />
     </element>
-    <element>
+    <element id="Extension.extension.VerifiedWith.url">
       <path value="Extension.extension.url" />
       <fixedUri value="VerifiedWith" />
     </element>
-    <element>
+    <element id="Extension.extension.VerifiedWith.valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <short value="VerifiedWith" />
       <definition value="The person with whom the treatment instruction was discussed and verified." />
@@ -82,15 +82,15 @@
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element>
+    <element id="Extension.extension.VerifiedDate">
       <path value="Extension.extension" />
       <name value="VerificationDate" />
     </element>
-    <element>
+    <element id="Extension.extension.VerifiedDate.url">
       <path value="Extension.extension.url" />
       <fixedUri value="VerificationDate" />
     </element>
-    <element>
+    <element id="Extension.extension.VerifiedDate.valueDateTime">
       <path value="Extension.extension.valueDateTime" />
       <short value="VerificationDate" />
       <definition value="Date on which the verification with the patient, the patient’s family and/or the patient's authorized representative took place." />
@@ -99,11 +99,11 @@
         <code value="dateTime" />
       </type>
     </element>
-    <element>
+    <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentInstruction-Verification" />
     </element>
-    <element>
+    <element id="Extension.value">
       <path value="Extension.value[x]" />
       <max value="0" />
     </element>

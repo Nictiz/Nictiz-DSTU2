@@ -33,19 +33,19 @@
   <context value="DeviceUseStatement.indication" />
   <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <differential>
-    <element>
+    <element id="Extension">
       <path value="Extension" />
     </element>
-    <element>
+    <element id="Extension.extension">
       <path value="Extension.extension" />
       <min value="0" />
       <max value="0" />
     </element>
-    <element>
+    <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalAid-ConcernReference" />
     </element>
-    <element>
+    <element id="Extension.valueReference">
       <path value="Extension.valueReference" />
       <short value="Indication" />
       <definition value="The medical reason for use of the medical aid." />

@@ -35,7 +35,7 @@
   <abstract value="false" />
   <base value="http://hl7.org/fhir/StructureDefinition/DeviceUseStatement" />
   <differential>
-    <element>
+    <element id="DeviceUseStatement">
       <path value="DeviceUseStatement" />
       <short value="MedicalAid" />
       <alias value="MedischHulpmiddel" />
@@ -44,14 +44,14 @@
         <map value="NL-CM:10.1.1" />
       </mapping>
     </element>
-    <element>
+    <element id="DeviceUseStatement.extension">
       <path value="DeviceUseStatement.extension" />
       <slicing>
         <discriminator value="url" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="DeviceUseStatement.extension.HealthcareProvider">
       <path value="DeviceUseStatement.extension" />
       <name value="HealthcareProvider" />
       <short value="HealthcareProvider" />
@@ -67,7 +67,7 @@
         <map value="NL-CM:10.1.8" />
       </mapping>
     </element>
-    <element>
+    <element id="DeviceUseStatement.extension.HealthProfessional">
       <path value="DeviceUseStatement.extension" />
       <name value="HealthProfessional" />
       <short value="HealthProfessional" />
@@ -83,7 +83,7 @@
         <map value="NL-CM:10.1.9" />
       </mapping>
     </element>
-    <element>
+    <element id="DeviceUseStatement.bodySiteCodeableConcept">
       <path value="DeviceUseStatement.bodySiteCodeableConcept" />
       <short value="AidAnatomicalLocation" />
       <definition value="Patient’s anatomical location of the medical aid used." />
@@ -101,47 +101,47 @@
         <map value="NL-CM:10.1.6" />
       </mapping>
     </element>
-    <element>
+    <element id="DeviceUseStatement.bodySiteCodeableConcept.coding">
       <path value="DeviceUseStatement.bodySiteCodeableConcept.coding" />
       <definition value="A reference to a code defined by a terminology system. " />
     </element>
-    <element>
+    <element id="DeviceUseStatement.bodySiteCodeableConcept.coding.system">
       <path value="DeviceUseStatement.bodySiteCodeableConcept.coding.system" />
       <min value="1" />
     </element>
-    <element>
+    <element id="DeviceUseStatement.bodySiteCodeableConcept.coding.code">
       <path value="DeviceUseStatement.bodySiteCodeableConcept.coding.code" />
       <min value="1" />
     </element>
-    <element>
+    <element id="DeviceUseStatement.whenUsed">
       <path value="DeviceUseStatement.whenUsed" />
       <short value="Time range defined by start and end date/time " />
     </element>
-    <element>
+    <element id="DeviceUseStatement.whenUsed.start">
       <path value="DeviceUseStatement.whenUsed.start" />
       <short value="StartDate" />
       <definition value="The start date of the first use or implant of the medical aid. A ‘vague’ date, such as only the year, is permitted." />
       <alias value="BeginDatum" />
     </element>
-    <element>
+    <element id="DeviceUseStatement.device">
       <path value="DeviceUseStatement.device" />
       <type>
         <code value="Reference" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalAidProduct" />
       </type>
     </element>
-    <element>
+    <element id="DeviceUseStatement.indication">
       <path value="DeviceUseStatement.indication" />
       <short value="Concept - reference to a terminology or just text" />
     </element>
-    <element>
+    <element id="DeviceUseStatement.indication.extension">
       <path value="DeviceUseStatement.indication.extension" />
       <slicing>
         <discriminator value="url" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="DeviceUseStatement.indication.extension.Indication-Problem">
       <path value="DeviceUseStatement.indication.extension" />
       <name value="Indication-Problem" />
       <short value="Indication-Probleem" />
@@ -156,7 +156,7 @@
         <map value="NL-CM:10.1.7" />
       </mapping>
     </element>
-    <element>
+    <element id="DeviceUseStatement.notes">
       <path value="DeviceUseStatement.notes" />
       <short value="Explanation" />
       <definition value="Comment about use or information on the medical aid used." />
@@ -166,7 +166,7 @@
         <map value="NL-CM:10.1.10" />
       </mapping>
     </element>
-    <element>
+    <element id="DeviceUseStatement.subject">
       <path value="DeviceUseStatement.subject" />
       <type>
         <code value="Reference" />

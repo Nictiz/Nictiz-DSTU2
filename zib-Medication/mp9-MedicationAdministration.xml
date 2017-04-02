@@ -22,29 +22,29 @@
   <abstract value="false" />
   <base value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
   <differential>
-    <element>
+    <element id="MedicationAdministration">
       <path value="MedicationAdministration" />
       <type>
         <code value="MedicationAdministration" />
       </type>
     </element>
-    <element>
+    <element id="MedicationAdministration.status">
       <path value="MedicationAdministration.status" />
       <name value="MedicatieToedieningStatus" />
       <short value="MedicatieToedieningStatus" />
     </element>
-    <element>
+    <element id="MedicationAdministration.patient">
       <path value="MedicationAdministration.patient" />
       <type>
         <code value="Reference" />
         <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
       </type>
     </element>
-    <element>
+    <element id="MedicationAdministration.practitioner">
       <path value="MedicationAdministration.practitioner" />
       <name value="Toediener" />
     </element>
-    <element>
+    <element id="MedicationAdministration.reasonNotGiven">
       <path value="MedicationAdministration.reasonNotGiven" />
       <name value="MedicatieToedieningRedenVanNietToedienen" />
       <short value="MedicatieToedieningRedenVanNietToedienen" />
@@ -57,12 +57,12 @@
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="MedicationAdministration.effectiveTime">
       <path value="MedicationAdministration.effectiveTime[x]" />
       <name value="ToedieningsDatumTijd" />
       <short value="ToedieningsDatumTijd" />
     </element>
-    <element>
+    <element id="MedicationAdministration.medicationReference">
       <path value="MedicationAdministration.medicationReference" />
       <name value="ToedieningsProduct" />
       <short value="ToedieningsProduct" />
@@ -71,16 +71,16 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-Medication" />
       </type>
     </element>
-    <element>
+    <element id="MedicationAdministration.note">
       <path value="MedicationAdministration.note" />
       <name value="Toelichting" />
       <short value="Toelichting" />
     </element>
-    <element>
+    <element id="MedicationAdministration.dosage">
       <path value="MedicationAdministration.dosage" />
       <name value="Dosering" />
     </element>
-    <element>
+    <element id="MedicationAdministration.dosage.route">
       <path value="MedicationAdministration.dosage.route" />
       <name value="Toedieningsweg" />
       <short value="Toedieningsweg" />
@@ -93,7 +93,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="MedicationAdministration.dosage.quantity">
       <path value="MedicationAdministration.dosage.quantity" />
       <name value="ToegediendeHoeveelheid" />
       <short value="ToegediendeHoeveelheid" />

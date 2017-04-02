@@ -25,20 +25,20 @@
   <context value="MedicationDispense" />
   <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <differential>
-    <element>
+    <element id="Extension">
       <path value="Extension" />
     </element>
-    <element>
+    <element id="Extension.extension">
       <path value="Extension.extension" />
       <min value="0" />
       <max value="0" />
     </element>
-    <element>
+    <element id="Extension.url">
       <path value="Extension.url" />
       <representation value="xmlAttr" />
       <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/mp9-medication-dispense-registration-date" />
     </element>
-    <element>
+    <element id="Extension.valueDateTime">
       <path value="Extension.valueDateTime" />
       <type>
         <code value="dateTime" />

@@ -23,67 +23,67 @@
   <abstract value="false" />
   <base value="http://nictiz.nl/fhir/StructureDefinition/nl-core-observation" />
   <differential>
-    <element>
+    <element id="Observation">
       <path value="Observation" />
     </element>
-    <element>
+    <element id="Observation.code">
       <path value="Observation.code" />
       <short value="code" />
     </element>
-    <element>
+    <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
       <short value="coding" />
     </element>
-    <element>
+    <element id="Observation.code.coding.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
       <fixedUri value="http://loinc.org" />
     </element>
-    <element>
+    <element id="Observation.code.coding.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
       <fixedCode value="33452-4" />
     </element>
-    <element>
+    <element id="Observation.code.coding.display">
       <path value="Observation.code.coding.display" />
       <fixedString value="Forced vital capacity [Volume] Respiratory system by Spirometry" />
     </element>
-    <element>
+    <element id="Observation.effectiveDateTime">
       <path value="Observation.effectiveDateTime" />
       <type>
         <code value="dateTime" />
       </type>
     </element>
-    <element>
+    <element id="Observation.valueRatio">
       <path value="Observation.valueRatio" />
       <min value="1" />
       <type>
         <code value="Ratio" />
       </type>
     </element>
-    <element>
+    <element id="Observation.valueRatio.numerator">
       <path value="Observation.valueRatio.numerator" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Observation.valueRatio.numerator.value">
       <path value="Observation.valueRatio.numerator.value" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Observation.valueRatio.numerator.unit">
       <path value="Observation.valueRatio.numerator.unit" />
       <min value="1" />
       <fixedString value="L" />
     </element>
-    <element>
+    <element id="Observation.valueRatio.denominator">
       <path value="Observation.valueRatio.denominator" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Observation.valueRatio.denominator.value">
       <path value="Observation.valueRatio.denominator.value" />
       <min value="1" />
       <fixedDecimal value="1" />
     </element>
-    <element>
+    <element id="Observation.valueRatio.denominator.unit">
       <path value="Observation.valueRatio.denominator.unit" />
       <min value="1" />
       <fixedString value="s" />

@@ -24,10 +24,10 @@
   <abstract value="false" />
   <base value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <differential>
-    <element>
+    <element id="Observation">
       <path value="Observation" />
     </element>
-    <element>
+    <element id="Observation.subject">
       <path value="Observation.subject" />
       <type>
         <code value="Reference" />
@@ -46,14 +46,14 @@
         <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
       </type>
     </element>
-    <element>
+    <element id="Observation.encounter">
       <path value="Observation.encounter" />
       <type>
         <code value="Reference" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Contact" />
       </type>
     </element>
-    <element>
+    <element id="Observation.performer">
       <path value="Observation.performer" />
       <type>
         <code value="Reference" />

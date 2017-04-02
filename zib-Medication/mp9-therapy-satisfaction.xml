@@ -25,21 +25,21 @@
   <context value="MedicationStatement" />
   <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <differential>
-    <element>
+    <element id="Extension">
       <path value="Extension" />
       <short value="medication treatment experience " />
     </element>
-    <element>
+    <element id="Extension.extension">
       <path value="Extension.extension" />
       <min value="0" />
       <max value="0" />
     </element>
-    <element>
+    <element id="Extension.url">
       <path value="Extension.url" />
       <representation value="xmlAttr" />
       <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/mp9-therapy-satisfaction" />
     </element>
-    <element>
+    <element id="Extension.valueString">
       <path value="Extension.valueString" />
       <type>
         <code value="string" />

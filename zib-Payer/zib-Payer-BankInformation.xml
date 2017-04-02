@@ -32,27 +32,27 @@
   <context value="Patient" />
   <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <differential>
-    <element>
+    <element id="Extension">
       <path value="Extension" />
     </element>
-    <element>
+    <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
         <discriminator value="url" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="Extension.extension.BankName">
       <path value="Extension.extension" />
       <name value="BankName" />
       <min value="0" />
       <max value="1" />
     </element>
-    <element>
+    <element id="Extension.extension.BankName.url">
       <path value="Extension.extension.url" />
       <fixedUri value="BankName" />
     </element>
-    <element>
+    <element id="Extension.extension.BankName.valueString">
       <path value="Extension.extension.valueString" />
       <short value="BankName" />
       <definition value="Name of the financial organization." />
@@ -65,17 +65,17 @@
         <map value="NL-CM:1.1.9" />
       </mapping>
     </element>
-    <element>
+    <element id="Extension.extension.AccountNumber">
       <path value="Extension.extension" />
       <name value="AccountNumber" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element>
+    <element id="Extension.extension.AccountNumber.url">
       <path value="Extension.extension.url" />
       <fixedUri value="AccountNumber" />
     </element>
-    <element>
+    <element id="Extension.extension.AccountNumber.valueString">
       <path value="Extension.extension.valueString" />
       <short value="AccountNumber" />
       <definition value="The payer’s bank account number at the listed organization. For European countries, this is the IBAN." />
@@ -88,15 +88,15 @@
         <map value=" NL-CM:1.1.11" />
       </mapping>
     </element>
-    <element>
+    <element id="Extension.extension.BankCode">
       <path value="Extension.extension" />
-      <name value="Bankcode " />
+      <name value="BankCode" />
     </element>
-    <element>
+    <element id="Extension.extension.BankCode.url">
       <path value="Extension.extension.url" />
       <fixedUri value="Bankcode " />
     </element>
-    <element>
+    <element id="Extension.extension.BankCode.valueString">
       <path value="Extension.extension.valueString" />
       <short value="BankCode" />
       <definition value="Code indicating the bank and branch. For European countries, this is the organization’s BIC or SWIFT code." />
@@ -109,11 +109,11 @@
         <map value=" NL-CM:1.1.10" />
       </mapping>
     </element>
-    <element>
+    <element id="Extension.BankInformation.url">
       <path value="Extension.url" />
       <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/zib-BetalerBankgegevens" />
     </element>
-    <element>
+    <element id="Extension.value">
       <path value="Extension.value[x]" />
       <max value="0" />
     </element>

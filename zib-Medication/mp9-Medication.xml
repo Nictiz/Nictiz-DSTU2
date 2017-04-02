@@ -23,20 +23,20 @@
   <abstract value="false" />
   <base value="http://hl7.org/fhir/StructureDefinition/Medication" />
   <differential>
-    <element>
+    <element id="Medication">
       <path value="Medication" />
       <type>
         <code value="Medication" />
       </type>
     </element>
-    <element>
+    <element id="Medication.extension">
       <path value="Medication.extension" />
       <slicing>
         <discriminator value="url" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="Medication.extension.description">
       <path value="Medication.extension" />
       <name value="description" />
       <short value="Omschrijving" />
@@ -47,11 +47,11 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-medication-description" />
       </type>
     </element>
-    <element>
+    <element id="Medication.code">
       <path value="Medication.code" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Medication.code.coding">
       <path value="Medication.code.coding" />
       <slicing>
         <discriminator value="system" />
@@ -59,7 +59,7 @@
       </slicing>
       <min value="1" />
     </element>
-    <element>
+    <element id="Medication.code.coding.GPK">
       <path value="Medication.code.coding" />
       <name value="G-Standaard GPK" />
       <max value="1" />
@@ -67,12 +67,12 @@
         <strength value="required" />
         <description value="VoorschriftProductGPKCodelijst" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.8--2015-04-01T00:00:00" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.8--20150401000000" />
           <display value="VoorschriftProductGPKCodelijst" />
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Medication.code.coding.HPK">
       <path value="Medication.code.coding" />
       <name value="G-Standaard HPK " />
       <max value="1" />
@@ -80,12 +80,12 @@
         <strength value="required" />
         <description value="VoorschriftProductHPKCodelijst " />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.9--2015-04-01T00:00:00" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.9--20150401000000" />
           <display value="VoorschriftProductHPKCodelijst" />
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Medication.code.coding.ZI">
       <path value="Medication.code.coding" />
       <name value="VoorschriftProductZICodelijst " />
       <max value="1" />
@@ -93,12 +93,12 @@
         <strength value="required" />
         <description value="VoorschriftProductZICodelijst " />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.13--2015-04-01T00:00:00" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.13--20150401000000" />
           <display value="VoorschriftProductZICodelijst" />
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Medication.code.coding.ATC">
       <path value="Medication.code.coding" />
       <name value="WHO ATC" />
       <max value="1" />
@@ -106,12 +106,12 @@
         <strength value="required" />
         <description value="VoorschriftProductATCCodelijst" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.20--2015-04-01T00:00:00" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.20--20150401000000" />
           <display value="VoorschriftProductATCCodelijst" />
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Medication.code.coding.PRK">
       <path value="Medication.code.coding" />
       <name value="VoorschriftProductPRKCodelijst" />
       <max value="1" />
@@ -119,12 +119,12 @@
         <strength value="required" />
         <description value="VoorschriftProductPRKCodelijst" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.10--2015-04-01T00:00:00" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.10--20150401000000" />
           <display value="VoorschriftProductPRKCodelijst" />
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Medication.code.coding.GTIN">
       <path value="Medication.code.coding" />
       <name value="VoorschriftProductGTINCodelijst " />
       <max value="1" />
@@ -132,20 +132,20 @@
         <strength value="required" />
         <description value="VoorschriftProductGTINCodelijst " />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.11--2015-04-01T00:00:00" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.11--20150401000000" />
           <display value="VoorschriftProductGTINCodelijst" />
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Medication.code.text">
       <path value="Medication.code.text" />
       <name value="ProductNaam" />
     </element>
-    <element>
+    <element id="Medication.product">
       <path value="Medication.product" />
       <name value="Product" />
     </element>
-    <element>
+    <element id="Medication.product.form">
       <path value="Medication.product.form" />
       <name value="FarmaceutischeVorm" />
       <short value="FarmaceutischeVorm" />
@@ -153,24 +153,24 @@
         <strength value="required" />
         <description value="FarmaceutischeVormCodelijst" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.7--2015-04-01T00:00:00" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.7--20150401000000" />
           <display value="FarmaceutischeVormCodelijst" />
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Medication.product.ingredient">
       <path value="Medication.product.ingredient" />
       <name value="Ingredient" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Medication.product.ingredient.item">
       <path value="Medication.product.ingredient.item" />
       <type>
         <code value="Reference" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-ingredient" />
       </type>
     </element>
-    <element>
+    <element id="Medication.product.ingredient.amount">
       <path value="Medication.product.ingredient.amount" />
       <name value="Sterkte" />
       <short value=" Hoeveelheid ingrediënt" />

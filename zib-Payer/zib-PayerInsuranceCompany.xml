@@ -28,28 +28,28 @@
   <abstract value="false" />
   <base value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization" />
   <differential>
-    <element>
+    <element id="Organization">
       <path value="Organization" />
       <name value="HealthcareProvider" />
     </element>
-    <element>
+    <element id="Organization.identifier">
       <path value="Organization.identifier" />
       <name value="UZOVI" />
       <short value="IdentificationNumber" />
       <definition value="Unique healthcare insurance company identification (the UZOVI number)." />
       <alias value="IdentificationNumber" />
     </element>
-    <element>
+    <element id="Organization.identifier.system">
       <path value="Organization.identifier.system" />
       <min value="1" />
       <fixedUri value="urn:oid:2.16.840.1.113883.2.4.6.4" />
     </element>
-    <element>
+    <element id="Organization.identifier.value">
       <path value="Organization.identifier.value" />
       <short value="UZOVI" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Organization.name">
       <path value="Organization.name" />
       <short value="OrganizationName" />
       <definition value="Full, official name of the healthcare insurance company. If the UZOVI number is entered as an identification number, this will be the name as listed in the UZOVI register and the name which is returned in the Check for Right to Insurance (COV)." />

@@ -32,19 +32,19 @@
   <context value="Immunization" />
   <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <differential>
-    <element>
+    <element id="Extension">
       <path value="Extension" />
     </element>
-    <element>
+    <element id="Extension.extension">
       <path value="Extension.extension" />
       <min value="0" />
       <max value="0" />
     </element>
-    <element>
+    <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/zib-Vaccination-DesiredDateForRevaccination" />
     </element>
-    <element>
+    <element id="Extension.valueDateTime">
       <path value="Extension.valueDateTime" />
       <short value="DesiredDateForRevaccination" />
       <definition value="Date on which this vaccination will have to be repeated according to the author’s information." />

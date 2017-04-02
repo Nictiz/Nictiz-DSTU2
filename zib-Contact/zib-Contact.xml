@@ -36,7 +36,7 @@
   <abstract value="false" />
   <base value="http://hl7.org/fhir/StructureDefinition/Encounter" />
   <differential>
-    <element>
+    <element id="Encounter">
       <path value="Encounter" />
       <constraint>
         <key value="cbb-contact-1" />
@@ -46,7 +46,7 @@
       </constraint>
     </element>
     <!-- Had mapping problems between ambulatory vs outpatient, solved in STU3 -->
-    <element>
+    <element id="Encounter.class">
       <path value="Encounter.class" />
       <short value="ContactType" />
       <definition value="The type of contact." />
@@ -57,7 +57,7 @@
         <map value="NL-CM:15.1.2" />
       </mapping>
     </element>    
-    <element>
+    <element id="Encounter.patient">
       <path value="Encounter.patient" />
       <min value="1" />
       <type>
@@ -65,11 +65,11 @@
         <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
       </type>
     </element>
-    <element>
+    <element id="Encounter.participant">
       <path value="Encounter.participant" />
       <short value="Participant" />
     </element>
-    <element>
+    <element id="Encounter.participant.individual">
       <path value="Encounter.participant.individual" />
       <short value="ContactWith::HealthcareProvider" />
       <definition value="The healthcare provider with whom the contact took place. The specialty and role of the healthcare provider can be entered in the HealthcareProvider information model as well." />
@@ -87,11 +87,11 @@
         <map value="NL-CM:15.1.7" />
       </mapping>
     </element>
-    <element>
+    <element id="Encounter.period">
       <path value="Encounter.period" />
       <short value="Period" />
     </element>
-    <element>
+    <element id="Encounter.period.start">
       <path value="Encounter.period.start" />
       <short value="StartDateTime" />
       <definition value=" The date and time at which the contact took place." />
@@ -102,7 +102,7 @@
         <map value=" NL-CM:15.1.3" />
       </mapping>
     </element>
-    <element>
+    <element id="Encounter.period.end">
       <path value="Encounter.period.end" />
       <short value="EndDateTime" />
       <definition value="The date and time at which the contact ended. If the contact takes place over a period of time, this indicates the end of the period, in the case of an admission, for example.&#xD;&#xA;&#xD;&#xA;If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time." />
@@ -112,12 +112,12 @@
         <map value="NL-CM:15.1.4" />
       </mapping>
     </element>
-    <element>
+    <element id="Encounter.reason">
       <path value="Encounter.reason" />
       <short value="DeviatingResult" />
       <definition value="A deviating result which serves as the reason for the contact." />
     </element>
-    <element>
+    <element id="Encounter.reason.text">
       <path value="Encounter.reason.text" />
       <short value="Textual representation of the DeviatingResult" />
       <definition value="A deviating result which serves as the reason for the contact." />
@@ -127,7 +127,7 @@
         <map value="NL-CM:15.1.12" />
       </mapping>
     </element>
-    <element>
+    <element id="Encounter.indication">
       <path value="Encounter.indication" />
       <short value="ContactReason" />
       <definition value="The problem that led to the contact or the procedure carried out during the contact.&#xD;&#xA;&#xD;&#xA;Reason the encounter takes place, as specified using information from another resource. For admissions, this is the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure." />
@@ -146,7 +146,7 @@
         <map value="NL-CM:15.1.6" />
       </mapping>
     </element>
-    <element>
+    <element id="Encounter.serviceProvider">
       <path value="Encounter.serviceProvider" />
       <short value="Location::HealthcareProvider" />
       <definition value="The physical location at which the contact took place." />

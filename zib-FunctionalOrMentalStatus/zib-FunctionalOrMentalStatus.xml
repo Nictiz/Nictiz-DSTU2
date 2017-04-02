@@ -36,17 +36,17 @@
   <abstract value="false" />
   <base value="http://nictiz.nl/fhir/StructureDefinition/nl-core-observation" />
   <differential>
-    <element>
+    <element id="Observation">
       <path value="Observation" />
     </element>
-    <element>
+    <element id="Observation.extension">
       <path value="Observation.extension" />
       <slicing>
         <discriminator value="url" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="Observation.extension.MedicalAid">
       <path value="Observation.extension" />
       <name value="MedicalAid" />
       <short value="MedicalAid" />
@@ -61,7 +61,7 @@
         <map value="NL-CM:4.26.5" />
       </mapping>
     </element>
-    <element>
+    <element id="Observation.code">
       <path value="Observation.code" />
       <short value="StatusName" />
       <definition value="Coded description of the functional or mental status or limitation.&#13;&#10;&#13;&#10;Code systems used include:&#13;&#10;SNOMED CT&#13;&#10;ICF (International Classification of Functioning, Disability and Health)&#13;&#10;NOC (Nursing Outcomes Classification)&#13;&#10;OMAHA" />
@@ -71,14 +71,14 @@
         <map value=" NL-CM:4.26.2" />
       </mapping>
     </element>
-    <element>
+    <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
       <slicing>
         <discriminator value="system" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="Observation.code.coding.OMAHA">
       <path value="Observation.code.coding" />
       <name value="StatusNaamOMAHACodelijst" />
       <max value="1" />
@@ -91,7 +91,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Observation.code.coding.NOC">
       <path value="Observation.code.coding" />
       <name value="StatusNaamNOCCodelijst" />
       <max value="1" />
@@ -104,7 +104,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Observation.code.coding.ICF">
       <path value="Observation.code.coding" />
       <name value="StatusNaamICFCodelijst" />
       <max value="1" />
@@ -117,7 +117,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Observation.code.coding.SNOMED">
       <path value="Observation.code.coding" />
       <name value="StatusNaamSnomedCodelijst" />
       <max value="1" />
@@ -130,7 +130,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Observation.effectiveDateTime">
       <path value="Observation.effectiveDateTime" />
       <short value="StatusDate" />
       <definition value="Date on which the status was determined. A ‘vague’ date, such as only the year, is permitted." />
@@ -143,7 +143,7 @@
         <map value="NL-CM:4.26.6" />
       </mapping>
     </element>
-    <element>
+    <element id="Observation.valueCodeableConcept">
       <path value="Observation.valueCodeableConcept" />
       <short value="StatusValue" />
       <definition value="The extent to which the patient is limited by the functional or mental condition.&#13;&#10;If both the status name and the status value are recorded in code, then both values must come from the same code system. If the patient uses a medical aid, the evaluation of the extent of the limitation will take place without this aid." />
@@ -156,14 +156,14 @@
         <map value="NL-CM:4.26.3" />
       </mapping>
     </element>
-    <element>
+    <element id="Observation.valueCodeableConcept.coding">
       <path value="Observation.valueCodeableConcept.coding" />
       <slicing>
         <discriminator value="system" />
         <rules value="open" />
       </slicing>
     </element>
-    <element>
+    <element id="Observation.valueCodeableConcept.coding.OMAHA">
       <path value="Observation.valueCodeableConcept.coding" />
       <name value="StatusWaardeOMAHACodelijst" />
       <max value="1" />
@@ -176,7 +176,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Observation.valueCodeableConcept.coding.NOC">
       <path value="Observation.valueCodeableConcept.coding" />
       <name value="StatusWaardeNOCCodelijst" />
       <max value="1" />
@@ -189,7 +189,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Observation.valueCodeableConcept.coding.ICF">
       <path value="Observation.valueCodeableConcept.coding" />
       <name value="StatusWaardeICFCodelijst" />
       <max value="1" />
@@ -202,7 +202,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Observation.valueCodeableConcept.coding.SNOMED">
       <path value="Observation.valueCodeableConcept.coding" />
       <name value="StatusWaardeSnomedCodelijst" />
       <max value="1" />
@@ -215,7 +215,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element>
+    <element id="Observation.comments">
       <path value="Observation.comments" />
       <short value="Explanation" />
       <definition value="Explanatory comments as a description of the functional or mental status." />

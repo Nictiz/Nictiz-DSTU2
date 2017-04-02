@@ -33,7 +33,7 @@
       <short value="Provides the specific CBB code for a FHIR element that has a required binding to a FHIR ValueSet" />
       <definition value="Defines a more specific value to a code. Especially useful for FHIR's required ValueSets. These extensions are primarily used on codes bound to a required value set, where you would like to use a more specific code than the codes in the bounded value set." />
     </element>
-    <element>
+    <element id="Extension.extension">
       <path value="Extension.extension" />
       <min value="0" />
       <max value="0" />
