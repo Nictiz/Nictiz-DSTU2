@@ -162,28 +162,24 @@
       <path value="Observation.component.code.coding.display" />
       <fixedString value="Alcohol intake" />
     </element>
-    <element id="Observation.component.Amount.valueRatio">
-      <path value="Observation.component.valueRatio" />
+    <element id="Observation.component.Amount.valueQuantity">
+      <path value="Observation.component.valueQuantity" />
       <short value="Amount" />
-      <definition value="The extent of the patient’s alcohol use in units of alcohol per time period." />
+      <definition value="The extent of the patient’s alcohol use in units of alcohol per time period defined in UCUM {glasses}/wk where wk (week) may be any reasonable time unit like d (day), wk (week), mo (month) or a (annum/year)" />
       <alias value="Hoeveelheid" />
       <type>
-        <code value="Ratio" />
+        <code value="Quantity" />
       </type>
+      <exampleQuantity>
+        <value value="1"/>
+        <unit value="glasses/week"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{glasses}/wk"/>
+      </exampleQuantity>
       <mapping>
         <identity value="zib-alcoholgebruik" />
         <map value="NL-CM:7.3.6" />
       </mapping>
-    </element>
-    <element id="Observation.component.Amount.valueRatio.numerator">
-      <path value="Observation.component.valueRatio.numerator" />
-      <short value="UnitOfTime" />
-      <definition value="The value of the numerator." />
-    </element>
-    <element id="Observation.component.Amount.valueRatio.denominator">
-      <path value="Observation.component.valueRatio.denominator" />
-      <short value="UnitOfTime" />
-      <definition value="The value of the denominator." />
     </element>
   </differential>
 </StructureDefinition>
