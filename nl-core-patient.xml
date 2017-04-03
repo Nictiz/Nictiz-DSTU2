@@ -65,6 +65,56 @@
         <map value="NL-CM:0.1.1" />
       </mapping>
     </element>
+    <element>
+      <path value="Patient.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="Nationality" />
+      <alias value="Nationaliteit" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/patient-nationality" />
+      </type>
+      <mapping>
+        <identity value="zib-nationaliteit" />
+        <map value="NL-CM:7.6.1" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.extension.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Patient.extension.extension" />
+      <name value="code" />
+      <binding>
+        <strength value="extensible" />
+        <description value="Indicates the country of citizenship." />
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.6.3--20150401000000" />
+          <display value="NationaliteitCodelijst" />
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="zib-nationaliteit" />
+        <map value="NL-CM:7.6.3" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.identifier" />
+      <slicing>
+        <discriminator value="system" />
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
       <slicing>
