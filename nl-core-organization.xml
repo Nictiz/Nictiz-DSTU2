@@ -155,85 +155,43 @@
     </element>
     <element id="Organization.telecom">
       <path value="Organization.telecom" />
-      <slicing>
-        <discriminator value="system" />
-        <rules value="open" />
-      </slicing>
-      <short value="A contact detail for the organization" />
-    </element>
-    <element id="Organization.telecom.Phone">
-      <path value="Organization.telecom" />
-      <name value="TelephoneNumbers" />
-      <short value="TelephoneNumbers" />
-      <alias value="Contactgegevens" />
-      <alias value="Telefoonnummers" />
+      <short value="ContactInformation"/>
+      <alias value="Contactgegevens"/>
       <mapping>
         <identity value="zib-zorgaanbieder" />
         <map value="NL-CM:17.2.6" />
-      </mapping>
+      </mapping>     
       <mapping>
         <identity value="zib-patient" />
-        <map value="NL-CM:0.1.21" />
+        <map value="NL-CM:0.1.5" />
       </mapping>
     </element>
-    <element id="Organization.telecom.Phone.system">
+    <element id="Organization.telecom.Phone">
       <path value="Organization.telecom.system" />
-      <fixedCode value="phone" />
+      <min value="1" />
     </element>
-    <element id="Organization.telecom.Phone.value">
+    <element id="Organization.telecom.value">
       <path value="Organization.telecom.value" />
-      <name value="TelephoneNumber" />
-      <short value="TelephoneNumber" />
       <alias value="Telefoonnummer" />
+      <alias value="EmailAdres" />
+      <min value="1" />
       <mapping>
         <identity value="zib-patient" />
         <map value="NL-CM:0.1.23" />
       </mapping>
-    </element>
-    <element id="Organization.telecom.Phone.use">
-      <path value="Organization.telecom.use" />
-      <name value="NumberType" />
-      <short value="NumberType" />
-      <alias value="NummerSoort" />
-      <mapping>
-        <identity value="zib-patient" />
-        <map value="NL-CM:0.1.22" />
-      </mapping>
-    </element>
-    <element id="Organization.telecom.Email">
-      <path value="Organization.telecom" />
-      <name value="EmailAddresses" />
-      <short value="EmailAddresses" />
-      <alias value="Contactgegevens" />
-      <alias value="E-mailadressen" />
-      <mapping>
-        <identity value="zib-zorgaanbieder" />
-        <map value="NL-CM:17.2.6" />
-      </mapping>
-      <mapping>
-        <identity value="zib-patient" />
-        <map value="NL-CM:0.1.18" />
-      </mapping>
-    </element>
-    <element id="Organization.telecom.Email.system">
-      <path value="Organization.telecom.system" />
-      <fixedCode value="email" />
-    </element>
-    <element id="Organization.telecom.Email.use">
-      <path value="Organization.telecom.use"/>
-      <name value="EmailAddress" />
-      <short value="EmailAddress" />
-      <alias value="E-mailadres" />
       <mapping>
         <identity value="zib-patient" />
         <map value="NL-CM:0.1.20" />
       </mapping>
     </element>
-    <element id="Organization.telecom.Email.use">
+    <element id="Organization.telecom.use">
       <path value="Organization.telecom.use" />
-      <name value="EmailType" />
-      <short value="EmailType" />
-      <alias value="Emailsoort" />
+      <alias value="NummerSoort" />
+      <alias value="EmailSoort" />
+      <mapping>
+        <identity value="zib-patient" />
+        <map value="NL-CM:0.1.22" />
+      </mapping>
       <mapping>
         <identity value="zib-patient" />
         <map value="NL-CM:0.1.19" />
