@@ -418,5 +418,12 @@
         <map value="NL-CM:17.1.1" />
       </mapping>
     </element>
+    <element>
+      <path value="Patient.managingOrganization"/>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization"/>
+      </type>
+    </element>
   </differential>
 </StructureDefinition>
