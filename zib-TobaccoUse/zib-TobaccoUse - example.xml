@@ -27,7 +27,7 @@
                         <td>Occasional cigarette smoker</td>
                         <td>2002-04-08</td>
                         <td>2004-02-01</td>
-                        <td>5 packs per week</td>
+                        <td>20 sigarettes per day</td>
                         <td>3</td>
                         <td>Tries to stop. Partner smokes as well.</td>
                     </tr>
@@ -83,7 +83,6 @@
             </coding>
         </valueCodeableConcept>
     </component>
-    <!-- Dutch: Hoeveelheid -->
     <component>
         <code>
             <coding>
@@ -92,19 +91,12 @@
                 <display value="Tobacco smoking consumption"/>
             </coding>
         </code>
-        <valueRatio>
-            <numerator>
-                <value value="5"/>
-                <!-- For review: is this unit allowed? -->
-                <unit value="cigarette packs"/>
-            </numerator>
-            <denominator>
-                <value value="1"/>
-                <unit value="week"/>
-                <system value="http://unitsofmeasure.org"/>
-                <code value="WK"/>
-            </denominator>
-        </valueRatio>
+        <valueQuantity>
+            <value value="20"/>
+            <unit value="sigarettes/day"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="{sigarettes}/d"/>
+        </valueQuantity>
     </component>
     <component>
         <code>

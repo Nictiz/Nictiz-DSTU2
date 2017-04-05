@@ -200,23 +200,24 @@
       <path value="Observation.component.code.coding.display" />
       <fixedString value="Tobacco smoking consumption" />
     </element>
-    <element id="Observation.component.Amount.valueRatio">
-      <path value="Observation.component.valueRatio" />
+    <element id="Observation.component.Amount.valueQuantity">
+      <path value="Observation.component.valueQuantity" />
       <short value="TobaccoQuantity" />
       <definition value="The number of cigarettes, cigars or grams of rolling tobacco consumed per day, week, month or year." />
       <alias value="Hoeveelheid" />
       <type>
-        <code value="Ratio" />
+        <code value="valueQuantity" />
       </type>
+      <exampleQuantity>
+        <value value="20"/>
+        <unit value="sigarettes/day"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{sigarettes}/d"/>
+      </exampleQuantity>
       <mapping>
         <identity value="zib-tabakgebruik" />
         <map value="NL-CM:7.2.6" />
       </mapping>
-    </element>
-    <element id="Observation.component.Amount.valueRatio.denominator">
-      <path value="Observation.component.valueRatio.denominator" />
-      <short value="UnitOfTime" />
-      <alias value="TijdsEenheid" />
     </element>
     <element id="Observation.component.PackYears">
       <path value="Observation.component" />

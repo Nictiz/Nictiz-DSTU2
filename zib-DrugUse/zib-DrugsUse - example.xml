@@ -28,7 +28,7 @@
                         <td>2005-04-08</td>
                         <td>2006-02-01</td>
                         <td>NASAAL, ORAAL</td>
-                        <td>50mg per week</td>
+                        <td>2 gram  per week</td>
                         <td>Used drugs only during parties and nightlife.</td>
                     </tr>
                 </tbody>
@@ -121,20 +121,12 @@
                 <display value="Frequency of drug misuse"/>
             </coding>
         </code>
-        <valueRatio>
-            <numerator>
-                <value value="50"/>
-                <unit value="mg"/>
+        <valueQuantity>
+                <value value="2"/>
+                <unit value="gram/week"/>
                 <system value="http://unitsofmeasure.org"/>
-                <code value="mg"/>
-            </numerator>
-            <denominator>
-                <value value="1"/>
-                <unit value="week"/>
-                <system value="http://unitsofmeasure.org"/>
-                <code value="WK"/>
-            </denominator>
-        </valueRatio>
+                <code value="g/wk"/>
+        </valueQuantity>
     </component>
 </Observation>
 
