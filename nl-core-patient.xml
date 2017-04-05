@@ -347,7 +347,7 @@
         <map value="NL-CM:3.1.4" />
       </mapping>
     </element>
-    <element>
+    <element id="Patient.contact.telecom">
       <path value="Patient.contact.telecom" />
       <short value="ContactInformation"/>
       <alias value="Contactgegevens"/>
@@ -356,11 +356,11 @@
         <map value="NL-CM:0.1.5" />
       </mapping>
     </element>
-    <element>
+    <element id="Patient.contact.telecom.system">
       <path value="Patient.contact.telecom.system" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Patient.contact.telecom.value">
       <path value="Patient.contact.telecom.value" />
       <alias value="Telefoonnummer" />
       <alias value="EmailAdres" />
@@ -374,7 +374,7 @@
         <map value="NL-CM:0.1.20" />
       </mapping>
     </element>
-    <element>
+    <element id="Patient.contact.telecom.use">
       <path value="Patient.contact.telecom.use" />
       <alias value="NummerSoort" />
       <alias value="EmailSoort" />
