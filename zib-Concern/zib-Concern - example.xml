@@ -50,7 +50,7 @@
         </coding>
     </category>
     <clinicalStatus value="55561003">
-        <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-Concern-ProblemStatusDate">
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-Concern-clinicalStatusDate">
             <valueDateTime value="2012-11-15"/>
         </extension>
     </clinicalStatus>

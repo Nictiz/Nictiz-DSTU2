@@ -29,9 +29,6 @@
             </table>
         </div>
     </text>
-    <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-Concern-ProblemStatusDate">
-        <valueDateTime value="2012-09-10"/>
-    </extension>    
     <patient>
         <reference value="Patient/example"/>
         <display value="Jongeneel-de Haas"/>
@@ -51,7 +48,7 @@
         </coding>
     </category>
     <clinicalStatus value="413322009">
-        <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-Concern-ProblemStatusDate">
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-Concern-clinicalStatusDate">
             <valueDateTime value="2012-09-10"/>
         </extension>
     </clinicalStatus>
