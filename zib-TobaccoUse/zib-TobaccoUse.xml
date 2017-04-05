@@ -1,4 +1,5 @@
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/DSTU2/structuredefinition.xsd" xmlns="http://hl7.org/fhir">
   <id value="28f2e632-8290-42e4-aac7-470a6f28ae92" />
   <meta>
     <versionId value="1" />
@@ -206,7 +207,7 @@
       <definition value="The number of cigarettes, cigars or grams of rolling tobacco consumed per day, week, month or year." />
       <alias value="Hoeveelheid" />
       <type>
-        <code value="valueQuantity" />
+        <code value="Quantity" />
       </type>
       <exampleQuantity>
         <value value="20"/>
