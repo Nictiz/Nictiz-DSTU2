@@ -145,7 +145,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-partners-prefix" />
       </type>
     </element>
     <element id="HumanName.family.extension.PartnerName">
@@ -157,7 +157,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-partner-name" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-partners-name" />
       </type>
     </element>
     <element id="HumanName.given">
