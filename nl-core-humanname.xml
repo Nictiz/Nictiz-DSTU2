@@ -42,10 +42,10 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
             <valueString value="Jongeneel" />
           </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partners-prefix">
+          <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix">
             <valueString value="de" />
           </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partners-name">
+          <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-name">
             <valueString value="Haas" />
           </extension>
         </family>
@@ -70,7 +70,7 @@
         <key value="nl-core-humanname-2" />
         <severity value="error" />
         <human value="if you specify a voorvoegsel for a partner name then a partner name is also expected" />
-        <xpath value="not(f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-partners-prefix']) or f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-partners-name']" />
+        <xpath value="not(f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix']) or f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-partner-name']" />
       </constraint>
       <mapping>
         <identity value="zib-name" />
@@ -145,7 +145,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-partners-prefix" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix" />
       </type>
     </element>
     <element id="HumanName.family.extension.PartnerName">
@@ -157,7 +157,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-partners-name" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-partner-name" />
       </type>
     </element>
     <element id="HumanName.given">
