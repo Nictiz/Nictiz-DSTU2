@@ -123,87 +123,43 @@
     </element>
     <element id="Practitioner.telecom">
       <path value="Practitioner.telecom" />
-      <slicing>
-        <discriminator value="system" />
-        <rules value="open" />
-      </slicing>
-      <short value="ContactDetails" />
-      <alias value="Contactgegevens" />
+      <short value="ContactInformation"/>
+      <alias value="Contactgegevens"/>
       <mapping>
         <identity value="zib-zorgaanbieder" />
         <map value="NL-CM:17.1.8" />
       </mapping>
-    </element>
-    <element id="Practitioner.telecom.Phone">
-      <path value="Practitioner.telecom" />
-      <name value="TelephoneNumbers" />
-      <short value="TelephoneNumbers" />
-      <alias value="Telefoonnummers" />
       <mapping>
         <identity value="zib-patient" />
-        <map value="NL-CM:0.1.21" />
+        <map value="NL-CM:0.1.5" />
       </mapping>
     </element>
-    <element id="Practitioner.telecom.Phone.system">
+    <element id="Practitioner.telecom.Phone">
       <path value="Practitioner.telecom.system" />
-      <type>
-        <code value="code" />
-      </type>
-      <fixedCode value="phone" />
+      <min value="1" />
     </element>
-    <element id="Practitioner.telecom.Phone.value">
+    <element id="Practitioner.telecom.value">
       <path value="Practitioner.telecom.value" />
-      <name value="TelephoneNumber" />
-      <short value="TelephoneNumber" />
       <alias value="Telefoonnummer" />
+      <alias value="EmailAdres" />
+      <min value="1" />
       <mapping>
         <identity value="zib-patient" />
         <map value="NL-CM:0.1.23" />
       </mapping>
-    </element>
-    <element id="Practitioner.telecom.Phone.use">
-      <path value="Practitioner.telecom.use" />
-      <name value="NumberType" />
-      <short value="NumberType" />
-      <alias value="Nummersoort" />
-      <mapping>
-        <identity value="zib-patient" />
-        <map value="NL-CM:0.1.22" />
-      </mapping>
-    </element>
-    <element id="Practitioner.telecom.Email">
-      <path value="Practitioner.telecom" />
-      <name value="EmailAddresses" />
-      <short value="EmailAddresses" />
-      <alias value="E-mailadressen" />
-      <mapping>
-        <identity value="zib-patient" />
-        <map value="NL-CM:0.1.18" />
-      </mapping>
-    </element>
-    <element id="Practitioner.telecom.Email.system">
-      <path value="Practitioner.telecom.system" />
-      <type>
-        <code value="code" />
-      </type>
-      <fixedCode value="email" />
-    </element>
-    <element id="Practitioner.telecom.Email.value">
-      <path value="Practitioner.telecom.value" />
-      <name value="EmailAddress" />
-      <short value="EmailAddress" />
-      <definition value="The actual email address of the patient" />
-      <alias value="E-mailadres" />
       <mapping>
         <identity value="zib-patient" />
         <map value="NL-CM:0.1.20" />
       </mapping>
     </element>
-    <element id="Practitioner.telecom.Email.use">
+    <element id="Practitioner.telecom.use">
       <path value="Practitioner.telecom.use" />
-      <name value="EmailType" />
-      <short value="EmailType" />
-      <alias value="E-mailSoort" />
+      <alias value="NummerSoort" />
+      <alias value="EmailSoort" />
+      <mapping>
+        <identity value="zib-patient" />
+        <map value="NL-CM:0.1.22" />
+      </mapping>
       <mapping>
         <identity value="zib-patient" />
         <map value="NL-CM:0.1.19" />
@@ -245,8 +201,8 @@
       <binding>
         <strength value="extensible" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.2--20150401000000" />
-          <display value="RolCodelijst" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.1.5--20150401000000" />
+          <display value="ZorgverlenerRolCodelijst" />
         </valueSetReference>
       </binding>
       <mapping>
