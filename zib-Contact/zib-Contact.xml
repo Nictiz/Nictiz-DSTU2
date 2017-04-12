@@ -3,7 +3,7 @@
   <id value="32233286-e536-479d-8d8e-91d508cd2c77" />
   <meta>
     <versionId value="4" />
-    <lastUpdated value="2017-03-29T11:47:30.832+02:00" />
+    <lastUpdated value="2017-04-12T11:41:29.623+02:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -44,6 +44,10 @@
         <human value="There is either a textual representation of the encounter reason or reference to a condition or procedure that indicated the encounter" />
         <xpath value="not(exists(f:reason.text)) or not(exists(f:indication))" />
       </constraint>
+      <mapping>
+        <identity value="zib-contact" />
+        <map value="NL-CM:15.1.1" />
+      </mapping>
     </element>
     <!-- Had mapping problems between ambulatory vs outpatient, solved in STU3 -->
     <element id="Encounter.class">
@@ -144,6 +148,10 @@
       <mapping>
         <identity value="zib-contact" />
         <map value="NL-CM:15.1.6" />
+      </mapping>
+      <mapping>
+        <identity value="zib-contact" />
+        <map value="NL-CM:15.1.11" />
       </mapping>
     </element>
     <element id="Encounter.serviceProvider">
