@@ -26,7 +26,7 @@
                         <td>Inpatient</td>
                         <td>16-08-2012</td>
                         <td>19-08-2012</td>
-                        <td>Broken leg operation</td>
+                        <td>Operation on bone injury of femur</td>
                         <td>G.Z.M. de Wit</td>
                         <td>Hospital</td>
                         <td>St. Lucas Andreas Ziekenhuis</td>
@@ -53,7 +53,7 @@
     </period>
     <indication>
         <reference value="Procedure/example"/>
-        <display value="Operatie been"/>
+        <display value="Operation on bone injury of femur"/>
     </indication>
     <serviceProvider>
         <reference value="Organization/example"/>
