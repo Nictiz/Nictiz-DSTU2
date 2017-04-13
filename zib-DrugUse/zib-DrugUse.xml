@@ -239,22 +239,24 @@
       <path value="Observation.component.code.coding.display" />
       <fixedString value="Frequency of drug misuse" />
     </element>
-    <element id="Observation.component.Amount.valueRatio">
-      <path value="Observation.component.valueRatio" />
+    <element id="Observation.component.Amount.valueQuantity">
+      <path value="Observation.component.valueQuantity" />
       <short value="Amount" />
       <definition value="The number of units (pills, joints, shots etc.) per day, week, month or year or the frequency of use." />
       <alias value="Hoeveelheid" />
       <type>
-        <code value="Ratio" />
+        <code value="Quantity" />
       </type>
+      <exampleQuantity>
+        <value value="5"/>
+        <unit value="pills/week"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{pills}/wk"/>
+      </exampleQuantity>
       <mapping>
         <identity value="zib-drugsgebruik" />
         <map value="NL-CM:7.4.8" />
       </mapping>
-    </element>
-    <element id="Observation.component.Amount.valueRatio.denominator">
-      <path value="Observation.component.valueRatio.denominator" />
-      <short value="UnitOfTime" />
     </element>
   </differential>
 </StructureDefinition>

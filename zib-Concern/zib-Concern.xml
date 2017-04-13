@@ -152,29 +152,29 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Condition.clinicalStatus.extension.ProblemStatusDate">
+    <element id="Condition.clinicalStatus.extension.clinicalStatusDate">
       <path value="Condition.clinicalStatus.extension" />
-      <name value="ProblemStatusDate" />
-      <short value="ProblemStatusDate" />
+      <name value="clinicalStatusDate" />
+      <short value="clinicalStatusDate" />
       <definition value="Date from when the current value of the ProblemStatus applies: since when is the problem current, under control or non-current." />
       <alias value="ProbleemStatusDatum" />
       <min value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Concern-ProblemStatusDate" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Concern-clinicalStatusDate" />
       </type>
       <mapping>
         <identity value="zib-overdrachtconcern" />
         <map value="NL-CM:5.1.7" />
       </mapping>
     </element>
-    <element id="Condition.clinicalStatus.extension.ProblemStatusDate.valueDateTime">
+    <element id="Condition.clinicalStatus.extension.clinicalStatusDate.valueDateTime">
       <path value="Condition.clinicalStatus.extension.valueDateTime" />
       <min value="1" />
     </element>
     <element id="Condition.onset">
       <path value="Condition.onset[x]" />
-      <short value="ProblemStartDate" />
+      <short value="ConditionStartDate" />
       <definition value="Start of the disorder to which the problem applies. Especially in symptoms in which it takes longer for the final diagnosis, it is important to know not only the date of the diagnosis, but also how long the patient has had the disorder. A ‘vague’ date, such as only the year or the month and the year, is permitted." />
       <comments value="Age is generally used when the patient reports an age at which the Condition began to occur.&#xD;&#xA;Nictiz comment: We prefer the use of onsetDateTime if known." />
       <alias value="ProbleemBeginDatum" />

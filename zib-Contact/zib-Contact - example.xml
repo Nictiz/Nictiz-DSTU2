@@ -24,7 +24,7 @@
                     <tr>
                         <td>emergency</td>
                         <td>16-08-2012</td>
-                        <td>Broken leg</td>
+                        <td>Fracture of femur</td>
                         <td>J.H.R. Peters</td>
                         <td>Hospital</td>
                         <td>Universitair Medisch Centrum Groningen</td>
@@ -50,7 +50,7 @@
     </period>
     <indication>
         <reference value="Condition/example"/>
-        <display value="Gebroken been"/>
+        <display value="Fracture of femur"/>
     </indication>
     <serviceProvider>
         <reference value="Organization/example"/>

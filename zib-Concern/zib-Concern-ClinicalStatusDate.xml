@@ -10,8 +10,8 @@
       <p>An extension to provide a date from when the current value of the ProblemStatus applies: since when is the problem current, under control or non-current as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) 'OverdrachtConcern' version 3.0. </p>
     </div>
   </text>
-  <url value="http://nictiz.nl/fhir/StructureDefinition/zib-Concern-ProblemStatusDate" />
-  <name value="ZIB Concern ProblemStatusDate" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/zib-Concern-clinicalStatusDate" />
+  <name value="ZIB Concern ClinicalStatusDate" />
   <status value="draft" />
   <publisher value="Nictiz" />
   <contact>
@@ -44,11 +44,11 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/zib-Concern-ProbleemStatusDatum" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/zib-Concern-ConditionStatusDatum" />
     </element>
     <element id="Extension.valueDateTime">
       <path value="Extension.valueDateTime" />
-      <short value="ProblemStatusDate" />
+      <short value="clinicalStatusDate" />
       <definition value="Date from when the current value of the ProblemStatus applies: since when is the problem current, under control or non-current." />
       <alias value="ProbleemStatusDatum" />
       <type>
