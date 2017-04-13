@@ -52,7 +52,7 @@
         <strength value="required" />
         <description value="RedenMedicatieafspraak" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.21--2016-06-17T11:20:39" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.21--20160617112039" />
           <display value="RedenMedicatieafspraak" />
         </valueSetReference>
       </binding>
@@ -88,7 +88,7 @@
         <strength value="required" />
         <description value="VoorschriftToedieningswegCodelijst" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.4--2015-04-01T00:00:0" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.4--20150401000000" />
           <display value="VoorschriftToedieningswegCodelijst" />
         </valueSetReference>
       </binding>

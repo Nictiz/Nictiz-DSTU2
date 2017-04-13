@@ -120,7 +120,7 @@
         <strength value="required" />
         <description value="VoorschriftToedieningswegCodelijst" />
         <valueSetReference>
-          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.4--2015-04-01T00:00:0" />
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.5.4--20150401000000" />
           <display value="VoorschriftToedieningswegCodelijst" />
         </valueSetReference>
       </binding>
