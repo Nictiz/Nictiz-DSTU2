@@ -1,4 +1,5 @@
-<ValueSet xmlns="http://hl7.org/fhir">
+<?xml-model href="http://hl7.org/fhir/valueset.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<ValueSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/DSTU2/valueset.xsd" xmlns="http://hl7.org/fhir">
   <id value="38bf182c-e30e-413b-a642-0f90c804af5d" />
   <meta>
     <versionId value="1" />

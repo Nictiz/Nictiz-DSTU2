@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<?xml-model href="http://hl7.org/fhir/DSTU2/structuredefinition.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/DSTU2/structuredefinition.xsd" xmlns="http://hl7.org/fhir">
   <meta>
     <versionId value="1" />
     <lastUpdated value="2017-03-29T14:34:10.831+02:00" />
@@ -168,7 +169,7 @@
         <map value="NL-CM:5.1.7" />
       </mapping>
     </element>
-    <element id="Condition.clinicalStatus.extension.clinicalStatusDate.valueDateTime">
+    <element id="Condition.clinicalStatus.extension.cSDate.valueDateTime">
       <path value="Condition.clinicalStatus.extension.valueDateTime" />
       <min value="1" />
     </element>

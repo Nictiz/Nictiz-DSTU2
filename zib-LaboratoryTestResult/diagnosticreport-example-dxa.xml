@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://hl7.org/fhir/diagnosticreport.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<DiagnosticReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/diagnosticreport.xsd" xmlns="http://hl7.org/fhir">
+<?xml-model href="http://hl7.org/fhir/DSTU2/diagnosticreport.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<DiagnosticReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/DSTU2/diagnosticreport.xsd" xmlns="http://hl7.org/fhir">
     <id value="102"/>
     <meta>
         <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-DiagnosticReport"/>

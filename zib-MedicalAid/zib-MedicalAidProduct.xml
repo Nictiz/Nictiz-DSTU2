@@ -1,4 +1,5 @@
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<?xml-model href="http://hl7.org/fhir/DSTU2/structuredefinition.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/DSTU2/structuredefinition.xsd" xmlns="http://hl7.org/fhir">
   <id value="bdc91486-6274-4b32-b3db-c019ae085fa1" />
   <meta>
     <versionId value="3" />

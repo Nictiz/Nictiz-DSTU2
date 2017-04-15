@@ -1,4 +1,5 @@
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<?xml-model href="http://hl7.org/fhir/DSTU2/structuredefinition.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/DSTU2/structuredefinition.xsd" xmlns="http://hl7.org/fhir">
   <id value="c0c53668-b4eb-46da-95bc-43cfaadd8fda" />
   <meta>
     <versionId value="1" />
@@ -152,7 +153,7 @@
       <path value="Observation.component.code.coding.display" />
       <fixedString value="Drug or medicament" />
     </element>
-    <element id="Observation.component.TypeOfDrugOrMedication.valueCodeableConcept">
+    <element id="Observation.component.TypeOfDrugOrMed.valueCodeableConcept">
       <path value="Observation.component.valueCodeableConcept" />
       <short value="TypeOfDrugOrMedication" />
       <definition value="Type of drug used by the patient." />

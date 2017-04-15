@@ -1,4 +1,5 @@
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<?xml-model href="http://hl7.org/fhir/DSTU2/structuredefinition.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/DSTU2/structuredefinition.xsd" xmlns="http://hl7.org/fhir">
   <id value="42955261-3c07-454f-ae2a-140bbf85bee3" />
   <meta>
     <versionId value="6" />
@@ -116,15 +117,15 @@
         <aggregation value="bundled" />
       </type>
     </element>
-    <element id="Observation.related.FVC_L">
+    <element id="Observation.related.FVC-L">
       <path value="Observation.related" />
       <name value="FVC_L" />
     </element>
-    <element id="Observation.related.FVC_L.type">
+    <element id="Observation.related.FVC-L.type">
       <path value="Observation.related.type" />
       <fixedCode value="has-member" />
     </element>
-    <element id="Observation.related.FVC_L.target">
+    <element id="Observation.related.FVC-L.target">
       <path value="Observation.related.target" />
       <type>
         <code value="Reference" />
@@ -132,16 +133,16 @@
         <aggregation value="bundled" />
       </type>
     </element>
-    <element id="Observation.related.FEV1_VC">
+    <element id="Observation.related.FEV1-VC">
       <path value="Observation.related" />
       <name value="FEV1_VC" />
       <alias value="FEV1%M (%)" />
     </element>
-    <element id="Observation.related.FEV1_VC.type">
+    <element id="Observation.related.FEV1-VC.type">
       <path value="Observation.related.type" />
       <fixedCode value="has-member" />
     </element>
-    <element id="Observation.related.FEV1_VC.target">
+    <element id="Observation.related.FEV1-VC.target">
       <path value="Observation.related.target" />
       <type>
         <code value="Reference" />
@@ -165,15 +166,15 @@
         <aggregation value="bundled" />
       </type>
     </element>
-    <element id="Observation.related.VC_IN">
+    <element id="Observation.related.VC-IN">
       <path value="Observation.related" />
       <name value="VC_IN" />
     </element>
-    <element id="Observation.related.VC_IN.type">
+    <element id="Observation.related.VC-IN.type">
       <path value="Observation.related.type" />
       <fixedCode value="has-member" />
     </element>
-    <element id="Observation.related.VC_IN.target">
+    <element id="Observation.related.VC-IN.target">
       <path value="Observation.related.target" />
       <type>
         <code value="Reference" />
