@@ -173,7 +173,7 @@
     <element id="Medication.product.ingredient.amount">
       <path value="Medication.product.ingredient.amount" />
       <name value="Sterkte" />
-      <short value=" Hoeveelheid ingrediënt" />
+      <short value="Hoeveelheid ingrediënt" />
       <min value="1" />
     </element>
   </differential>

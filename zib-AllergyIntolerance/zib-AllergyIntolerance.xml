@@ -104,7 +104,7 @@
       </binding>
       <mapping>
         <identity value="zib-allergieintolerantie" />
-        <map value="NL-CM-8.2.2" />
+        <map value="NL-CM:8.2.2" />
       </mapping>
     </element>
     <element id="AllergyIntolerance.status">
@@ -139,7 +139,7 @@
       </binding>
       <mapping>
         <identity value="zib-allergieintolerantie" />
-        <map value="NL-CM-8.2.5" />
+        <map value="NL-CM:8.2.5" />
       </mapping>
     </element>
     <element id="AllergyIntolerance.criticality">
@@ -174,7 +174,7 @@
       </binding>
       <mapping>
         <identity value="zib-allergieintolerantie" />
-        <map value="NL-CM-8.2.7" />
+        <map value="NL-CM:8.2.7" />
       </mapping>
     </element>
     <element id="AllergyIntolerance.category">
@@ -209,7 +209,7 @@
       </binding>
       <mapping>
         <identity value="zib-allergieintolerantie" />
-        <map value="NL-CM-8.2.4" />
+        <map value="NL-CM:8.2.4" />
       </mapping>
     </element>
     <element id="AllergyIntolerance.lastOccurence.LastReactionDateTime">
@@ -218,7 +218,7 @@
       <alias value="LaatsteReactieDatumTijd" />
       <mapping>
         <identity value="zib-allergieintolerantie" />
-        <map value="NL-CM-8.2.8" />
+        <map value="NL-CM:8.2.8" />
       </mapping>
     </element>
     <element id="AllergyIntolerance.note">
@@ -252,7 +252,7 @@
       <alias value="Toelichting" />
       <mapping>
         <identity value="zib-allergieintolerantie" />
-        <map value="NL-CM-8.2.9" />
+        <map value="NL-CM:8.2.9" />
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction">
@@ -261,7 +261,7 @@
       <alias value="Reactie" />
       <mapping>
         <identity value="zib-allergieintolerantie" />
-        <map value="NL-CM-8.2.10" />
+        <map value="NL-CM:8.2.10" />
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.extension">
@@ -283,7 +283,7 @@
       </type>
       <mapping>
         <identity value="zib-allergieintolerantie" />
-        <map value="NL-CM-8.2.16" />
+        <map value="NL-CM:8.2.16" />
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.substance.SpecificSubstance">
@@ -299,7 +299,7 @@
       </binding>
       <mapping>
         <identity value="zib-allergieintolerantie" />
-        <map value="NL-CM-8.2.12" />
+        <map value="NL-CM:8.2.12" />
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.certainty">
@@ -334,7 +334,7 @@
       </binding>
       <mapping>
         <identity value="zib-allergieintolerantie" />
-        <map value="NL-CM-8.2.18" />
+        <map value="NL-CM:8.2.18" />
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.manifestation">
@@ -350,7 +350,7 @@
       </binding>
       <mapping>
         <identity value="zib-allergieintolerantie" />
-        <map value="NL-CM-8.2.11" />
+        <map value="NL-CM:8.2.11" />
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.description">
@@ -359,7 +359,7 @@
       <alias value="ReactieBeschrijving" />
       <mapping>
         <identity value="zib-allergieintolerantie" />
-        <map value="NL-CM-8.2.13" />
+        <map value="NL-CM:8.2.13" />
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.onset">
@@ -368,7 +368,7 @@
       <alias value="ReactieTijdstip" />
       <mapping>
         <identity value="zib-allergieintolerantie" />
-        <map value="NL-CM-8.2.17" />
+        <map value="NL-CM:8.2.17" />
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.severity">
@@ -384,7 +384,7 @@
       </binding>
       <mapping>
         <identity value="zib-allergieintolerantie" />
-        <map value="NL-CM-8.2.14" />
+        <map value="NL-CM:8.2.14" />
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.exposureRoute">
@@ -400,7 +400,7 @@
       </binding>
       <mapping>
         <identity value="zib-allergieintolerantie" />
-        <map value="NL-CM-8.2.15" />
+        <map value="NL-CM:8.2.15" />
       </mapping>
     </element>
   </differential>

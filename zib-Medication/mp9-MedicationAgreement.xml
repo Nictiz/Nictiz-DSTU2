@@ -100,8 +100,8 @@
     </element>
     <element id="MedicationOrder.prescriber">
       <path value="MedicationOrder.prescriber" />
-      <name value=" Voorschrijver" />
-      <short value=" Voorschrijver" />
+      <name value="Voorschrijver" />
+      <short value="Voorschrijver" />
       <type>
         <code value="Reference" />
         <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner" />
@@ -130,8 +130,8 @@
     </element>
     <element id="MedicationOrder.medicationReference">
       <path value="MedicationOrder.medicationReference" />
-      <name value=" Afgesproken geneesmiddel" />
-      <short value=" Afgesproken geneesmiddel" />
+      <name value="Afgesproken geneesmiddel" />
+      <short value="Afgesproken geneesmiddel" />
       <type>
         <code value="Reference" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-Medication" />
@@ -139,8 +139,8 @@
     </element>
     <element id="MedicationOrder.dosageInstruction">
       <path value="MedicationOrder.dosageInstruction" />
-      <name value=" Gebruiksinstructie" />
-      <short value=" Gebruiksinstructie" />
+      <name value="Gebruiksinstructie" />
+      <short value="Gebruiksinstructie" />
     </element>
     <element id="MedicationOrder.dosageInstruction.extension">
       <path value="MedicationOrder.dosageInstruction.extension" />
@@ -168,8 +168,8 @@
     </element>
     <element id="MedicationOrder.dosageInstruction.timing">
       <path value="MedicationOrder.dosageInstruction.timing" />
-      <name value=" Toedieningsschema" />
-      <short value=" Toedieningsschema" />
+      <name value="Toedieningsschema" />
+      <short value="Toedieningsschema" />
       <type>
         <code value="Timing" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-AdministrationSchedule" />
@@ -198,8 +198,8 @@
     </element>
     <element id="MedicationOrder.dosageInstruction.dose">
       <path value="MedicationOrder.dosageInstruction.dose[x]" />
-      <name value=" Keerdosis" />
-      <short value=" Keerdosis" />
+      <name value="Keerdosis" />
+      <short value="Keerdosis" />
     </element>
     <element id="MedicationOrder.dosageInstruction.rate">
       <path value="MedicationOrder.dosageInstruction.rate[x]" />

@@ -114,7 +114,7 @@
     </element>
     <element id="MedicationDispense.dispenser">
       <path value="MedicationDispense.dispenser" />
-      <name value=" Verstrekker" />
+      <name value="Verstrekker" />
     </element>
     <element id="MedicationDispense.medicationReference">
       <path value="MedicationDispense.medicationReference" />
@@ -152,8 +152,8 @@
     </element>
     <element id="MedicationDispense.dosageInstruction.asNeeded">
       <path value="MedicationDispense.dosageInstruction.asNeeded[x]" />
-      <name value=" Zo nodig" />
-      <short value=" Zo nodig" />
+      <name value="Zo nodig" />
+      <short value="Zo nodig" />
     </element>
     <element id="MedicationDispense.dosageInstruction.route">
       <path value="MedicationDispense.dosageInstruction.route" />
@@ -161,13 +161,13 @@
     </element>
     <element id="MedicationDispense.dosageInstruction.dose">
       <path value="MedicationDispense.dosageInstruction.dose[x]" />
-      <name value=" Aantal" />
-      <short value=" Aantal" />
+      <name value="Aantal" />
+      <short value="Aantal" />
     </element>
     <element id="MedicationDispense.dosageInstruction.rate">
       <path value="MedicationDispense.dosageInstruction.rate[x]" />
-      <name value=" Toedieningssnelheid" />
-      <short value=" Toedieningssnelheid" />
+      <name value="Toedieningssnelheid" />
+      <short value="Toedieningssnelheid" />
     </element>
   </differential>
 </StructureDefinition>

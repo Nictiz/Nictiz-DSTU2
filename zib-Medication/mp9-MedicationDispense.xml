@@ -16,8 +16,8 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value=" A MedicationDispense as defined by the Dutch Medication v9 project." />
-  <copyright value=" CC0" />
+  <description value="A MedicationDispense as defined by the Dutch Medication v9 project." />
+  <copyright value="CC0" />
   <kind value="resource" />
   <constrainedType value="MedicationDispense" />
   <abstract value="false" />
@@ -75,8 +75,8 @@
     </element>
     <element id="MedicationDispense.authorizingPrescription">
       <path value="MedicationDispense.authorizingPrescription" />
-      <name value=" Relatie naar verstrekkingsverzoek" />
-      <short value=" Relatie naar verstrekkingsverzoek" />
+      <name value="Relatie naar verstrekkingsverzoek" />
+      <short value="Relatie naar verstrekkingsverzoek" />
       <type>
         <code value="Reference" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-MedicationDispenseRequest" />

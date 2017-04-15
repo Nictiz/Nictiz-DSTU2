@@ -42,8 +42,8 @@
     </element>
     <element id="MedicationOrder.prescriber">
       <path value="MedicationOrder.prescriber" />
-      <name value=" Auteur" />
-      <short value=" Auteur" />
+      <name value="Auteur" />
+      <short value="Auteur" />
     </element>
     <element id="MedicationOrder.note">
       <path value="MedicationOrder.note" />
