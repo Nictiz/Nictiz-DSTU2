@@ -27,6 +27,7 @@
   <description
     value="Vaccinatie as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.&#13;&#10;&#13;&#10;Immunization can be defined as “Generating natural immunity against pathogens by means of vaccination (active immunization) or by administering immunoglobulins (passive immunization)”.&#13;&#10;&#13;&#10;Only vaccinations are included in this information model. Administering immunoglobulins is part of the medication overview. Vaccinations have lifelong relevance.&#13;&#10;&#13;&#10;Most vaccinations are carried out in the Netherlands as part of the RVP (Rijksvaccinatieprogramma, National Immunisation Program). RVP information is especially important for children. &#13;&#10;&#13;&#10;Vaccinations are also relevant for adult patients such as transplant patients, dialysis patients and patients with a post-splenectomy status. In addition, there are specific indications for the vaccination of risk groups, such as travelers, professionals who come into contact with blood or patients with wounds, weakened immune systems or heightened risk." />
   <copyright value="CC0" />
+  <fhirVersion value="1.0.2" />
   <mapping>
     <identity value="zib-vaccinatie" />
     <uri value="https://zibs.nl/wiki/Vaccinatie(NL)" />
@@ -101,7 +102,7 @@
     </element>
     <element id="Immunization.vaccineCode.coding.GPK">
       <path value="Immunization.vaccineCode.coding" />
-      <name value="G-Standaard GPK" />
+      <name value="VoorschriftProductGPKCodelijst" />
       <max value="1" />
       <binding>
         <strength value="required" />
@@ -114,7 +115,7 @@
     </element>
     <element id="Immunization.vaccineCode.coding.HPK">
       <path value="Immunization.vaccineCode.coding" />
-      <name value="G-Standaard HPK" />
+      <name value="ProductCodeHPKCodelijst" />
       <max value="1" />
       <binding>
         <strength value="required" />
@@ -127,7 +128,7 @@
     </element>
     <element id="Immunization.vaccineCode.coding.ZI">
       <path value="Immunization.vaccineCode.coding" />
-      <name value="VoorschriftProductZICodelijst" />
+      <name value="ProductCodeZICodelijst" />
       <max value="1" />
       <binding>
         <strength value="required" />
@@ -140,7 +141,7 @@
     </element>
     <element id="Immunization.vaccineCode.coding.ATC">
       <path value="Immunization.vaccineCode.coding" />
-      <name value="WHO ATC" />
+      <name value="ProductCodeATCCodelijst" />
       <max value="1" />
       <binding>
         <strength value="required" />
@@ -153,7 +154,7 @@
     </element>
     <element id="Immunization.vaccineCode.coding.PRK">
       <path value="Immunization.vaccineCode.coding" />
-      <name value="VoorschriftProductPRKCodelijst" />
+      <name value="ProductCodePRKCodelijst" />
       <max value="1" />
       <binding>
         <strength value="required" />
@@ -166,7 +167,7 @@
     </element>
     <element id="Immunization.vaccineCode.coding.GTIN">
       <path value="Immunization.vaccineCode.coding" />
-      <name value="VoorschriftProductGTINCodelijst" />
+      <name value="ProductCodeGTINCodelijst" />
       <max value="1" />
       <binding>
         <strength value="required" />

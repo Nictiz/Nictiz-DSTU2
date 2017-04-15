@@ -18,6 +18,7 @@
   </contact>
   <date value="2017-01-16T16:16:34.9349699+01:00" />
   <copyright value="CC0" />
+  <fhirVersion value="1.0.2" />
   <mapping>
     <identity value="zib-Betaler" />
     <uri value="https://zibs.nl/wiki/Betaler(NL)" />

@@ -45,7 +45,7 @@
     </element>
     <element id="Substance.code.coding.GTIN">
       <path value="Substance.code.coding" />
-      <name value="GTIN" />
+      <name value="IngredientCodeGTINCodeLijst" />
       <max value="1" />
       <binding>
         <strength value="required" />
@@ -58,7 +58,7 @@
     </element>
     <element id="Substance.code.coding.SSK">
       <path value="Substance.code.coding" />
-      <name value="SSK" />
+      <name value="IngredientCodeSSKLijst" />
       <max value="1" />
       <binding>
         <strength value="required" />
@@ -71,7 +71,7 @@
     </element>
     <element id="Substance.code.coding.PRK">
       <path value="Substance.code.coding" />
-      <name value="PRK" />
+      <name value="IngredientCodePRKLijst" />
       <max value="1" />
       <binding>
         <strength value="required" />
@@ -84,7 +84,7 @@
     </element>
     <element id="Substance.code.coding.HPK">
       <path value="Substance.code.coding" />
-      <name value="HPK" />
+      <name value="IngredientCodeHPKLijst" />
       <max value="1" />
       <binding>
         <strength value="required" />
@@ -97,7 +97,7 @@
     </element>
     <element id="Substance.code.coding.GPK">
       <path value="Substance.code.coding" />
-      <name value="GPK" />
+      <name value="IngredientCodeGPKLijst" />
       <max value="1" />
       <binding>
         <strength value="required" />
@@ -110,7 +110,7 @@
     </element>
     <element id="Substance.code.coding.SNK">
       <path value="Substance.code.coding" />
-      <name value="SNK" />
+      <name value="IngredientCodeSNKLijst" />
       <max value="1" />
       <binding>
         <strength value="required" />
@@ -123,7 +123,7 @@
     </element>
     <element id="Substance.code.coding.ATC">
       <path value="Substance.code.coding" />
-      <name value="ATC" />
+      <name value="IngredientCodeATCCodelijst" />
       <max value="1" />
       <binding>
         <strength value="required" />
@@ -136,7 +136,7 @@
     </element>
     <element id="Substance.code.coding.ZI">
       <path value="Substance.code.coding" />
-      <name value="ZI" />
+      <name value="IngredientCodeZICodelijst" />
       <max value="1" />
       <binding>
         <strength value="required" />

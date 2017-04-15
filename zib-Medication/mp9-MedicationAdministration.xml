@@ -17,6 +17,7 @@
     </telecom>
   </contact>
   <copyright value="CC0" />
+  <fhirVersion value="1.0.2" />
   <kind value="resource" />
   <constrainedType value="MedicationAdministration" />
   <abstract value="false" />

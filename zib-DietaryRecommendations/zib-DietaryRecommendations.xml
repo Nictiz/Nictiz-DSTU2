@@ -25,6 +25,7 @@
   <date value="2017-02-13T15:20:12.6745603+01:00" />
   <description value="Voedingsadvies as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) version 3.0.&#13;&#10;The ZIB Voedingsadvies references to another ZIB named VerpleegkundigeInterventie. This profile on NutritionOrder also contains concenpts of the ZIB VerpleegkundigeInterventie.  &#13;&#10;" />
   <copyright value="CC0" />
+  <fhirVersion value="1.0.2" />
   <mapping>
     <identity value="zib-voedingsadvies" />
     <uri value="https://zibs.nl/wiki/Voedingsadvies(NL)" />
@@ -188,8 +189,8 @@
     <element id="NutritionOrder.oralDiet.instruction">
       <path value="NutritionOrder.oralDiet.instruction" />
       <short value="Activity" />
-      <definition value="The description of nursing procedures carried out in the care for a patient. A nursing intervention consists of a set of patient-related nursing procedures.&#13;&#10;" />
-      <comments value="&#13;&#10;Free text dosage instructions can be used for cases where the instructions are too complex to code." />
+      <definition value="The description of nursing procedures carried out in the care for a patient. A nursing intervention consists of a set of patient-related nursing procedures." />
+      <comments value="Free text dosage instructions can be used for cases where the instructions are too complex to code." />
       <alias value="Activiteit" />
       <mapping>
         <identity value="zib-verpleegkundigeinterventie" />

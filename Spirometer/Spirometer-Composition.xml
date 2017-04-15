@@ -130,7 +130,7 @@
         <valueString value="Section" />
       </extension>
       <path value="Composition.section" />
-      <name value="Spirometer Observation Panel" />
+      <name value="SpirometerObservationPanel" />
     </element>
     <element id="Composition.section.code">
       <path value="Composition.section.code" />

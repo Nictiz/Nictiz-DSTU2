@@ -17,6 +17,7 @@
   </contact>
   <date value="2017-01-16T15:52:25.068429+01:00" />
   <copyright value="CC0" />
+  <fhirVersion value="1.0.2" />
   <mapping>
     <identity value="zib-betaler" />
     <uri value="https://zibs.nl/wiki/Betaler(NL)" />
@@ -128,10 +129,6 @@
         <code value="uri" />
       </type>
       <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/zib-BetalerBankgegevens" />
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
     </element>
     <element id="Patient.extension.value">
       <path value="Patient.extension.value[x]" />
@@ -139,10 +136,6 @@
       <type>
         <code value="boolean" />
       </type>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
     </element>
     <element id="Patient.name">
       <path value="Patient.name" />

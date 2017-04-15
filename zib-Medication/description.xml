@@ -18,6 +18,7 @@
   </contact>
   <description value="Textual description of the medication usage." />
   <copyright value="CC0" />
+  <fhirVersion value="1.0.2" />
   <kind value="datatype" />
   <constrainedType value="Extension" />
   <abstract value="false" />

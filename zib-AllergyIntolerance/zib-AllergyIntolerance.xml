@@ -146,6 +146,10 @@
       <path value="AllergyIntolerance.criticality" />
       <short value="CriticalExtent" />
       <alias value="MateVanKritiekZijn" />
+      <mapping>
+        <identity value="zib-allergieintolerantie" />
+        <map value="NL-CM:8.2.7" />
+      </mapping>
     </element>
     <element id="AllergyIntolerance.criticality.extension">
       <path value="AllergyIntolerance.criticality.extension" />
@@ -228,10 +232,13 @@
     </element>
     <element id="AllergyIntolerance.note.author">
       <path value="AllergyIntolerance.note.author[x]" />
-      <name value="Auteur" />
       <short value="Auteur" />
       <type>
         <code value="string" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner" />
       </type>
       <type>
         <code value="Reference" />
@@ -241,12 +248,8 @@
         <code value="Reference" />
         <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson" />
       </type>
-      <type>
-        <code value="Reference" />
-        <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner" />
-      </type>
     </element>
-    <element id="AllergyIntolerance.note.text.Explanation">
+    <element id="AllergyIntolerance.note.text">
       <path value="AllergyIntolerance.note.text" />
       <short value="Explanation" />
       <alias value="Toelichting" />
@@ -271,7 +274,7 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="AllergyIntolerance.reaction.extension.ReactionDuration">
+    <element id="AllergyIntolerance.reaction.extension.Duration">
       <path value="AllergyIntolerance.reaction.extension" />
       <short value="ReactionDuration" />
       <alias value="ReactieDuur" />

@@ -18,6 +18,7 @@
   </contact>
   <date value="2017-01-20T15:08:40.2001106+01:00" />
   <copyright value="CC0" />
+  <fhirVersion value="1.0.2" />
   <kind value="resource" />
   <constrainedType value="Observation" />
   <abstract value="false" />
@@ -100,7 +101,7 @@
     </element>
     <element id="Observation.related.FEV1">
       <path value="Observation.related" />
-      <name value="FEV 1" />
+      <name value="FEV1" />
       <definition value="The FEV 1 value is the primary value from the panel as it is only one that at present has to be obtained in a clinical setting." />
     </element>
     <element id="Observation.related.FEV1.type">
@@ -117,7 +118,7 @@
     </element>
     <element id="Observation.related.FVC_L">
       <path value="Observation.related" />
-      <name value="FVC (L)" />
+      <name value="FVC_L" />
     </element>
     <element id="Observation.related.FVC_L.type">
       <path value="Observation.related.type" />
@@ -133,7 +134,7 @@
     </element>
     <element id="Observation.related.FEV1_VC">
       <path value="Observation.related" />
-      <name value="FEV1/VC" />
+      <name value="FEV1_VC" />
       <alias value="FEV1%M (%)" />
     </element>
     <element id="Observation.related.FEV1_VC.type">
@@ -166,7 +167,7 @@
     </element>
     <element id="Observation.related.VC_IN">
       <path value="Observation.related" />
-      <name value="VC IN" />
+      <name value="VC_IN" />
     </element>
     <element id="Observation.related.VC_IN.type">
       <path value="Observation.related.type" />

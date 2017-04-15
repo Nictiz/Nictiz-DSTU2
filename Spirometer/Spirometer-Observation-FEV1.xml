@@ -18,6 +18,7 @@
   </contact>
   <date value="2017-01-20T15:54:54.5764447+01:00" />
   <copyright value="CC0" />
+  <fhirVersion value="1.0.2" />
   <kind value="resource" />
   <constrainedType value="Observation" />
   <abstract value="false" />

@@ -25,6 +25,7 @@
   <date value="2017-02-10T10:20:09.8814306+01:00" />
   <description value="An extension to provide the date on which the vaccination will have to be repeated according to the author’s information as defined by the Dutch Clinical Building Block (Dutch: Zorginformatiebouwsteen or ZIB) 'Vaccinatie' version 3.0." />
   <copyright value="CC0" />
+  <fhirVersion value="1.0.2" />
   <kind value="datatype" />
   <constrainedType value="Extension" />
   <abstract value="false" />
