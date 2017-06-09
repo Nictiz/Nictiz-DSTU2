@@ -23,7 +23,7 @@
   <kind value="resource" />
   <constrainedType value="Composition" />
   <abstract value="false" />
-  <base value="http://nictiz.nl/fhir/StructureDefinition/nl-core-composition" />
+  <base value="http://nictiz.nl/fhir/StructureDefinition/composition-nl" />
   <differential>
     <element id="Composition">
       <path value="Composition" />

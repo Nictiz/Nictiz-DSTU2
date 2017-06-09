@@ -5,8 +5,8 @@
     <versionId value="2" />
     <lastUpdated value="2017-02-20T14:57:12.35+00:00" />
   </meta>
-  <url value="http://nictiz.nl/fhir/StructureDefinition/nl-core-observation" />
-  <name value="nl-core-observation" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/observation-nl" />
+  <name value="observation-nl" />
   <status value="draft" />
   <publisher value="Nictiz" />
   <contact>

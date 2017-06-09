@@ -4,8 +4,8 @@
     <versionId value="1" />
     <lastUpdated value="2017-01-31T15:18:41.409+00:00" />
   </meta>
-  <url value="http://nictiz.nl/fhir/StructureDefinition/nl-core-composition" />
-  <name value="nl-core-composition" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/composition-nl" />
+  <name value="composition-nl" />
   <status value="draft" />
   <publisher value="Nictiz" />
   <contact>

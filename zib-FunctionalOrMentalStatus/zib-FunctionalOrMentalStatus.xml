@@ -35,7 +35,7 @@
   <kind value="resource" />
   <constrainedType value="Observation" />
   <abstract value="false" />
-  <base value="http://nictiz.nl/fhir/StructureDefinition/nl-core-observation" />
+  <base value="http://nictiz.nl/fhir/StructureDefinition/observation-nl" />
   <differential>
     <element id="Observation">
       <path value="Observation" />
