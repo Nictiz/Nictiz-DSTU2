@@ -292,10 +292,6 @@
         <identity value="zib-address" />
         <map value="NL-CM:0.1.17" />
       </mapping>
-      <mapping>
-        <identity value="BRP" />
-        <map value="11.60 Postcode" />
-      </mapping>
     </element>
   </differential>
 </StructureDefinition>
