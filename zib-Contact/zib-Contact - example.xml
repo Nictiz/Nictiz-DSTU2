@@ -37,7 +37,7 @@
     <class value="emergency"/>
    <patient>
        <reference value="Patient/example"/>
-       <display value="Jongeneel-de Haas"/>
+       <display value="XXX_Helleman-de Vries"/>
    </patient>
     <participant>
         <individual>

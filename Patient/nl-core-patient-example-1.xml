@@ -11,7 +11,7 @@
       <p>Voorbeeld van een 'Patient' zoals verder samengesteld tijdens de HL7 WGM NL 15-04-2016 jl. Deze discussie heeft diverse uitzoekpunten opgeleverd zoals hier gedocumenteerd.</p>
       <div>
         <p>BSN: 123456782</p>
-        <p>Naam: Irma Jongeneel-de Haas</p>
+        <p>Naam: Irma XXX_Helleman-de Vries</p>
         <p>Geslacht: Vrouw</p>
         <p>Geboortedatum: 1970-03-04</p>
         <p>Telefoon: 030-2345456</p>
@@ -47,15 +47,15 @@
       <valueCode value="NL4" />
     </extension>
     <use value="official" />
-    <family value="Jongeneel-de Haas">
+    <family value="XXX_Helleman-de Vries">
       <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
-        <valueString value="Jongeneel" />
+        <valueString value="XXX_Helleman" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partners-prefix">
         <valueString value="de" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partners-name">
-        <valueString value="Haas" />
+        <valueString value="Vries" />
       </extension>
     </family>
     <given value="Irma">

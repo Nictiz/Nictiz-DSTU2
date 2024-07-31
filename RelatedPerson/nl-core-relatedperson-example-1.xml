@@ -9,7 +9,7 @@
     <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">
       <ol>
-        <li>Henk de Haas is eerste contactpersoon en echtgenoot van patient Irma Jongeneel-de Haas</li>
+        <li>Henk de Vries is eerste contactpersoon en echtgenoot van patient Irma XXX_Helleman-de Vries</li>
       </ol>
     </div>
   </text>
@@ -24,7 +24,7 @@
   </extension>
   <patient>
     <reference value="Patient/nl-core-patient-example-1" />
-    <display value="Irma Jongeneel-de Haas" />
+    <display value="Irma XXX_Helleman-de Vries" />
   </patient>
   <relationship>
     <coding>
@@ -34,12 +34,12 @@
     </coding>
   </relationship>
   <name>
-    <family value="de Haas">
+    <family value="de Vries">
       <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
         <valueString value="de " />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
-        <valueString value="Haas" />
+        <valueString value="Vries" />
       </extension>
     </family>
     <given value="Henk" />
@@ -51,7 +51,7 @@
   </telecom>
   <telecom>
     <system value="email" />
-    <value value="dehaas@work.com" />
+    <value value="devries@work.com" />
     <use value="work" />
   </telecom>
   <address>

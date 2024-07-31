@@ -25,7 +25,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th>Irma Jongeneel-de Haas</th>
+                            <th>Irma XXX_Helleman-de Vries</th>
                             <th>ING</th>
                             <th>INGBNL2A</th>
                             <td>NL85INGB0001234567</td>
@@ -62,15 +62,15 @@
             <valueCode value="NL4" />
         </extension>
         <use value="official" />        
-        <family value="Jongeneel-de Haas">
+        <family value="XXX_Helleman-de Vries">
             <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
-                <valueString value="Jongeneel" />
+                <valueString value="XXX_Helleman" />
             </extension>
             <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partners-prefix">
                 <valueString value="de" />
             </extension>
             <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partners-name">
-                <valueString value="Haas" />
+                <valueString value="Vries" />
             </extension>
         </family>
         <given value="Irma">

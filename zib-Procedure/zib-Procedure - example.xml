@@ -44,7 +44,7 @@
     </extension>
     <subject>
             <reference value="Patient/example"/>
-            <display value="Jongeneel-de Haas"/>
+            <display value="XXX_Helleman-de Vries"/>
     </subject>
     <status value="completed"/>
     <code>
